@@ -1,0 +1,33 @@
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.navbarContent a {
+    float: right;
+
+    height: 100%;
+}
+
+.navbarContent img {
+    float: left;
+    object-fit: contain;
+}
+
+.navbarContent a {
+    display: block;
+    color: var(--KeyBlack);
+    text-align: center;
+    padding: 41px 3%;
+    text-decoration: none;
+
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+}
+
+.navbarContent a:hover {
+    background-color: var(--CustomGreyLight);
+}

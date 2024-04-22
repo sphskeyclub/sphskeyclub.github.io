@@ -17,7 +17,7 @@
     --KeyMango: #f5b419;
 
     --CustomGrey: #ededed;
-    --CustomGreyLight: #f7f7f7;
+    --CustomGreyLight: #f4f4f4;
 }
 
 @font-face {
@@ -36,7 +36,7 @@
 }
 
 html {
-    background-color: var(--KeyBlue);
+    background-color: #ffffff;
     padding: 0;
     margin: 0;
 
@@ -58,17 +58,17 @@ body {
 }
 
 p {
-    font-family: garamond-premiere-pro, serif;
+    font-family: garamond-premier-pro, serif;
     font-weight: 400;
 }
 
 a {
-    font-family: garamond-premiere-pro, serif;
+    font-family: garamond-premier-pro, serif;
     font-weight: 400;
 }
 
 span {
-    font-family: garamond-premiere-pro, serif;
+    font-family: garamond-premier-pro, serif;
     font-weight: 400;
 }
 
@@ -78,12 +78,12 @@ span {
 }
 
 a {
-    color: var(--KeyMagenta);
+    color: var(--KeyGold);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--KeyRed);
+    color: var(--KeyYellow);
     text-decoration: underline;
 }
 
@@ -101,26 +101,6 @@ a:hover {
     border-top: solid 8px var(--KeyGold);
 
     border-spacing: 2.25vh;
-}
-
-#navbar {
-    position: absolute;
-    width:100%;
-
-    transform: translate(0, -100vh);
-}
-
-#navbarContent {
-    padding: 0 10vw 0 10vw;
-    border-spacing: 1vw;
-    width:100%;
-
-    font-size: 1vw;
-}
-
-#navbarContent a {
-    text-decoration: none;
-    color: var(--KeyGold);
 }
 
 #home_img {
@@ -190,8 +170,8 @@ a:hover {
 }
 
 #mainContainer {
-    margin-top: 100vh;
-    
+    translate: 0 -10px;
+
     width: 100vw;
 
     background-color: white;
@@ -308,7 +288,7 @@ a:hover {
 
 .addShadow:hover {
     transition: 0.5s;
-    box-shadow: 0.7vw 0.7vh 10px var(--KeyBlueGrey);
+    box-shadow: 0.35vw 0.35vh 10px var(--KeyBlueGrey);
 }
 
 .addShadow {
@@ -342,7 +322,7 @@ p {
 
     border-top: solid 8px var(--KeyGold);
 
-    background-color: var(--KeyBlue);
+    background-color: #ffffff;
 
     color: var(--KeyGold);
     font-size: 1.6vw;

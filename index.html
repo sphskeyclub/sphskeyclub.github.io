@@ -11,11 +11,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="icon" href="./imgs/favicon-32x32.png">
+
+     <link rel="stylesheet" href="./styles/navbar.css">
     <title>SPHS Key Club</title>
 </head>
 <body>
     <div id="screenFit">
-        <div id="navbar">
+        <!--<div id="navbar">
             <table id="navbarContent">
                 <tbody>
                     <tr>
@@ -31,22 +33,29 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </div>-->
+        <!-- Dropdown Structure -->
         <div id="home">
-            <img src="./imgs/key.png" id="home_img">
-            <div id="nametag">
-                <h2 id="title">SPHS Key Club</h2>
-                <h4 id="tag">
-                    Florida (D13) <a id="scrollLink" href="#mainContainer"><i class="large material-icons arrowDownLink" style="font-size: 300%;">arrow_drop_down</i></a>
-                </h4>
-            </div>
+            <ul id="navbar">
+                <a href="./index.html">
+                    <li class="navbarContent">
+                        <img src="./imgs/KC-wordmark-sphs.png" height="100px">
+                    </li>
+                </a>
+                <li class="navbarContent"><a href="./Contact_Us.html">CONTACT US!</a></li>
+                <li class="navbarContent"><a href="./Points.html">POINTS</a></li>
+                <li class="navbarContent"><a href="#">ABOUT</a></li>
+                <li class="navbarContent"><a style="color: var(--KeyGold)" href="./index.html">HOME</a></li>
+            </ul>
+
+            <img src="./imgs/DCON-24.HEIC" width="100%" style="object-fit: cover; height: max(600px, 50vh);">
         </div>
         <div id="mainContainer">
             <table id="infoContainerWeb" style="padding-bottom: 0;">
                 <tbody>
                     <tr>
                         <td class="basicContainer" colspan="3">
-                            <img src="./imgs/DCON-24.HEIC" width="60%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
+                            <img src="./imgs/DCON-group3.JPG" width="60%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
                             <h1>News</h1>
                             <h2>DCON 2024 (April 18-21)</h2>
                             <p style="text-indent: 2em;">
@@ -115,7 +124,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="./imgs/DCON-24.HEIC" width="100%" style="border-radius: 1.5vw;">
+                            <img src="./imgs/DCON-group3.JPG" width="100%" style="border-radius: 1.5vw;">
                         </td>
                     </tr>
                     <tr>
@@ -200,7 +209,7 @@
                 <tbody>
                     <tr>
                         <td class="basicContainer">
-                            <img src="./imgs/DCON-24.HEIC" width="55%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
+                            <img src="./imgs/DCON-carwash.JPG" width="55%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%; object-fit: cover; height: max(600px, 50vh);">
                             <h1 style="font-size: 2.5vw;">Service and Club Projects</h1>
                             <h2>DCON Car Wash</h2>
                             <p style="text-indent: 2em;">
@@ -213,7 +222,7 @@
                     </tr>
                     <tr>
                         <td class="basicContainer">
-                            <img src="./imgs/DCON-24.HEIC" width="55%" style="border-radius: 1.5vw; float: left; margin-right: 3%; margin-bottom: 3%;">
+                            <img src="./imgs/homeless-meals.JPG" width="55%" style="border-radius: 1.5vw; float: left; margin-right: 3%; margin-bottom: 3%; object-fit: cover; height: max(600px, 50vh);">
                             <h2>Homeless Meals</h2>
                             <p style="text-indent: 2em;">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quia aliquam quasi? Deleniti ad totam saepe accusamus, eum exercitationem perspiciatis perferendis! Deserunt beatae facilis rem necessitatibus ab quidem cupiditate libero!
@@ -244,7 +253,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="./imgs/DCON-24.HEIC" width="100%" style="border-radius: 1.5vw;">
+                            <img src="./imgs/DCON-carwash.JPG" width="100%" style="border-radius: 1.5vw; object-fit: cover; height: max(600px, 50vh);">
                         </td>
                     </tr>
                     <tr>
@@ -263,7 +272,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="./imgs/DCON-24.HEIC" width="100%" style="border-radius: 1.5vw;">
+                            <img src="./imgs/homeless-meals.JPG" width="100%" style="border-radius: 1.5vw; object-fit: cover; height: max(600px, 50vh);">
                         </td>
                     </tr>
                 </tbody>
