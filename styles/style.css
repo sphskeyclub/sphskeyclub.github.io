@@ -96,7 +96,7 @@ a:hover {
 }
 
 #infoContainerMobile {
-    padding: 3vh 2vw 0 2vw;
+    padding: 0vh 2vw 0 2vw;
 
     border-top: solid 8px var(--KeyGold);
 
@@ -178,7 +178,7 @@ a:hover {
 }
 
 #infoContainerWeb {
-    padding: 3vh 10vw 3vh 10vw;
+    padding: 1vh 10vw 1vh 10vw;
 
     border-top: solid 8px var(--KeyGold);
 
@@ -186,7 +186,7 @@ a:hover {
 }
 
 #infoContainerWebContact {
-    padding: 3vh 15vw 3vh 15vw;
+    padding: 2vh 15vw 2vh 15vw;
 
     border-top: solid 8px var(--KeyGold);
 
@@ -194,7 +194,7 @@ a:hover {
 }
 
 #infoContainerWebContactChairs {
-    padding: 3vh 24.5vw 3vh 24.5vw;
+    padding: 2vh 24.5vw 2vh 24.5vw;
 
     border-top: solid 8px var(--KeyGold);
 
