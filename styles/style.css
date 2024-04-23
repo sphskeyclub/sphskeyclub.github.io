@@ -87,12 +87,20 @@ a:hover {
     text-decoration: underline;
 }
 
-.headingT {
+.headingTWeb {
     padding-top: 3vh;
     color: var(--KeyCyan);
     text-align: center;
 
     font-size: 4vw; /* max(4vw, 5vh) */
+}
+
+.headingTMobile {
+    padding-top: 3vh;
+    color: var(--KeyCyan);
+    text-align: center;
+
+    font-size: 8vw; /* max(4vw, 5vh) */
 }
 
 #infoContainerMobile {
@@ -191,6 +199,14 @@ a:hover {
     border-top: solid 8px var(--KeyGold);
 
     border-spacing: 1.25vw;
+}
+
+#infoContainerMobileContact {
+    padding: 2vh 8vw 2vh 6vw;
+
+    border-top: solid 8px var(--KeyGold);
+
+    border-spacing: 2vw;
 }
 
 #infoContainerWebContactChairs {
@@ -340,7 +356,19 @@ p {
         display: block;
     }
 
+    #infoContainerMobileContact {
+        display: none;
+    }
+
     #infoContainerMobile {
+        display: none;
+    }
+
+    .headingTWeb {
+        display: block;
+    }
+
+    .headingTMobile {
         display: none;
     }
 }
@@ -356,6 +384,10 @@ p {
 
     #infoContainerWebContactChairs {
         display: none;
+    }
+
+    #infoContainerMobileContact {
+        display: block;
     }
 
     #infoContainerMobile {
@@ -406,6 +438,14 @@ p {
     #footnoteContainer {
         font-size: 4vw;
         text-wrap: wrap;
+    }
+
+    .headingTWeb {
+        display: none;
+    }
+
+    .headingTMobile {
+        display: block;
     }
 }
 
