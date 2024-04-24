@@ -1,4 +1,4 @@
-#navbar {
+#navbarWeb {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -6,18 +6,18 @@
     background-color: #ffffff;
 }
 
-.navbarContent a {
+.navbarWebContent a {
     float: right;
 
     height: 100%;
 }
 
-.navbarContent img {
+.navbarWebContent img {
     float: left;
     object-fit: contain;
 }
 
-.navbarContent a {
+.navbarWebContent a {
     display: block;
     color: var(--KeyBlack);
     text-align: center;
@@ -28,6 +28,99 @@
     font-weight: 400;
 }
 
-.navbarContent a:hover {
+.navbarWebContent a:hover {
     background-color: var(--CustomGreyLight);
+}
+
+#navbarMobile {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.navbarMobileContent a {
+    float: right;
+
+    height: 100%;
+}
+
+.navbarMobileContent img {
+    float: left;
+    object-fit: contain;
+}
+
+.navbarMobileContent a {
+    display: block;
+    color: var(--KeyBlack);
+    text-align: center;
+    text-decoration: none;
+
+    padding: 36px 3%;
+
+    margin-right: calc(60.5px - 3%); /* make some px value /// 363 x 600 */
+
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+}
+
+.navbarMobileContent a:hover {
+    background-color: var(--CustomGreyLight);
+
+    cursor: pointer;
+}
+
+#mobileDropdown {
+    display: none;
+    
+    height: 100vh;
+    width: 100vw;
+}
+
+#navbarMobileDropdown {
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.navbarMobileDropdownContent a {
+    display: block;
+    color: var(--KeyBlack);
+    text-align: center;
+    text-decoration: none;
+
+    padding: 36px 5%;
+
+    margin-right: calc(60.5px - 3%); /* make some px value /// 363 x 600 */
+
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+}
+
+.navbarMobileDropdownContent a:hover {
+    background-color: var(--CustomGreyLight);
+
+    cursor: pointer;
+}
+
+@media screen and (min-width: 850px) and (min-height: 380px) { /* w:1100px h:380px */
+    #navbarWeb {
+        display: block;
+    }
+
+    #navbarMobile {
+        display: none;
+    }
+}
+
+@media (max-width: 849px) or (max-height: 379px) { /* w:1099px h:379px */
+    #navbarWeb {
+        display: none;
+    }
+
+    #navbarMobile {
+        display: block;
+    }
 }

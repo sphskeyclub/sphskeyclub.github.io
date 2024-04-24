@@ -19,17 +19,39 @@
     <title>Points - SPHS Key Club</title>
 </head>
 <body>
+    <div id="mobileDropdown">
+        <ul id="navbarMobileDropdown">
+            <li class="navbarMobileDropdownContent"><a href="./index.html">HOME</a></li>
+            <li class="navbarMobileDropdownContent"><a href="#">ABOUT</a></li>
+            <li class="navbarMobileDropdownContent"><a style="color: var(--KeyGold)" href="./Points.html">POINTS</a></li>
+            <li class="navbarMobileDropdownContent"><a href="./Contact_Us.html">CONTACT US!</a></li>
+            <li class="navbarMobileDropdownContent"><a onclick="closeDropdown()" style="color: var(--KeyCyan)">GO BACK</a></li>
+        </ul>
+    </div>
+    <div id="mainWindow">
         <div id="home">
-            <ul id="navbar">
+            <ul id="navbarWeb">
                 <a href="./index.html">
-                    <li class="navbarContent">
+                    <li class="navbarWebContent">
                         <img src="./imgs/KC-wordmark-sphs.png" height="100px">
                     </li>
                 </a>
-                <li class="navbarContent"><a href="./Contact_Us.html">CONTACT US!</a></li>
-                <li class="navbarContent"><a style="color: var(--KeyGold)" href="./Points.html">POINTS</a></li>
-                <li class="navbarContent"><a href="#">ABOUT</a></li>
-                <li class="navbarContent"><a href="./index.html">HOME</a></li>
+                <li class="navbarWebContent"><a href="./Contact_Us.html">CONTACT US!</a></li>
+                <li class="navbarWebContent"><a style="color: var(--KeyGold)" href="./Points.html">POINTS</a></li>
+                <li class="navbarWebContent"><a href="#">ABOUT</a></li>
+                <li class="navbarWebContent"><a href="./index.html">HOME</a></li>
+            </ul>
+            <ul id="navbarMobile">
+                <a href="./index.html">
+                    <li class="navbarMobileContent">
+                        <img src="./imgs/KC-wordmark-sphs.png" height="100px">
+                    </li>
+                </a>
+                <li class="navbarMobileContent">
+                    <a onclick="getDropdown()">
+                        <i class="medium material-icons">dehaze</i>
+                    </a>
+                </li>
             </ul>
 
             <img src="./imgs/DCON-24.HEIC" width="100%" style="object-fit: cover; height: max(600px, 50vh);">
@@ -76,19 +98,19 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="shadContainer" onclick="location.href='https://sphskey.weebly.com/goldfever-calendar.html'">
+                        <td class="shadContainer" style="border-radius: 4vw;" onclick="location.href='https://sphskey.weebly.com/goldfever-calendar.html'">
                             <h2>2023-24 S1</h2>
                             <p>Click here for the 2023-2024 Semester 1 Point Log.</p>
                         </td>
                     </tr>
                     <tr>
-                        <td class="shadContainer" onclick="location.href='https://sphskey.weebly.com/goldfever-calendar.html'">
+                        <td class="shadContainer" style="border-radius: 4vw;" onclick="location.href='https://sphskey.weebly.com/goldfever-calendar.html'">
                             <h2>2023-24 S2</h2>
                             <p>Click here for the 2023-2024 Semester 2 Point Log.</p>
                         </td>
                     </tr>
                     <tr>
-                        <td class="shadContainer" onclick="location.href='https://sphskey.weebly.com/goldfever-calendar.html'">
+                        <td class="shadContainer" style="border-radius: 4vw;" onclick="location.href='https://sphskey.weebly.com/goldfever-calendar.html'">
                             <h2>Report Error</h2>
                             <p>Click here to report errors with the point log.</p>
                         </td>
@@ -112,6 +134,6 @@
         Copy text to clipboard: remind @
     -->
 
-    <script src="./logic/slideshow.js"></script>
+    <script src="./logic/dropdown.js"></script>
 </body>
 </html>

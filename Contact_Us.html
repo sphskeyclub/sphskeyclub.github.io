@@ -15,37 +15,39 @@
     <title>Contact Us! - SPHS Key Club</title>
 </head>
 <body>
-    <div id="screenFit">
-        <!--
-        <div id="navbar">
-            <table id="navbarContent">
-                <tbody>
-                    <tr>
-                        <td><h3><a href="./index.html">HOME</a></h3></td>
-                        <td><h3><a href="./ABOUT.html">ABOUT</a></h3></td>
-                        <td><h3><a href="./POINTS.html">POINTS</a></h3></td>
-                        <td><h3><a href="#">SERVICE</a></h3></td>
-                        <td><h3><a href="#">SOCIALS</a></h3></td>
-                        <td><h3><a href="#">MEETINGS</a></h3></td>
-                        <td><h3><a href="#">PHOTOS</a></h3></td>
-                        <td><h3><a href="#">SUPPORT</a></h3></td>
-                        <td><h3><a href="./CONTACT_US.html">CONTACT US!</a></h3></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        -->
+    <div id="mobileDropdown">
+        <ul id="navbarMobileDropdown">
+            <li class="navbarMobileDropdownContent"><a href="./index.html">HOME</a></li>
+            <li class="navbarMobileDropdownContent"><a href="#">ABOUT</a></li>
+            <li class="navbarMobileDropdownContent"><a href="./Points.html">POINTS</a></li>
+            <li class="navbarMobileDropdownContent"><a style="color: var(--KeyGold)" href="./Contact_Us.html">CONTACT US!</a></li>
+            <li class="navbarMobileDropdownContent"><a onclick="closeDropdown()" style="color: var(--KeyCyan)">GO BACK</a></li>
+        </ul>
+    </div>
+    <div id="mainWindow">
         <div id="home">
-            <ul id="navbar">
+            <ul id="navbarWeb">
                 <a href="./index.html">
-                    <li class="navbarContent">
+                    <li class="navbarWebContent">
                         <img src="./imgs/KC-wordmark-sphs.png" height="100px">
                     </li>
                 </a>
-                <li class="navbarContent"><a style="color: var(--KeyGold)" href="./Contact_Us.html">CONTACT US!</a></li>
-                <li class="navbarContent"><a href="./Points.html">POINTS</a></li>
-                <li class="navbarContent"><a href="#">ABOUT</a></li>
-                <li class="navbarContent"><a href="./index.html">HOME</a></li>
+                <li class="navbarWebContent"><a style="color: var(--KeyGold)" href="./Contact_Us.html">CONTACT US!</a></li>
+                <li class="navbarWebContent"><a href="./Points.html">POINTS</a></li>
+                <li class="navbarWebContent"><a href="#">ABOUT</a></li>
+                <li class="navbarWebContent"><a href="./index.html">HOME</a></li>
+            </ul>
+            <ul id="navbarMobile">
+                <a href="./index.html">
+                    <li class="navbarMobileContent">
+                        <img src="./imgs/KC-wordmark-sphs.png" height="100px">
+                    </li>
+                </a>
+                <li class="navbarMobileContent">
+                    <a onclick="getDropdown()">
+                        <i class="medium material-icons">dehaze</i>
+                    </a>
+                </li>
             </ul>
 
             <img src="./imgs/DCON-24.HEIC" width="100%" style="object-fit: cover; height: max(600px, 50vh);">
@@ -209,7 +211,7 @@
             <table id="infoContainerMobileContact" style="border-top: none;">
                 <tbody>
                     <tr>
-                        <td class="emphContainer addShadow" style="width: 50%;">
+                        <td class="emphContainer addShadow" style="width: 50%; border-radius: 4vw;">
                             <img src="./imgs/members/BrodyW.heic" width="100%" style="border-radius: 100%; padding-bottom: 4%;"/>
                             <h2 style="font-size: 5vw">Brody<br>Whiteside</h2>
                             <p style="font-size: 2vw;">
@@ -219,7 +221,7 @@
                                 <a style="color: var(--KeyMagenta);" href="mailto:brodyholliswhiteside@gmail.com">brodyholliswhiteside@gmail.com</a>
                             </p>
                         </td>
-                        <td class="emphContainer addShadow" style="width: 50%;">
+                        <td class="emphContainer addShadow" style="width: 50%; border-radius: 4vw;">
                             <img src="./imgs/members/TuckerH.heic" width="100%" style="border-radius: 100%; padding-bottom: 4%;"/>
                             <h2 style="font-size: 5vw">Tucker<br>Henry</h2>
                             <p style="font-size: 2vw;">
@@ -231,7 +233,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="emphContainer addShadow" style="width: 50%;">
+                        <td class="emphContainer addShadow" style="width: 50%; border-radius: 4vw;">
                             <img src="./imgs/members/AvaM.heic" width="100%" style="border-radius: 100%; padding-bottom: 4%;"/>
                             <h2 style="font-size: 5vw">Ava<br>Masi</h2>
                             <p style="font-size: 2vw;">
@@ -241,7 +243,7 @@
                                 <a style="color: var(--KeyMagenta);" href="mailto:masi.ava.926@gmail.com">masi.ava.926@gmail.com</a>
                             </p>
                         </td>
-                        <td class="emphContainer addShadow" style="width: 50%;">
+                        <td class="emphContainer addShadow" style="width: 50%; border-radius: 4vw;">
                             <img src="./imgs/members/SavannahW.heic" width="100%" style="border-radius: 100%; padding-bottom: 4%;"/>
                             <h2 style="font-size: 5vw">Savannah<br>Walker</h2>
                             <p style="font-size: 2vw;">
@@ -253,7 +255,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="emphContainer addShadow" style="width: 50%;">
+                        <td class="emphContainer addShadow" style="width: 50%; border-radius: 4vw;">
                             <img src="./imgs/members/JocelyneL.jpg" width="100%" style="border-radius: 100%; padding-bottom: 4%;"/>
                             <h2 style="font-size: 5vw">Jocelyne<br>Lioe</h2>
                             <p style="font-size: 2vw;">
@@ -263,7 +265,7 @@
                                 <a style="color: var(--KeyMagenta);" href="mailto:jlioe8136@gmail.com">jlioe8136@gmail.com</a>
                             </p>
                         </td>
-                        <td class="emphContainer addShadow" style="width: 50%;">
+                        <td class="emphContainer addShadow" style="width: 50%; border-radius: 4vw;">
                             <img src="./imgs/members/LilyC.heic" width="100%" style="border-radius: 100%; padding-bottom: 4%;"/>
                             <h2 style="font-size: 5vw">Lily<br>Cuddy</h2>
                             <p style="font-size: 2vw;">
@@ -275,7 +277,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="emphContainer addShadow" style="width: 50%;">
+                        <td class="emphContainer addShadow" style="width: 50%; border-radius: 4vw;">
                             <img src="./imgs/members/MayaD.heic" width="100%" style="border-radius: 100%; padding-bottom: 4%;"/>
                             <h2 style="font-size: 5vw">Maya<br>Daly</h2>
                             <p style="font-size: 2vw;">
@@ -285,7 +287,7 @@
                                 <a style="color: var(--KeyMagenta);" href="mailto:mayarosedaly1@gmail.com">mayarosedaly1@gmail.com</a>
                             </p>
                         </td>
-                        <td class="emphContainer addShadow" style="width: 50%;">
+                        <td class="emphContainer addShadow" style="width: 50%; border-radius: 4vw;">
                             <img src="./imgs/members/JoyS.heic" width="100%" style="border-radius: 100%; padding-bottom: 4%;"/>
                             <h2 style="font-size: 5vw">Joy<br>Santiago</h2>
                             <p style="font-size: 2vw;">
@@ -395,7 +397,7 @@
             <table id="infoContainerMobileContact" style="border-top: none;">
                 <tbody>
                     <tr>
-                        <td class="emphContainer addShadow" style="width: 50%;">
+                        <td class="emphContainer addShadow" style="width: 50%; border-radius: 4vw;">
                             <img src="./imgs/members/SageS.heic" width="100%" style="border-radius: 100%; padding-bottom: 4%;"/>
                             <h2 style="font-size: 5vw">Sage<br>Summers</h2>
                             <p style="font-size: 2vw;">
@@ -405,7 +407,7 @@
                                 ?
                             </p>
                         </td>
-                        <td class="emphContainer addShadow" style="width: 50%;">
+                        <td class="emphContainer addShadow" style="width: 50%; border-radius: 4vw;">
                             <img src="./imgs/blank_keylogo.png" width="100%" style="border-radius: 100%; padding-bottom: 4%;"/>
                             <h2 style="font-size: 5vw">Sally<br>Rozelle</h2>
                             <p style="font-size: 2vw;">
@@ -417,7 +419,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="emphContainer addShadow" style="width: 50%;">
+                        <td class="emphContainer addShadow" style="width: 50%; border-radius: 4vw;">
                             <img src="./imgs/blank_keylogo.png" width="100%" style="border-radius: 100%; padding-bottom: 4%;"/>
                             <h2 style="font-size: 5vw">Anna<br>Hewett</h2>
                             <p style="font-size: 2vw;">
@@ -427,7 +429,7 @@
                                 <a style="color: var(--KeyMagenta);" href="mailto:annahewett10@gmail.com">annahewett10@gmail.com</a>
                             </p>
                         </td>
-                        <td class="emphContainer addShadow" style="width: 50%;">
+                        <td class="emphContainer addShadow" style="width: 50%; border-radius: 4vw;">
                             <img src="./imgs/blank_keylogo.png" width="100%" style="border-radius: 100%; padding-bottom: 4%;"/>
                             <h2 style="font-size: 5vw">Isabella<br>Angulo</h2>
                             <p style="font-size: 2vw;">
@@ -439,7 +441,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="emphContainer addShadow" style="width: 50%;">
+                        <td class="emphContainer addShadow" style="width: 50%; border-radius: 4vw;">
                             <img src="./imgs/blank_keylogo.png" width="100%" style="border-radius: 100%; padding-bottom: 4%;"/>
                             <h2 style="font-size: 5vw">Tylea<br>Calhoun</h2>
                             <p style="font-size: 2vw;">
@@ -449,7 +451,7 @@
                                 <a style="color: var(--KeyMagenta);" href="mailto:tyleacalhoun07@gmail.com">tyleacalhoun07@gmail.com</a>
                             </p>
                         </td>
-                        <td class="emphContainer addShadow" style="width: 50%;"> <!-- style="translate: 166.67% 0;" -->
+                        <td class="emphContainer addShadow" style="width: 50%; border-radius: 4vw;"> <!-- style="translate: 166.67% 0;" -->
                             <img src="./imgs/members/AlisonA.heic" width="100%" style="border-radius: 100%; padding-bottom: 4%;"/>
                             <h2 style="font-size: 5vw">Alison<br>Ashley</h2>
                             <p style="font-size: 2vw;">
@@ -530,5 +532,7 @@
             </div>
         </div>
     </div>
+
+    <script src="./logic/dropdown.js"></script>
 </body>
 </html>

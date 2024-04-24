@@ -194,7 +194,7 @@ a:hover {
 }
 
 #infoContainerWebContact {
-    padding: 2vh 15vw 2vh 15vw;
+    padding: 2vh 12vw 2vh 12vw;
 
     border-top: solid 8px var(--KeyGold);
 
@@ -210,7 +210,7 @@ a:hover {
 }
 
 #infoContainerWebContactChairs {
-    padding: 2vh 24.5vw 2vh 24.5vw;
+    padding: 2vh 21.5vw 2vh 21.5vw;
 
     border-top: solid 8px var(--KeyGold);
 

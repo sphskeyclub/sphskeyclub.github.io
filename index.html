@@ -16,36 +16,39 @@
     <title>SPHS Key Club</title>
 </head>
 <body>
-    <div id="screenFit">
-        <!--<div id="navbar">
-            <table id="navbarContent">
-                <tbody>
-                    <tr>
-                        <td><h3><a href="./index.html">HOME</a></h3></td>
-                        <td><h3><a href="./ABOUT.html">ABOUT</a></h3></td>
-                        <td><h3><a href="./POINTS.html">POINTS</a></h3></td>
-                        <td><h3><a href="#">SERVICE</a></h3></td>
-                        <td><h3><a href="#">SOCIALS</a></h3></td>
-                        <td><h3><a href="#">MEETINGS</a></h3></td>
-                        <td><h3><a href="#">PHOTOS</a></h3></td>
-                        <td><h3><a href="#">SUPPORT</a></h3></td>
-                        <td><h3><a href="./CONTACT_US.html">CONTACT US!</a></h3></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>-->
-        <!-- Dropdown Structure -->
+    <div id="mobileDropdown">
+        <ul id="navbarMobileDropdown">
+            <li class="navbarMobileDropdownContent"><a style="color: var(--KeyGold)" href="./index.html">HOME</a></li>
+            <li class="navbarMobileDropdownContent"><a href="#">ABOUT</a></li>
+            <li class="navbarMobileDropdownContent"><a href="./Points.html">POINTS</a></li>
+            <li class="navbarMobileDropdownContent"><a href="./Contact_Us.html">CONTACT US!</a></li>
+            <li class="navbarMobileDropdownContent"><a onclick="closeDropdown()" style="color: var(--KeyCyan)">GO BACK</a></li>
+        </ul>
+    </div>
+    <div id="mainWindow">
         <div id="home">
-            <ul id="navbar">
+            <ul id="navbarWeb">
                 <a href="./index.html">
-                    <li class="navbarContent">
+                    <li class="navbarWebContent">
                         <img src="./imgs/KC-wordmark-sphs.png" height="100px">
                     </li>
                 </a>
-                <li class="navbarContent"><a href="./Contact_Us.html">CONTACT US!</a></li>
-                <li class="navbarContent"><a href="./Points.html">POINTS</a></li>
-                <li class="navbarContent"><a href="#">ABOUT</a></li>
-                <li class="navbarContent"><a style="color: var(--KeyGold)" href="./index.html">HOME</a></li>
+                <li class="navbarWebContent"><a href="./Contact_Us.html">CONTACT US!</a></li>
+                <li class="navbarWebContent"><a href="./Points.html">POINTS</a></li>
+                <li class="navbarWebContent"><a href="#">ABOUT</a></li>
+                <li class="navbarWebContent"><a style="color: var(--KeyGold)" href="./index.html">HOME</a></li>
+            </ul>
+            <ul id="navbarMobile">
+                <a href="./index.html">
+                    <li class="navbarMobileContent">
+                        <img src="./imgs/KC-wordmark-sphs.png" height="100px">
+                    </li>
+                </a>
+                <li class="navbarMobileContent">
+                    <a onclick="getDropdown()">
+                        <i class="medium material-icons">dehaze</i>
+                    </a>
+                </li>
             </ul>
 
             <img src="./imgs/DCON-24.HEIC" width="100%" style="object-fit: cover; height: max(600px, 50vh);">
@@ -124,34 +127,34 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="./imgs/DCON-group3.JPG" width="100%" style="border-radius: 1.5vw;">
+                            <img src="./imgs/DCON-group3.JPG" width="100%" style="border-radius: 4vw;"> <!-- mobile => border-radius: 4vw -->
                         </td>
                     </tr>
                     <tr>
-                        <td class="emphContainer">
+                        <td class="emphContainer" style="border-radius: 4vw;">
                             <h2>Join the Remind</h2>
                             <p>Join our Remind class to receive instant updates on upcoming events. Use our class code:<br><br><span style="color:#b49759; font-size: 125%;">@sphkeyclub</span><br><br>or click the "Join class" button down below to instantly connect with SPHS Key Club.</p>
                         </td>
                     </tr>
                     <tr>
-                        <td class="emphContainer">
+                        <td class="emphContainer" style="border-radius: 2vw;">
                             <iframe src="https://widgets.remind.com/widget?height=500&amp;join=true&amp;token=a0a0e1f03c4301325883426df0da9367" id="remind101-widget-0" class="remind101-messages" frameborder="0" allowtransparency="true" style="border: 0;" title="Remind messages" width="100%" height="400px"></iframe>
                         </td>
                     </tr>
                     <tr>
-                        <td class="shadContainer" onclick="location.href='https://www.facebook.com/groups/183267901786970'">
+                        <td class="shadContainer" style="border-radius: 4vw;" onclick="location.href='https://www.facebook.com/groups/183267901786970'">
                             <h2>Find Upcoming Events</h2>
                             <p>Looking for service opportunities or other events? Find them on our Facebook by clicking here.</p>
                         </td>
                     </tr>
                     <tr>
-                        <td class="shadContainer" onclick="location.href='https://docs.google.com/spreadsheets/d/1B08cDx1TPqOLTpgwQuPJurtN1_LaRvaSyBlVOPZ5M2U/edit#gid=101376613'">
+                        <td class="shadContainer" style="border-radius: 4vw;" onclick="location.href='https://docs.google.com/spreadsheets/d/1B08cDx1TPqOLTpgwQuPJurtN1_LaRvaSyBlVOPZ5M2U/edit#gid=101376613'">
                             <h2>Points Log</h2>
                             <p>Click here to check your progress toward completing your hours requirement.</p>
                         </td>
                     </tr>
                     <tr>
-                        <td class="shadContainer" onclick="location.href='https://sphskey.weebly.com/goldfever-calendar.html'">
+                        <td class="shadContainer" style="border-radius: 4vw;" onclick="location.href='https://sphskey.weebly.com/goldfever-calendar.html'">
                             <h2>Goldfever Calendar</h2>
                             <p>Click here for the calendar containing all Goldfever practices and dates.</p>
                         </td>     
@@ -253,7 +256,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="./imgs/DCON-carwash.JPG" width="100%" style="border-radius: 1.5vw; object-fit: cover; height: max(600px, 50vh);">
+                            <img src="./imgs/DCON-carwash.JPG" width="100%" style="border-radius: 4vw; object-fit: cover; height: max(600px, 50vh);">
                         </td>
                     </tr>
                     <tr>
@@ -272,7 +275,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="./imgs/homeless-meals.JPG" width="100%" style="border-radius: 1.5vw; object-fit: cover; height: max(600px, 50vh);">
+                            <img src="./imgs/homeless-meals.JPG" width="100%" style="border-radius: 4vw; object-fit: cover; height: max(600px, 50vh);">
                         </td>
                     </tr>
                 </tbody>
@@ -281,11 +284,17 @@
             <div id="footnoteContainer">
                 <h5>2024-25 Key Club of St. Petersburg Senior High School (Florida District Division 13, Zone E)</h5>
             </div>
+
+            <script>
+                
+            </script>
         </div>
     </div>
 
     <!--
         Copy text to clipboard: remind @
     -->
+
+    <script src="./logic/dropdown.js"></script>
 </body>
 </html>
