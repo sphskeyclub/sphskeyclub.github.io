@@ -20,16 +20,6 @@
     --CustomGreyLight: #f4f4f4;
 }
 
-@font-face {
-    font-family: "playfairdisplay";
-    src: url("./PlayfairDisplay-Regular.woff2") format("truetype");
-}
-
-@font-face {
-    font-family: "playfairdisplay-bold";
-    src: url("./PlayfairDisplay-Bold.woff2") format("truetype");
-}
-
 .blueT {
     color: var(--KeyBlue);
     font-family: myriad-pro, sans-serif;
