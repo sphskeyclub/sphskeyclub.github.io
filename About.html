@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- favicon here (SPHS Key logo) -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="icon" href="./imgs/favicon-32x32.png">
+
+     <link rel="stylesheet" href="./styles/navbar.css">
+    <title>SPHS Key Club</title>
+</head>
+<body>
+    <div id="mobileDropdown">
+        <ul id="navbarMobileDropdown">
+            <li class="navbarMobileDropdownContent"><a href="./index.html">HOME</a></li>
+            <li class="navbarMobileDropdownContent"><a style="color: var(--KeyGold)" href="./About.html">ABOUT</a></li>
+            <li class="navbarMobileDropdownContent"><a href="./Points.html">POINTS</a></li>
+            <li class="navbarMobileDropdownContent"><a href="./Contact_Us.html">CONTACT US!</a></li>
+            <li class="navbarMobileDropdownContent"><a onclick="closeDropdown()" style="color: var(--KeyCyan)">GO BACK</a></li>
+        </ul>
+    </div>
+    <div id="mainWindow">
+        <div id="home">
+            <ul id="navbarWeb">
+                <a href="./index.html">
+                    <li class="navbarWebContent">
+                        <img src="./imgs/KC-wordmark-sphs.png" height="100px">
+                    </li>
+                </a>
+                <li class="navbarWebContent"><a href="./Contact_Us.html">CONTACT US!</a></li>
+                <li class="navbarWebContent"><a href="./Points.html">POINTS</a></li>
+                <li class="navbarWebContent"><a style="color: var(--KeyGold)" href="./About.html">ABOUT</a></li>
+                <li class="navbarWebContent"><a href="./index.html">HOME</a></li>
+            </ul>
+            <ul id="navbarMobile">
+                <a href="./index.html">
+                    <li class="navbarMobileContent">
+                        <img src="./imgs/KC-wordmark-sphs.png" height="100px">
+                    </li>
+                </a>
+                <li class="navbarMobileContent">
+                    <a onclick="getDropdown()">
+                        <i class="medium material-icons">dehaze</i>
+                    </a>
+                </li>
+            </ul>
+
+            <img src="./imgs/DCON-24.HEIC" width="100%" style="object-fit: cover; height: max(600px, 50vh);">
+        </div>
+        <div id="mainContainer">
+            <table id="infoContainerWeb" style="padding-bottom: 0;">
+                <tbody>
+                    <tr>
+                        <td class="basicContainer" colspan="4">
+                            <img src="./imgs/DCON-group3.JPG" width="65%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
+                            <h1 style="font-size: 6vw;">About</h1>
+                            <h2 style="font-size: 2.5vw;">Mission Statement</h2>
+                            <p style="text-indent: 2em; font-size: 1.2vw;">
+                                Key Club is an international student-led organization which provides its members with opportunities to provide service, build character, and develop leadership.
+                            </p>
+                            <h2 style="font-size: 2.5vw;">Vision</h2>
+                            <p style="text-indent: 2em; font-size: 1.2vw;">
+                                We are caring and competent servant leaders transforming communities worldwide.
+                            </p>
+                            <h2 style="font-size: 2.5vw;">Core Values</h2>
+                            <p style="text-indent: 2em; font-size: 1.2vw;">
+                                The core values of Key Club International are <span style="color: var(--KeyRed)">leadership</span>, <span style="color: var(--KeyMango)">character building</span>, <span style="color: var(--KeyGreen)">caring</span>, and <span style="color: var(--KeyCyan)">inclusiveness</span>.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer" width="25%">
+                            <img src="./imgs/DCON-24-safari.heic" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(300px, 40vh)">
+                        </td>
+                        <td class="basicContainer" width="25%">
+                            <h2 style="font-size: 2.5vw; color: var(--KeyRed)">Leadership</h2>
+                            <p style="font-size: 1.5vw;">
+                                Leadership is grounded in humility and service to others. A true leader listens, recognizes, and empowers.
+                            </p>
+                        </td>
+                        <td class="basicContainer" width="25%">
+                            <img src="./imgs/DCON-24-group2.JPG" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(300px, 40vh)">
+                        </td>
+                        <td class="basicContainer" width="25%">
+                            <h2 style="font-size: 2.5vw; color: var(--KeyMango)">Character Building</h2>
+                            <p style="font-size: 1.5vw;">
+                                Character is built by everyday acts of kindness, integrity and teamwork to grow stronger relationships and communities.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer" width="25%">
+                            <h2 style="font-size: 2.5vw; color: var(--KeyGreen)">Caring</h2>
+                            <p style="font-size: 1.5vw;">
+                                Compassion for others is a cornerstone of the Key Club experience, inspiring action and service to one's community.
+                            </p>
+                        </td>
+                        <td class="basicContainer" width="25%">
+                            <img src="./imgs/DCON-24-group2.JPG" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(300px, 40vh)">
+                        </td>
+                        <td class="basicContainer" width="25%">
+                            <h2 style="font-size: 2.5vw; color: var(--KeyCyan)">Inclusiveness</h2>
+                            <p style="font-size: 1.5vw;">
+                                We welcome people of all backgrounds and ethnicities to join in serving and making a positive difference in our world.
+                            </p>
+                        </td>
+                        <td class="basicContainer" width="25%">
+                            <img src="./imgs/DCON-24-safari.heic" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(300px, 40vh)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer">
+                            <img src="./imgs/DCON-24-group2.JPG" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(300px, 40vh)">
+                        </td>
+                        <td class="basicContainer">
+                            <h2 style="font-size: 3.5vw;">Motto</h2>
+                            <p style="font-size: 1.5vw;">
+                                "Caring — Our Way of Life"
+                            </p>
+                        </td>
+                        <td class="basicContainer">
+                            <img src="./imgs/DCON-24-group2.JPG" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(300px, 40vh)">
+                        </td>
+                        <td class="basicContainer">
+                            <h2 style="font-size: 3.5vw; color: var(--KeyGold)">Pledge</h2>
+                            <p style="font-size: 1.3vw;">
+                                I pledge, on my honor, to uphold the Objects of Key Club International; to build my home, school and community; to serve my nation and world; and combat all forces which tend to undermine these institutions.
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table id="infoContainerMobile">
+                <tbody>
+                    <tr>
+                        <td class="basicContainer" style="padding-bottom: 0;" colspan="2">
+                            <h1>About</h1>
+                            <h2>Mission Statement</h2>
+                            <p style="text-indent: 2em; font-size: 3.5vw;">
+                                Key Club is an international student-led organization which provides its members with opportunities to provide service, build character, and develop leadership.
+                            </p>
+                            <h2>Vision</h2>
+                            <p style="text-indent: 2em; font-size: 3.5vw;">
+                                We are caring and competent servant leaders transforming communities worldwide.
+                            </p>
+                            <h2>Core Values</h2>
+                            <p style="text-indent: 2em; font-size: 3.5vw;">
+                                The core values of Key Club International are <span style="color: var(--KeyRed)">leadership</span>, <span style="color: var(--KeyMango)">character building</span>, <span style="color: var(--KeyGreen)">caring</span>, and <span style="color: var(--KeyCyan)">inclusiveness</span>.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer" style="padding-top: 0;" colspan="2">
+                            <img src="./imgs/DCON-group3.JPG" width="100%" style="border-radius: 4vw;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer" style="width: 50%">
+                            <img src="./imgs/DCON-24-safari.heic" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(300px, 40vh)">
+                        </td>
+                        <td class="basicContainer" style="width: 50%">
+                            <h2 style="font-size: 6vw; color: var(--KeyRed)">Leadership</h2>
+                            <p style="font-size: 3vw;">
+                                Leadership is grounded in humility and service to others. A true leader listens, recognizes, and empowers.
+                            </p>
+                        </td>
+                    <tr>
+                        <td class="basicContainer" width="50%">
+                            <h2 style="font-size: 6vw; color: var(--KeyMango)">Character Building</h2>
+                            <p style="font-size: 3vw;">
+                                Character is built by everyday acts of kindness, integrity and teamwork to grow stronger relationships and communities.
+                            </p>
+                        </td>
+                        <td class="basicContainer" width="50%">
+                            <img src="./imgs/DCON-24-group2.JPG" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(300px, 40vh)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer" width="50%">
+                            <img src="./imgs/DCON-24-group2.JPG" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(300px, 40vh)">
+                        </td>
+                        <td class="basicContainer" width="50%">
+                            <h2 style="font-size: 6vw; color: var(--KeyGreen)">Caring</h2>
+                            <p style="font-size: 3vw;">
+                                Compassion for others is a cornerstone of the Key Club experience, inspiring action and service to one's community.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer" width="50%">
+                            <h2 style="font-size: 5vw; color: var(--KeyCyan)">Inclusiveness</h2>
+                            <p style="font-size: 3vw;">
+                                We welcome people of all backgrounds and ethnicities to join in serving and making a positive difference in our world.
+                            </p>
+                        </td>
+                        <td class="basicContainer" width="50%">
+                            <img src="./imgs/DCON-24-safari.heic" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(300px, 40vh)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer" width="50%">
+                            <img src="./imgs/DCON-24-group2.JPG" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(300px, 40vh)">
+                        </td>
+                        <td class="basicContainer" width="50%">
+                            <h2 style="font-size: 6vw;">Motto</h2>
+                            <p style="font-size: 3vw;">
+                                "Caring — Our Way of Life"
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer" width="50%">
+                            <h2 style="font-size: 6vw; color: var(--KeyGold)">Pledge</h2>
+                            <p style="font-size: 3vw;">
+                                I pledge, on my honor, to uphold the Objects of Key Club International; to build my home, school and community; to serve my nation and world; and combat all forces which tend to undermine these institutions.
+                            </p>
+                        </td>
+                        <td class="basicContainer" width="50%">
+                            <img src="./imgs/DCON-24-group2.JPG" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(300px, 40vh)">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr style="width: 50vw; background-color: var(--CustomGrey); border: solid 1px var(--CustomGrey); color: var(--CustomGrey);">
+
+            <table id="infoContainerWeb" style="padding-bottom: 0; border: none;">
+                <tbody>
+                    <tr>
+                        <td class="basicContainer" colspan="4">
+                            <img src="./imgs/DCON-group3.JPG" width="55%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
+                            <h1 style="font-size: 6vw;">Objectives</h1>
+                            <h2 style="font-size: 2.5vw;">1. 
+                                <span style="color: var(--KeyBlack); font-size: 1.2vw; ">
+                                    To develop initiative and leadership.
+                                </span>
+                            </h2>
+                            <h2 style="font-size: 2.5vw;">2. 
+                                <span style="color: var(--KeyBlack); font-size: 1.2vw; ">
+                                    To provide experience in living and working together.
+                                </span>
+                            </h2>
+                            <h2 style="font-size: 2.5vw;">3. 
+                                <span style="color: var(--KeyBlack); font-size: 1.2vw; ">
+                                    To serve the school and community.
+                                </span>
+                            </h2>
+                            <h2 style="font-size: 2.5vw;">4. 
+                                <span style="color: var(--KeyBlack); font-size: 1.2vw; ">
+                                    To cooperate with the school principal.
+                                </span>
+                            </h2>
+                            <h2 style="font-size: 2.5vw;">5. 
+                                <span style="color: var(--KeyBlack); font-size: 1.2vw; ">
+                                    To prepare for useful citizenship.
+                                </span>
+                            </h2>
+                            <h2 style="font-size: 2.5vw;">6. 
+                                <span style="color: var(--KeyBlack); font-size: 1.2vw; ">
+                                    To accept and promote the following ideals:
+                                </span>
+                                <ul style="color: var(--KeyBlack); font-size: 1.2vw; font-weight: 400;">
+                                    <li style="margin-left: 2em;">To give primacy to the human and spiritual, rather than to the material values of life.</li>
+                                    <li style="margin-left: 2em;">To encourage the daily living of the Golden Rule in all human relationships.</li>
+                                    <li style="margin-left: 2em;">To promote the adoption and application of higher standards in scholarship, sportsmanship and social contacts.</li>
+                                    <li style="margin-left: 2em;">To develop, by precept and example, a more intelligent, aggressive, and serviceable citizenship.</li>
+                                    <li style="margin-left: 2em;">To provide a practical means to form enduring friendships, to render unselfish service and to build better communities.</li>
+                                    <li style="margin-left: 2em;">To cooperate in creating and maintaining that sound public opinion and high idealism which makes possible the increase of righteousness, justice, patriotism and good will.</li>
+                                </ul>
+                            </h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer" colspan="4">
+                            <p style="font-style: italic; text-align: center; font-size: 1.2vw;">
+                                For more about Key Club's aims, goals, and structure, see the <a href="#">bylaws</a> page.
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table id="infoContainerMobile" style="padding-bottom: 0; border: none;">
+                <tbody>
+                    <tr>
+                        <td class="basicContainer" colspan="4" style="padding-top: 0; padding-bottom: 0;">
+                            <h1>Objectives</h1>
+                            <h2>1. 
+                                <span style="color: var(--KeyBlack);">
+                                    To develop initiative and leadership.
+                                </span>
+                            </h2>
+                            <h2>2. 
+                                <span style="color: var(--KeyBlack);">
+                                    To provide experience in living and working together.
+                                </span>
+                            </h2>
+                            <h2>3. 
+                                <span style="color: var(--KeyBlack);">
+                                    To serve the school and community.
+                                </span>
+                            </h2>
+                            <h2>4. 
+                                <span style="color: var(--KeyBlack);">
+                                    To cooperate with the school principal.
+                                </span>
+                            </h2>
+                            <h2>5. 
+                                <span style="color: var(--KeyBlack);">
+                                    To prepare for useful citizenship.
+                                </span>
+                            </h2>
+                            <h2>6. 
+                                <span style="color: var(--KeyBlack);">
+                                    To accept and promote the following ideals:
+                                </span>
+                                <ul style="color: var(--KeyBlack); font-weight: 400; margin-top: 0;">
+                                    <li style="margin-left: 2em;">To give primacy to the human and spiritual, rather than to the material values of life.</li>
+                                    <li style="margin-left: 2em;">To encourage the daily living of the Golden Rule in all human relationships.</li>
+                                    <li style="margin-left: 2em;">To promote the adoption and application of higher standards in scholarship, sportsmanship and social contacts.</li>
+                                    <li style="margin-left: 2em;">To develop, by precept and example, a more intelligent, aggressive, and serviceable citizenship.</li>
+                                    <li style="margin-left: 2em;">To provide a practical means to form enduring friendships, to render unselfish service and to build better communities.</li>
+                                    <li style="margin-left: 2em;">To cooperate in creating and maintaining that sound public opinion and high idealism which makes possible the increase of righteousness, justice, patriotism and good will.</li>
+                                </ul>
+                            </h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer" colspan="4" style="padding-top: 0; padding-bottom: 0;">
+                            <img src="./imgs/DCON-group3.JPG" width="100%" style="border-radius: 1.5vw;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer" colspan="4" style="padding-top: 0; padding-bottom: 0;">
+                            <p style="font-style: italic; text-align: center; font-size: 4vw;">
+                                For more about Key Club's aims, goals, and structure, see the <a href="#">bylaws</a> page.
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="footnoteContainer">
+                <h5>2024-25 Key Club of St. Petersburg Senior High School (Florida District Division 13, Zone E)</h5>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        Copy text to clipboard: remind @
+    -->
+
+    <script src="./logic/dropdown.js"></script>
+</body>
+</html>
