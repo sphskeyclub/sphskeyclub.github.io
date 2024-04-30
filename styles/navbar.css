@@ -38,6 +38,8 @@
     padding: 0;
     overflow: hidden;
     background-color: #ffffff;
+
+    max-height: 100px;
 }
 
 .navbarMobileContent a {

@@ -90,7 +90,7 @@ a:hover {
     color: var(--KeyCyan);
     text-align: center;
 
-    font-size: 4vw; /* max(4vw, 5vh) */
+    font-size: 6vw; /* max(4vw, 5vh) */
 }
 
 .headingTMobile {
@@ -98,11 +98,11 @@ a:hover {
     color: var(--KeyCyan);
     text-align: center;
 
-    font-size: 8vw; /* max(4vw, 5vh) */
+    font-size: 12vw; /* max(4vw, 5vh) */
 }
 
 #infoContainerMobile {
-    padding: 0vh 4vw 0 4vw;
+    padding: 0 4vw 0 4vw;
 
     border-top: solid 8px var(--KeyGold);
 
@@ -184,7 +184,7 @@ a:hover {
 }
 
 #infoContainerWeb {
-    padding: 1vh 10vw 1vh 10vw;
+    padding: 0 10vw 0 10vw;
 
     border-top: solid 8px var(--KeyGold);
 
@@ -274,14 +274,14 @@ a:hover {
 
 .basicContainer h1 {
     margin: 0;
-    font-size: 4vw;
+    font-size: 6vw;
 
     color: var(--KeyCyan);
 }
 
 .basicContainer h2 {
     margin: 0;
-    font-size: 1.8vw;
+    font-size: 2.5vw;
 
     color: var(--KeyMagenta);
 }
@@ -322,7 +322,7 @@ a:hover {
 }
 
 p {
-    font-size: 1.15vw; /* max(1.15vw, 1.5vh, 90%) */
+    font-size: 1.2vw; /* max(1.15vw, 1.5vh, 90%) */
     color: var(--KeyBlack);
 }
 
@@ -432,6 +432,10 @@ p {
     }
 
     p {
+        font-size: 3.5vw;
+    }
+
+    li {
         font-size: 3.5vw;
     }
 

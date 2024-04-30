@@ -6,8 +6,6 @@
 
     <link rel="stylesheet" href="./styles/style.css">
 
-    <!-- favicon here (SPHS Key logo) -->
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="icon" href="./imgs/favicon-32x32.png">
@@ -21,6 +19,7 @@
             <li class="navbarMobileDropdownContent"><a style="color: var(--KeyGold)" href="./index.html">HOME</a></li>
             <li class="navbarMobileDropdownContent"><a href="./About.html">ABOUT</a></li>
             <li class="navbarMobileDropdownContent"><a href="./Points.html">POINTS</a></li>
+            <li class="navbarMobileDropdownContent"><a href="./Service.html">SERVICE</a></li>
             <li class="navbarMobileDropdownContent"><a href="./Contact_Us.html">CONTACT US!</a></li>
             <li class="navbarMobileDropdownContent"><a onclick="closeDropdown()" style="color: var(--KeyCyan)">GO BACK</a></li>
         </ul>
@@ -34,6 +33,7 @@
                     </li>
                 </a>
                 <li class="navbarWebContent"><a href="./Contact_Us.html">CONTACT US!</a></li>
+                <li class="navbarWebContent"><a href="./Service.html">SERVICE</a></li>
                 <li class="navbarWebContent"><a href="./Points.html">POINTS</a></li>
                 <li class="navbarWebContent"><a href="./About.html">ABOUT</a></li>
                 <li class="navbarWebContent"><a style="color: var(--KeyGold)" href="./index.html">HOME</a></li>
@@ -54,13 +54,13 @@
             <img src="./imgs/DCON-24.HEIC" width="100%" style="object-fit: cover; height: max(600px, 50vh);">
         </div>
         <div id="mainContainer">
-            <table id="infoContainerWeb" style="padding-bottom: 0;">
+            <table id="infoContainerWeb">
                 <tbody>
                     <tr>
                         <td class="basicContainer" colspan="3">
                             <img src="./imgs/DCON-group3.JPG" width="60%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
                             <h1>News</h1>
-                            <h2>DCON 2024 (April 18-21)</h2>
+                            <h2 style="font-size: 2.25vw;">DCON 2024 (April 18-21)</h2>
                             <p>
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quia aliquam quasi? Deleniti ad totam saepe accusamus, eum exercitationem perspiciatis perferendis! Deserunt beatae facilis rem necessitatibus ab quidem cupiditate libero!
                             </p>
@@ -93,7 +93,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="shadContainer" onclick="location.href='https://www.facebook.com/groups/183267901786970'">
+                        <td class="shadContainer" onclick="location.href='./FACEBOOK.html'">
                             <h2>Upcoming Events</h2>
                             <p>Looking for service opportunities or other events? Find them on our Facebook by clicking here.</p>
                         </td>
@@ -143,7 +143,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="shadContainer" style="border-radius: 4vw;" onclick="location.href='https://www.facebook.com/groups/183267901786970'">
+                        <td class="shadContainer" style="border-radius: 4vw;" onclick="location.href='./FACEBOOK.html'">
                             <h2>Find Upcoming Events</h2>
                             <p>Looking for service opportunities or other events? Find them on our Facebook by clicking here.</p>
                         </td>
@@ -163,58 +163,14 @@
                 </tbody>
             </table>
 
-            <!--
-            <div class="slideshow-container">
-
-                <div class="mySlides fade">
-                    <div class="slideCounter">1 / 4</div>
-                    <img src="./imgs/inductions1.jpeg" style="width:100%; height: max(700px, 70vh); object-fit: cover;">
-                    <div class="slideshowCaptionText">Inductions '23</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="slideCounter">2 / 4</div>
-                    <img src="./imgs/tapping1.png" style="width:100%; height: max(700px, 70vh); object-fit: cover;">
-                    <div class="slideshowCaptionText">Tapping '23</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="slideCounter">3 / 4</div>
-                    <img src="./imgs/pumpkinsmash23.jpg" style="width:100%; height: max(700px, 70vh); object-fit: cover;">
-                    <div class="slideshowCaptionText">Pumpkin Smashing '23</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="slideCounter">4 / 4</div>
-                    <img src="./imgs/inductions2.JPEG" style="width:100%; height: max(700px, 70vh); object-fit: cover;">
-                        <div class="slideshowCaptionText">The King at Inductions '23</div>
-                    </div>
-                    <a class="prevSlide" onclick="plusSlides(-1)">❮</a>
-                    <a class="nextSlide" onclick="plusSlides(1)">❯</a>
-                </div>
-
-                <br>
-
-                <div style="text-align:center">
-                    <span class="dotSlide" onclick="currentSlide(1)"></span> 
-                    <span class="dotSlide" onclick="currentSlide(2)"></span> 
-                    <span class="dotSlide" onclick="currentSlide(3)"></span> 
-                    <span class="dotSlide" onclick="currentSlide(4)"></span> 
-                </div>
-
-                <br>
-
-            </div>
-            -->
-
             <hr style="width: 50vw; background-color: var(--CustomGrey); border: solid 1px var(--CustomGrey); color: var(--CustomGrey);">
 
-            <table id="infoContainerWeb" style="border-top: none; padding-top: 0;">
+            <table id="infoContainerWeb" style="border-top: none;">
                 <tbody>
                     <tr>
                         <td class="basicContainer">
                             <img src="./imgs/DCON-carwash.JPG" width="55%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%; object-fit: cover; height: max(600px, 50vh);">
-                            <h1 style="font-size: 2.5vw;">Service and Club Projects</h1>
+                            <h1 style="font-size: 4.75vw;">Service and Club Projects</h1>
                             <h2>DCON Car Wash</h2>
                             <p>
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quia aliquam quasi? Deleniti ad totam saepe accusamus, eum exercitationem perspiciatis perferendis! Deserunt beatae facilis rem necessitatibus ab quidem cupiditate libero!
@@ -241,7 +197,7 @@
                     </tr>
                 </tbody>
             </table>
-            <table id="infoContainerMobile" style="border-top: none; padding-top: 0;">
+            <table id="infoContainerMobile" style="border-top: none;">
                 <tbody>
                     <tr>
                         <td class="basicContainer" colspan="3" style="margin-top: 0;">
