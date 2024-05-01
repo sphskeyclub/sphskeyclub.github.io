@@ -4,11 +4,13 @@
     padding: 0;
     overflow: hidden;
     background-color: #ffffff;
+
+    max-height: 100px;
 }
 
 .navbarWebContent a {
     float: right;
-
+    
     height: 100%;
 }
 
@@ -21,7 +23,7 @@
     display: block;
     color: var(--KeyBlack);
     text-align: center;
-    padding: 41px 3%;
+    padding: 41px 2%;
     text-decoration: none;
 
     font-family: myriad-pro, sans-serif;
