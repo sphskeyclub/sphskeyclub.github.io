@@ -55,6 +55,8 @@ p {
 
 a {
     font-weight: 400;
+
+    cursor: pointer;
 }
 
 span {
@@ -73,6 +75,11 @@ u {
 @keyframes load-in {
     from {opacity: 0.0; }
     to {opacity: 1;}
+}
+
+@keyframes load-in-contact {
+    from {opacity: 0.0; }
+    to {opacity: 0.7;}
 }
 
 a {
@@ -470,3 +477,92 @@ p {
     color: var(--KeyGold);
 }
 
+#officerAboutContainer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 99;
+
+    background-color: rgba(0, 0, 0);
+    opacity: 70%;
+
+    animation-name: load-in-contact;
+    animation-duration: 0.6s;
+
+    display: none;
+}
+
+#officerAboutInfoContainer {
+    position: fixed;
+    width: 80vw;
+
+
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 80vh;
+
+    z-index: 99;
+
+    background-color: rgba(255, 255, 255);
+    opacity: 100%;
+
+    border-radius: 2vw;
+
+
+    display: none;
+}
+
+#infoPresident {
+    display: none;
+}
+
+#infoVPSE {
+    display: none;
+}
+
+#infoVPSO {
+    display: none;
+}
+
+#infoSecretary {
+    display: none;
+}
+
+#infoTreasurer {
+    display: none;
+}
+
+#infoSAA {
+    display: none;
+}
+
+#infoHistorian {
+    display: none;
+}
+
+#infoWebmaster {
+    display: none;
+}
+
+#infoEditor {
+    display: none;
+}
+
+#infoHM {
+    display: none;
+}
+
+#infoBD {
+    display: none;
+}
+
+#infoAAB {
+    display: none;
+}
+
+#infoCreative {
+    display: none;
+}
