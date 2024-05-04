@@ -1,20 +1,29 @@
 :root {
     --KeyBlue: #003366; /* rgb(0, 51, 102) */
     --KeyCyan: #00aeef;
-    --KeyGold: rgb(180, 151, 90);
+    --KeyGold: #b49759;
     --KeyBlack: #231f20;
     --KeyOrange: #f58025;
     --KeyBrown: #91381e;
     --KeyRed: #c41230;
+    --KeyBrightRed: #ed1c24;
     --KeyMagenta: #ec008c;
+    --KeyPurple: #bc34ba;
     --KeyGreen: #729849;
     --KeyYellow: #fed450;
-
+    --KeyBrown: #91381e;
+    --KeyMud: #80561b;
     --KeyPurpleGrey: #94829c;
     --KeyYellowGreen: #cbc42d;
     --KeyBlueGrey: #7d90aa;
     --KeySeaGreen: #8bcfba;
     --KeyMango: #f5b419;
+
+    /* 
+        To find more Key colors, go here (Key Club Officers: Be the Webmaster):
+        https://c7adf50c-1ab1-4550-b63e-a88eac3b3661.filesusr.com/ugd/279046_bd
+        cb010df0e2459781e71ad91745b2ad.pdf
+    */
 
     --CustomGrey: #ededed;
     --CustomGreyLight: #f4f4f4;
@@ -38,6 +47,8 @@ html {
 body {
     padding: 0;
     margin: 0;
+
+    overflow-x: hidden;
 }
 
 * {
@@ -88,6 +99,11 @@ a {
 }
 
 a:hover {
+    color: var(--KeyYellow);
+    text-decoration: underline;
+}
+
+.remindContainer:hover {
     color: var(--KeyYellow);
     text-decoration: underline;
 }
@@ -193,6 +209,8 @@ a:hover {
 #infoContainerWeb {
     padding: 0 10vw 0 10vw;
 
+    width: 100%;
+
     border-top: solid 8px var(--KeyGold);
 
     border-spacing: 2vw;
@@ -293,6 +311,36 @@ a:hover {
     color: var(--KeyMagenta);
 }
 
+.newsContainer {
+    transition: 0.4s;
+
+    box-sizing: border-box;
+    /*background-color: rgba(230, 230, 230, 0.5);*/
+    border-radius: 1.5vw;
+
+    width: 100%;
+
+    border: solid 4px var(--CustomGrey);
+
+    padding: 3%;
+
+    vertical-align: top;
+}
+
+.newsContainer h1 {
+    margin: 0;
+    font-size: 2.5vw;
+
+    color: var(--KeyCyan);
+}
+
+.newsContainer h2 {
+    margin: 0;
+    font-size: 1.2vw;
+
+    color: var(--KeyMagenta);
+}
+
 .emphContainer {
     box-sizing: border-box;
     background-color: var(--KeyBlue);
@@ -344,11 +392,11 @@ p {
     border-top: solid 8px var(--KeyGold);
 
     background-color: #ffffff;
-    font-size: 1.6vw;
 }
 
-#footnoteContainer h5 {
+#footnoteContainer h1 {
     color: var(--KeyGold);
+    font-size: 1.6vw;
 }
 
 @media screen and (min-width: 850px) and (min-height: 380px) { /* w:1100px h:380px */
@@ -378,6 +426,10 @@ p {
     .headingTMobile {
         display: none;
     }
+
+    img {
+        border-radius: 1.5vw;
+    }
 }
 
 @media (max-width: 849px) or (max-height: 379px) { /* w:1099px h:379px */
@@ -403,6 +455,7 @@ p {
 
     .shadContainer {
         padding: 3%;
+        border-radius: 4vw;
     }
 
     .shadContainer h2 {
@@ -430,8 +483,29 @@ p {
         color: var(--KeyMagenta);
     }
 
+    .newsContainer {
+        padding: 3%;
+
+        border-radius: 4vw;
+    }
+
+    .newsContainer h1 {
+        margin: 0;
+        font-size: 5.7vw;
+    
+        color: var(--KeyCyan);
+    }
+
+    .newsContainer h2 {
+        margin: 0;
+        font-size: 3.5vw;
+    
+        color: var(--KeyMagenta);
+    }
+
     .emphContainer {
         padding: 3%;
+        border-radius: 4vw;
     }
 
     .emphContainer h2 {
@@ -446,9 +520,12 @@ p {
         font-size: 3.5vw;
     }
 
-    #footnoteContainer {
-        font-size: 4vw;
+    #footnoteContainer {      
         text-wrap: wrap;
+    }
+
+    #footnoteContainer h1 {
+        font-size: 4vw;
     }
 
     .headingTWeb {
@@ -457,6 +534,10 @@ p {
 
     .headingTMobile {
         display: block;
+    }
+
+    img {
+        border-radius: 4vw;
     }
 }
 

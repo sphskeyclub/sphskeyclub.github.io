@@ -10,48 +10,55 @@
 
     <link rel="icon" href="./imgs/logos/favicon-32x32.png">
 
-     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+
+    <meta name="description" content="Find information 
+    about our Key Club's mission statement, values, and objectives, and also
+    how to join, the requirements, and our school's Key Club's rules.">
+
     <title>About - SPHS Key Club</title>
 </head>
 <body>
     <div id="mobileDropdown">
         <ul id="navbarMobileDropdown">
-            <li class="navbarMobileDropdownContent"><a href="./index.html">HOME</a></li>
-            <li class="navbarMobileDropdownContent"><a style="color: var(--KeyGold)" href="./About.html">ABOUT</a></li>
-            <li class="navbarMobileDropdownContent"><a href="./Points.html">POINTS</a></li>
-            <li class="navbarMobileDropdownContent"><a href="./Service.html">SERVICE</a></li>
-            <li class="navbarMobileDropdownContent"><a href="./Contact_Us.html">CONTACT US!</a></li>
-            <li class="navbarMobileDropdownContent"><a onclick="closeDropdown()" style="color: var(--KeyCyan)">GO BACK</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Home page" href="./index.html">HOME</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'About the club' page" style="color: var(--KeyGold)" href="./About.html">ABOUT</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the News page" href="./News/index.html">NEWS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Points page to track your points" href="./Points.html">POINTS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Service page to discover service opportunities" href="./Service.html">SERVICE</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="./Contact_Us.html">CONTACT US!</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Back out of menu" onclick="closeDropdown()" style="color: var(--KeyCyan)">GO BACK</a></li>
         </ul>
     </div>
     <div id="mainWindow">
         <div id="home">
             <ul id="navbarWeb">
-                <a href="./index.html">
+                <a aria-label="Go to the Home page" href="./index.html">
                     <li class="navbarWebContent">
                         <img src="./imgs/logos/WordmarkSPHS.png" height="100px">
                     </li>
                 </a>
-                <li class="navbarWebContent"><a href="./Contact_Us.html">CONTACT US!</a></li>
-                <li class="navbarWebContent"><a href="./Service.html">SERVICE</a></li>
-                <li class="navbarWebContent"><a href="./Points.html">POINTS</a></li>
-                <li class="navbarWebContent"><a style="color: var(--KeyGold)" href="./About.html">ABOUT</a></li>
-                <li class="navbarWebContent"><a href="./index.html">HOME</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="./Contact_Us.html">CONTACT US!</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the Service page to discover service opportunities" href="./Service.html">SERVICE</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the Points page to track your points" href="./Points.html">POINTS</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the News page" href="./News/index.html">NEWS</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the 'About the club' page" style="color: var(--KeyGold)" href="./About.html">ABOUT</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the Home page" href="./index.html">HOME</a></li>
             </ul>
             <ul id="navbarMobile">
-                <a href="./index.html">
+                <a aria-label="Go to the Home page" href="./index.html">
                     <li class="navbarMobileContent">
                         <img src="./imgs/logos/WordmarkSPHS.png" height="100px">
                     </li>
                 </a>
                 <li class="navbarMobileContent">
-                    <a onclick="getDropdown()">
+                    <a aria-label="Open mobile dropdown to see link options" onclick="getDropdown()">
                         <i class="medium material-icons">dehaze</i>
                     </a>
                 </li>
             </ul>
 
-            <img src="./imgs/HomeImage.jpg" width="100%" style="object-fit: cover; height: max(600px, 50vh);">
+            <img src="./imgs/HomeImage.jpg" width="100%" style="object-fit: cover; height: 60vh; border-radius: 0;" alt="SPHS' Key Club officers">
         </div>
         <div id="mainContainer">
 
@@ -61,7 +68,7 @@
                     <tbody>
                         <tr>
                             <td class="basicContainer" colspan="4">
-                                <img src="./imgs/Tapping23/Group1.png" width="65%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
+                                <img alt="Key Club group tapping" src="./imgs/Tapping23/Group1.png" width="65%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
                                 <h1>About</h1>
                                 <h2>Mission Statement</h2>
                                 <p>
@@ -79,7 +86,7 @@
                         </tr>
                         <tr>
                             <td class="basicContainer" width="25%">
-                                <img src="./imgs/Inductions23/Leadership1.jpeg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
+                                <img alt="Inductions with former presidents" src="./imgs/Inductions23/Leadership1.jpeg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
                             </td>
                             <td class="basicContainer" width="25%">
                                 <h2 style="color: var(--KeyRed)">Leadership</h2>
@@ -88,7 +95,7 @@
                                 </p>
                             </td>
                             <td class="basicContainer" width="25%">
-                                <img src="./imgs/PumpskinSmashing23/CharacterBuilding1.jpg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
+                                <img alt="Mr. Benton smashing pumpkins" src="./imgs/PumpskinSmashing23/CharacterBuilding1.jpg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
                             </td>
                             <td class="basicContainer" width="25%">
                                 <h2 style="color: var(--KeyMango)">Character Building</h2>
@@ -105,7 +112,7 @@
                                 </p>
                             </td>
                             <td class="basicContainer" width="25%">
-                                <img src="./imgs/MadHatters23/Service1.jpg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
+                                <img alt="Key Club members setting up Mad Hatters 2023" src="./imgs/MadHatters23/Service1.jpg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
                             </td>
                             <td class="basicContainer" width="25%">
                                 <h2 style="color: var(--KeyCyan)">Inclusiveness</h2>
@@ -114,12 +121,12 @@
                                 </p>
                             </td>
                             <td class="basicContainer" width="25%">
-                                <img src="./imgs/Tapping23/Inclusiveness1.jpg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
+                                <img alt="Key Clubbers' tapping" src="./imgs/Tapping23/Inclusiveness1.jpg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
                             </td>
                         </tr>
                         <tr>
                             <td class="basicContainer">
-                                <img src="./imgs/Inductions23/Motto1.JPEG" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
+                                <img alt="Quinn with ghost" src="./imgs/Inductions23/Motto1.JPEG" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
                             </td>
                             <td class="basicContainer">
                                 <h2 style="font-size: 3.5vw;">Motto</h2>
@@ -128,7 +135,7 @@
                                 </p>
                             </td>
                             <td class="basicContainer">
-                                <img src="./imgs/Tapping23/Pledge1.jpg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
+                                <img alt="Two K's demonstrating togetherness" src="./imgs/Tapping23/Pledge1.jpg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
                             </td>
                             <td class="basicContainer">
                                 <h2 style="font-size: 3.5vw; color: var(--KeyGold)">Pledge</h2>
@@ -160,12 +167,12 @@
                         </tr>
                         <tr>
                             <td class="basicContainer" colspan="2">
-                                <img src="./imgs/Tapping23/Group1.png" width="100%" style="border-radius: 4vw;">
+                                <img alt="Key Club group tapping" src="./imgs/Tapping23/Group1.png" width="100%" style="border-radius: 4vw;">
                             </td>
                         </tr>
                         <tr>
                             <td class="basicContainer" style="width: 50%">
-                                <img src="./imgs/Inductions23/Leadership1.jpeg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
+                                <img alt="Inductions with former presidents" src="./imgs/Inductions23/Leadership1.jpeg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
                             </td>
                             <td class="basicContainer" style="width: 50%">
                                 <h2 style="color: var(--KeyRed)">Leadership</h2>
@@ -182,12 +189,12 @@
                                 </p>
                             </td>
                             <td class="basicContainer" width="50%">
-                                <img src="./imgs/PumpskinSmashing23/CharacterBuilding1.jpg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
+                                <img alt="Mr. Benton smashing pumpkins" src="./imgs/PumpskinSmashing23/CharacterBuilding1.jpg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
                             </td>
                         </tr>
                         <tr>
                             <td class="basicContainer" width="50%">
-                                <img src="./imgs/MadHatters23/Service1.jpg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
+                                <img alt="Key Club members setting up Mad Hatters 2023" src="./imgs/MadHatters23/Service1.jpg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
                             </td>
                             <td class="basicContainer" width="50%">
                                 <h2 style="color: var(--KeyGreen)">Caring</h2>
@@ -204,12 +211,12 @@
                                 </p>
                             </td>
                             <td class="basicContainer" width="50%">
-                                <img src="./imgs/Tapping23/Inclusiveness1.jpg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
+                                <img alt="Key Clubbers' tapping" src="./imgs/Tapping23/Inclusiveness1.jpg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
                             </td>
                         </tr>
                         <tr>
                             <td class="basicContainer" width="50%">
-                                <img src="./imgs/Inductions23/Motto1.JPEG" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
+                                <img alt="Quinn with ghost" src="./imgs/Inductions23/Motto1.JPEG" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
                             </td>
                             <td class="basicContainer" width="50%">
                                 <h2>Motto</h2>
@@ -226,7 +233,7 @@
                                 </p>
                             </td>
                             <td class="basicContainer" width="50%">
-                                <img src="./imgs/Tapping23/Pledge1.jpg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
+                                <img alt="Two K's demonstrating togetherness" src="./imgs/Tapping23/Pledge1.jpg" width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
                             </td>
                         </tr>
                     </tbody>
@@ -241,7 +248,7 @@
                     <tbody>
                         <tr>
                             <td class="basicContainer" colspan="4">
-                                <img src="./imgs/DCON24/Group3.JPG" width="55%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
+                                <img alt="SPHS Key Club at DCON 2024" src="./imgs/DCON24/Group3.JPG" width="55%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
                                 <h1>Objectives</h1>
                                 <h2>1. 
                                     <span style="color: var(--KeyBlack); font-size: 1.2vw; ">
@@ -286,7 +293,7 @@
                         <tr>
                             <td class="basicContainer" colspan="4">
                                 <p style="font-style: italic; text-align: center;">
-                                    For more about Key Club's aims, goals, and structure, see the <a href="#">bylaws</a> page.
+                                    For more about Key Club's aims, goals, and structure, see the <a aria-label="Go to the bylaws section" href="./About.html#BYLAWS">bylaws</a> section.
                                 </p>
                             </td>
                         </tr>
@@ -339,13 +346,13 @@
                         </tr>
                         <tr>
                             <td class="basicContainer" colspan="4">
-                                <img src="./imgs/DCON24/Group3.JPG" width="100%" style="border-radius: 1.5vw;">
+                                <img alt="SPHS Key Club at DCON 2024" src="./imgs/DCON24/Group3.JPG" width="100%" style="border-radius: 1.5vw;">
                             </td>
                         </tr>
                         <tr>
                             <td class="basicContainer" colspan="4">
                                 <p style="font-style: italic; text-align: center;">
-                                    For more about Key Club's aims, goals, and structure, see the <a href="#">bylaws</a> page.
+                                    For more about Key Club's aims, goals, and structure, see the <a aria-label="Go to the bylaws section" href="./About.html#BYLAWS">bylaws</a> section.
                                 </p>
                             </td>
                         </tr>
@@ -361,14 +368,14 @@
                     <tbody>
                         <tr>
                             <td class="basicContainer" colspan="4">
-                                <img src="./imgs/DCON24/Group3.JPG" width="55%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
+                                <img alt="SPHS Key Club at DCON 2024" src="./imgs/DCON24/Group3.JPG" width="55%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
                                 <h1>Join</h1>
                                 <h2>Application Process</h2>
                                 <p>
                                     St. Petersburg High School has a joint application process for all service clubs in the beginning of the year. Beginning this year, all students, including freshmen, may apply.
                                 </p>
                                 <p>
-                                    Applications are currently closed for the 2022-23 school year. For further inquiries, contact our sponsor, Mr. Benton, in room 01-223 or the Key Board email at <a href="mailto:sphskeyboard@gmail.com">sphskeyboard@gmail.com</a>.
+                                    Applications are currently closed for the 2022-23 school year. For further inquiries, contact our club advisor, Mr. Benton, in room 01-223 or the Key Board email at <a aria-label="Email the SPHS' Key Board" href="mailto:sphskeyboard@gmail.com">sphskeyboard@gmail.com</a>.
                                 </p>
                                 <h2>Auditions</h2>
                                 <p>
@@ -395,7 +402,7 @@
                                     St. Petersburg High School has a joint application process for all service clubs in the beginning of the year. Beginning this year, all students, including freshmen, may apply.
                                 </p>
                                 <p>
-                                    Applications are currently closed for the 2022-23 school year. For further inquiries, contact our sponsor, Mr. Benton, in room 1-223 or the Key Board email at <a href="mailto:sphskeyboard@gmail.com">sphskeyboard@gmail.com</a>.
+                                    Applications are currently closed for the 2022-23 school year. For further inquiries, contact our club advisor, Mr. Benton, in room 1-223 or the Key Board email at <a aria-label="Email the SPHS' Key Board" href="mailto:sphskeyboard@gmail.com">sphskeyboard@gmail.com</a>.
                                 </p>
                                 <h2>Auditions</h2>
                                 <p>
@@ -412,7 +419,7 @@
                         </tr>
                         <tr>
                             <td class="basicContainer" colspan="2">
-                                <img src="./imgs/DCON24/Group3.JPG" width="100%" style="border-radius: 4vw;">
+                                <img alt="SPHS Key Club at DCON 2024" src="./imgs/DCON24/Group3.JPG" width="100%" style="border-radius: 4vw;">
                             </td>
                         </tr>
                     </tbody>
@@ -430,10 +437,10 @@
                                 <h1>Requirements</h1>
                                 <h2>General Points System</h2>
                                 <p>
-                                    All members should obtain a minimum of 25 points in the first semester through various service and social opportunities. Members do not meet this minimum by the deadline are put on probation or are dismissed from the club, according to the <a href="#POLICIES">policies</a> laid out below. The deadline is announced on the SPHS Key Club <a href="./FACEBOOK.html">Facebook page</a>.
+                                    All members should obtain a minimum of 25 points in the first semester through various service and social opportunities. Members do not meet this minimum by the deadline are put on probation or are dismissed from the club, according to the <a aria-label="Go to the policies section" href="#POLICIES">policies</a> laid out below. The deadline is announced on the SPHS Key Club <a aria-label="Be redirected to our Facebook page" href="./FACEBOOK.html">Facebook page</a>.
                                 </p>
                                 <p>
-                                    Each member must have accumulated 50 points for the year by the end of the second semester. Members that do not meet this minimum by the deadline are assessed disciplinary action as laid out below in the <a href="#POLICIES">policies</a> section. The deadline will also be announced on our <a href="./FACEBOOK.html">Facebook page</a>.
+                                    Each member must have accumulated 50 points for the year by the end of the second semester. Members that do not meet this minimum by the deadline are assessed disciplinary action as laid out below in the <a aria-label="Go to the policies section" href="#POLICIES">policies</a> section. The deadline will also be announced on our <a aria-label="Be redirected to our Facebook page" href="./FACEBOOK.html">Facebook page</a>.
                                 </p>
                                 <p>
                                     The Key Club Board may institute a small point requirement over the summer. Failure to meet the requirement over the summer will result in any point deficit being added to the first semester. This year's summer point requirement is 5 points.
@@ -465,7 +472,7 @@
                                     If you have been dismissed but still believe you fulfill this description, you may make an appeal of your dismissal to the members of the Board within a reasonable amount of time.
                                 </p>
                                 <p>
-                                    For any further questions regarding probation, dismissal, or points in general, contact either <a href="./Contact_Us.html">Sergeant-at-Arms Maya Daly or Secretary Jocelyne Lioe</a>.
+                                    For any further questions regarding probation, dismissal, or points in general, contact either <a aria-label="Go to the Officers section on the Contact Us page for contact information" href="./Contact_Us.html#OFFICERS">Sergeant-at-Arms Maya Daly or Secretary Jocelyne Lioe</a>.
                                 </p>
                             </td>
                         </tr>
@@ -478,10 +485,10 @@
                                 <h1>Requirements</h1>
                                 <h2>General Points System</h2>
                                 <p>
-                                    All members should obtain a minimum of 25 points in the first semester through various service and social opportunities. Members do not meet this minimum by the deadline are put on probation or are dismissed from the club, according to the <a href="#POLICIES">policies</a> laid out below. The deadline is announced on the SPHS Key Club <a href="./FACEBOOK.html">Facebook page</a>.
+                                    All members should obtain a minimum of 25 points in the first semester through various service and social opportunities. Members do not meet this minimum by the deadline are put on probation or are dismissed from the club, according to the <a aria-label="Go to the policies section" href="#POLICIES">policies</a> laid out below. The deadline is announced on the SPHS Key Club <a aria-label="Be redirected to our Facebook page" href="./FACEBOOK.html">Facebook page</a>.
                                 </p>
                                 <p>
-                                    Each member must have accumulated 50 points for the year by the end of the second semester. Members that do not meet this minimum by the deadline are assessed disciplinary action as laid out below in the <a href="#POLICIES">policies</a> section. The deadline will also be announced on our <a href="./FACEBOOK.html">Facebook page</a>.
+                                    Each member must have accumulated 50 points for the year by the end of the second semester. Members that do not meet this minimum by the deadline are assessed disciplinary action as laid out below in the <a aria-label="Go to the policies section" href="#POLICIES">policies</a> section. The deadline will also be announced on our <a aria-label="Be redirected to our Facebook page" href="./FACEBOOK.html">Facebook page</a>.
                                 </p>
                                 <p>
                                     The Key Club Board may institute a small point requirement over the summer. Failure to meet the requirement over the summer will result in any point deficit being added to the first semester. This year's summer point requirement is 5 points.
@@ -513,7 +520,127 @@
                                     If you have been dismissed but still believe you fulfill this description, you may make an appeal of your dismissal to the members of the Board within a reasonable amount of time.
                                 </p>
                                 <p>
-                                    For any further questions regarding probation, dismissal, or points in general, contact either <a href="./Contact_Us.html">Sergeant-at-Arms Maya Daly or Secretary Jocelyne Lioe</a>.
+                                    For any further questions regarding probation, dismissal, or points in general, contact either <a aria-label="Go to the Officers section on the Contact Us page for contact information" href="./Contact_Us.html#OFFICERS">Sergeant-at-Arms Maya Daly or Secretary Jocelyne Lioe</a>.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr style="width: 50vw; background-color: var(--CustomGrey); border: solid 1px var(--CustomGrey); color: var(--CustomGrey);">
+
+            <!-- BYLAWS -->
+            <div id="BYLAWS">
+                <table id="infoContainerWeb" style="border-top: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer" colspan="4">
+                                <h1>Bylaws</h1>
+                                <h2>Key Club International Guidebook</h2>
+                                <p>
+                                    Find the Key Club International Bylaws and Policies <a aria-label="Go to Key Club International Guidebook page" href="https://www.keyclub.org/resources/guidebook/">here</a>.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="infoContainerMobile" style="border-top: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer" colspan="2">
+                                <h1>Bylaws</h1>
+                                <h2>Key Club International Guidebook</h2>
+                                <p>
+                                    Find the Key Club International Bylaws and Policies <a aria-label="Go to Key Club International Guidebook page" href="https://www.keyclub.org/resources/guidebook/">here</a>.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr style="width: 50vw; background-color: var(--CustomGrey); border: solid 1px var(--CustomGrey); color: var(--CustomGrey);">
+
+            <!-- FAQs -->
+            <div id="FAQs">
+                <table id="infoContainerWeb" style="border-top: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer" colspan="4">
+                                <h1>FAQs</h1>
+                                <h2>What is Key Club?</h2>
+                                <p>
+                                    Key Club is the oldest and largest service program for high school students. It is a student-led organization that teaches leadership through service to others. As members of the Kiwanis International family, Key Club members build themselves as they build their schools and communities. Key Club has over 251,000 members in approximately 5,000 clubs and is currently represented in 40 countries. ​
+                                </p>
+                                <h2>What is the cost of membership?</h2>
+                                <p>
+                                    Dues of $ ??? must be paid per member at the beginning of each year. If a member has financial problems, do not hesitate on consulting with our current club presidents, Han and Rein, or our club advisor, Mr. Benton, in room 01-223.​
+                                </p>
+                                <h2>Where can I buy Key Club merchandise?</h2>
+                                <p>
+                                    To purchase other Key Club merchandise than the T-shirts offered through SPHS' Key Club, visit <a aria-label="Go to the Kiwanis online store" href="https://store.kiwanis.org/home">the Kiwanis online store</a>. This year's t-shirt is currently being worked on by the Creative Committee.
+                                </p>
+                                <h2>How did Key Club get started?</h2>
+                                <p>
+                                    The original concept was to develop a vocational guidance program aimed to combat the problems of a student fraternity. The idea evolved into the formation of a youth service organization for the home, school and community.
+                                </p>
+                                <h2>Where and when did Key Club begin?</h2>
+                                <p>
+                                    The first Key Club met at Sacramento High School in California in 1925.
+                                </p>
+                                <h2>How did Key Club get its name?</h2>
+                                <p>
+                                    In 1925, California State Commissioner of Schools Albert C. Olney and vocational education teacher Frank C. Vincent worked to establish the first Key Club at Sacramento High School in California. This club was comprised of the key boys in the school, willing to serve the school in any way possible and to create better school spirit. Thus, the club was dubbed Key Club.
+                                </p>
+                                <h2>Who are Key Club's service partners and how does Key Club support them?</h2>
+                                <p>
+                                    UNICEF (and the ELIMINATE project), March of Dimes, and Children’s Miracle Network are all service partners. Key Club members provide fundraising support for each of these groups. Find out more at <a aria-label="Go to Key Club's service partners page" href="https://www.keyclub.org/about/partnership/">Key Club's service partners page</a>.
+                                </p>
+                                <h2>What is Kiwanis?</h2>
+                                <p>
+                                    Kiwanis is a global organization of volunteers dedicated to changing the world one child and one community at a time. Our members help shelter the homeless, feed the hungry, mentor the disadvantaged, and care for the sick. We develop youth as leaders, build playgrounds, raise funds for pediatric research, and more. Working together, members achieve what one person cannot accomplish alone.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="infoContainerMobile" style="border-top: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer" colspan="2">
+                                <h1>FAQs</h1>
+                                <h2>What is Key Club?</h2>
+                                <p>
+                                    Key Club is the oldest and largest service program for high school students. It is a student-led organization that teaches leadership through service to others. As members of the Kiwanis International family, Key Club members build themselves as they build their schools and communities. Key Club has over 251,000 members in approximately 5,000 clubs and is currently represented in 40 countries. ​
+                                </p>
+                                <h2>What is the cost of membership?</h2>
+                                <p>
+                                    Dues of $ ??? must be paid per member at the beginning of each year. If a member has financial problems, do not hesitate on consulting with our current club presidents, Han and Rein, or our club advisor, Mr. Benton, in room 01-223.​
+                                </p>
+                                <h2>Where can I buy Key Club merchandise?</h2>
+                                <p>
+                                    To purchase other Key Club merchandise than the T-shirts offered through SPHS' Key Club, visit <a aria-label="Go to the Kiwanis online store" href="https://store.kiwanis.org/home">the Kiwanis online store</a>. This year's t-shirt is currently being worked on by the Creative Committee.
+                                </p>
+                                <h2>How did Key Club get started?</h2>
+                                <p>
+                                    The original concept was to develop a vocational guidance program aimed to combat the problems of a student fraternity. The idea evolved into the formation of a youth service organization for the home, school and community.
+                                </p>
+                                <h2>Where and when did Key Club begin?</h2>
+                                <p>
+                                    The first Key Club met at Sacramento High School in California in 1925.
+                                </p>
+                                <h2>How did Key Club get its name?</h2>
+                                <p>
+                                    In 1925, California State Commissioner of Schools Albert C. Olney and vocational education teacher Frank C. Vincent worked to establish the first Key Club at Sacramento High School in California. This club was comprised of the key boys in the school, willing to serve the school in any way possible and to create better school spirit. Thus, the club was dubbed Key Club.
+                                </p>
+                                <h2>Who are Key Club's service partners and how does Key Club support them?</h2>
+                                <p>
+                                    UNICEF (and the ELIMINATE project), March of Dimes, and Children’s Miracle Network are all service partners. Key Club members provide fundraising support for each of these groups. Find out more at <a aria-label="Go to Key Club's service partners page" href="https://www.keyclub.org/about/partnership/">Key Club's service partners page</a>.
+                                </p>
+                                <h2>What is Kiwanis?</h2>
+                                <p>
+                                    Kiwanis is a global organization of volunteers dedicated to changing the world one child and one community at a time. Our members help shelter the homeless, feed the hungry, mentor the disadvantaged, and care for the sick. We develop youth as leaders, build playgrounds, raise funds for pediatric research, and more. Working together, members achieve what one person cannot accomplish alone.
                                 </p>
                             </td>
                         </tr>
@@ -522,7 +649,7 @@
             </div>
 
             <div id="footnoteContainer">
-                <h5>2024-25 Key Club of St. Petersburg Senior High School (Florida District Division 13, Zone E)</h5>
+                <h1>2024-25 Key Club of St. Petersburg Senior High School (Florida District Division 13, Zone E)</h1>
             </div>
         </div>
     </div>

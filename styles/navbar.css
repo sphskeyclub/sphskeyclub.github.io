@@ -6,6 +6,8 @@
     background-color: #ffffff;
 
     max-height: 100px;
+
+    overflow-x: hidden;
 }
 
 .navbarWebContent a {
@@ -42,6 +44,8 @@
     background-color: #ffffff;
 
     max-height: 100px;
+
+    overflow-x: hidden;
 }
 
 .navbarMobileContent a {
