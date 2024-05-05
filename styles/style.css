@@ -647,3 +647,7 @@ p {
 #infoCreative {
     display: none;
 }
+
+.articleImportant {
+    color: var(--KeyCyan);
+}
