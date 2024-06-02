@@ -661,3 +661,10 @@ p {
     margin-left: auto; 
     margin-right: auto;
 }
+
+.quote {
+    padding-left: 2em;
+    font-style: italic;
+
+    border-left: solid 6px var(--KeyGold);
+}
