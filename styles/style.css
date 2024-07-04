@@ -434,6 +434,10 @@ p {
     img {
         border-radius: 1.5vw;
     }
+
+    #errorCode {
+        font-size: 4vw;
+    }
 }
 
 @media (max-width: 849px) or (max-height: 379px) { /* w:1099px h:379px */
@@ -529,7 +533,7 @@ p {
     }
 
     #footnoteContainer h1 {
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
 
     .headingTWeb {
@@ -542,6 +546,10 @@ p {
 
     img {
         border-radius: 4vw;
+    }
+
+    #errorCode {
+        font-size: 15vw;
     }
 }
 
@@ -667,4 +675,8 @@ p {
     font-style: italic;
 
     border-left: solid 6px var(--KeyGold);
+}
+
+.i {
+    font-style: italic;
 }
