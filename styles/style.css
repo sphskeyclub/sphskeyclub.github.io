@@ -31,6 +31,7 @@
 
     --CustomGrey: #ededed;
     --CustomGreyLight: #f4f4f4;
+    --CustomGreyLighter: #fafafa; /* f8f8f8 */
 }
 
 .blueT {
@@ -319,12 +320,12 @@ a:hover {
     transition: 0.4s;
 
     box-sizing: border-box;
-    /*background-color: rgba(230, 230, 230, 0.5);*/
+    background-color: var(--CustomGreyLighter);
     border-radius: 1.5vw;
 
     width: 100%;
 
-    border: solid 4px var(--CustomGrey);
+    border: solid 4px var(--CustomGreyLighter);
 
     padding: 3%;
 
