@@ -23,7 +23,7 @@
 
 .navbarWebContent a {
     display: block;
-    color: var(--CustomBlack);
+    color: var(--KeyBlack);
     text-align: center;
     padding: 41px 2%;
     text-decoration: none;
