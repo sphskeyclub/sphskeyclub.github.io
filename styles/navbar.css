@@ -29,7 +29,7 @@
     text-decoration: none;
 
     font-family: myriad-pro, sans-serif;
-    font-weight: 400;
+    font-weight: 800;
 }
 
 .navbarWebContent a:hover {
@@ -104,7 +104,7 @@
     margin-right: calc(60.5px - 3%); /* make some px value /// 363 x 600 */
 
     font-family: myriad-pro, sans-serif;
-    font-weight: 400;
+    font-weight: 800;
 }
 
 .navbarMobileDropdownContent a:hover {
