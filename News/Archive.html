@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="icon" href=".../imgs/logos/favicon-32x32.png">
+
+    <link rel="stylesheet" href="../styles/navbar.css">
+
+    <meta name="description" content="Find archived club news, monthly blogs, and the 
+    Key Clubber of the Month here!">
+    <meta name="author" content="Zachary Ratkiewicz">
+    <meta name="keywords" content="Key, Key Club, SPHS, St. Petersburg High School, St. Petersburg Senior High School, News, SPHS News, Key Club News">
+
+    <meta property='og:title' content='News Archive - SPHS Key Club'/>
+    <meta property='og:image' content='https://sphskeyclub.org/imgs/SocialImage.jpg'/>
+    <meta property='og:description' content="Find archived club news, monthly blogs, and the Key Clubber of the Month here!"/>
+    <meta property='og:url' content="https://sphskeyclub.org"/>
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='630' />
+    <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
+    <meta property="og:type" content='website'/>
+    
+    <title>News Archive - SPHS Key Club</title>
+</head>
+<body>
+    <div id="mobileDropdown">
+        <ul id="navbarMobileDropdown">
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">HOME</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'About the club' page" href="https://www.sphskeyclub.org/About">ABOUT</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the News page" href="https://www.sphskeyclub.org/News/" style="color: var(--KeyGold)">NEWS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Points page to track your points" href="https://www.sphskeyclub.org/Points">POINTS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Service page to discover service opportunities" href="https://www.sphskeyclub.org/Events">EVENTS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="https://www.sphskeyclub.org/Contact-Us">CONTACT US</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Back out of menu" onclick="closeDropdown()" style="color: var(--KeyCyan)">GO BACK</a></li>
+        </ul>
+    </div>
+    <div id="mainWindow">
+        <div id="home">
+            <ul id="navbarWeb">
+                <a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">
+                    <li class="navbarWebContent">
+                        <img src="../imgs/logos/WordmarkSPHS-700w.webp" height="100px" alt="SPHS Key Club wordmark logo">
+                    </li>
+                </a>
+                <li class="navbarWebContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="https://www.sphskeyclub.org/Contact-Us">CONTACT US</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the Service page to discover service opportunities" href="https://www.sphskeyclub.org/Events">EVENTS</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the Points page to track your points" href="https://www.sphskeyclub.org/Points">POINTS</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the News page" href="https://www.sphskeyclub.org/News/" style="color: var(--KeyGold)">NEWS</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the 'About the club' page" href="https://www.sphskeyclub.org/About">ABOUT</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">HOME</a></li>
+            </ul>
+            <ul id="navbarMobile">
+                <a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">
+                    <li class="navbarMobileContent">
+                        <img src="../imgs/logos/WordmarkSPHS-700w.webp" height="100px" alt="SPHS Key Club wordmark logo">
+                    </li>
+                </a>
+                <li class="navbarMobileContent">
+                    <a aria-label="Open mobile dropdown to see link options" onclick="getDropdown()">
+                        <i class="medium material-icons">dehaze</i>
+                    </a>
+                </li>
+            </ul>
+
+            <img 
+                srcset="../imgs/HomeImage-450w.webp 450w,
+                    ../imgs/HomeImage-1000w.webp 1000w, 
+                    ../imgs/HomeImage-2500w.webp 2500w, 
+                    ../imgs/HomeImage-3526w.webp 3526w"
+                width="100%" style="object-fit: cover; height: 60vh; border-radius: 0;" alt="SPHS' Key Club officers">
+        </div>
+        <div id="mainContainer">
+            <table id="infoContainerWeb">
+                <tbody>
+                    <tr>
+                        <td class="basicContainer">
+                            <h1>News Archive</h1>
+                            <p style="margin-bottom: 0;">Click on the links below to see archived news articles.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer">
+                            <a aria-label="Click here to see this article" href="https://www.sphskeyclub.org/News/articles/The-Monthly-Key-April24">The Monthly Key: April 2024 [Zachary Ratkiewicz 2024]</a>
+                            <br>
+                            <a aria-label="Click here to see this article" href="https://www.sphskeyclub.org/News/articles/The-Key-Takeaways-of-DCON-2024">The Key Takeaways of DCON 2024 [Zachary Ratkiewicz 2024]</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="infoContainerMobile">
+                <tr>
+                    <td class="basicContainer">
+                        <h1>News Archive</h1>
+                        <p style="margin-bottom: 0;">Click on the links below to see archived news articles.</p>
+                        <br>
+                        <a aria-label="Click here to see this article" href="https://www.sphskeyclub.org/News/articles/The-Monthly-Key-April24">The Monthly Key: April 2024 [Zachary Ratkiewicz 2024]</a>
+                        <br>
+                        <a aria-label="Click here to see this article" href="https://www.sphskeyclub.org/News/articles/The-Key-Takeaways-of-DCON-2024">The Key Takeaways of DCON 2024 [Zachary Ratkiewicz 2024]</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="footnoteContainer">
+            <h1>2024-25 Key Club of St. Petersburg Senior High School (Florida District Division 13, Zone E)</h1>
+        </div>
+    </div>
+
+    <!--
+        Copy text to clipboard: remind @
+    -->
+
+    <script src="../logic/dropdown.js"></script>
+</body>
+</html>
