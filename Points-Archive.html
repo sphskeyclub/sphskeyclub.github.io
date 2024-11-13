@@ -29,36 +29,44 @@
     <title>Points Archive - SPHS Key Club</title>
 </head>
 <body>
-    <div id="mobileDropdown">
-        <ul id="navbarMobileDropdown">
-            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">HOME</a></li>
-            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'About the club' page" href="https://www.sphskeyclub.org/About">ABOUT</a></li>
-            <li class="navbarMobileDropdownContent"><a aria-label="Go to the News page" href="https://www.sphskeyclub.org/News/">NEWS</a></li>
-            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Points page to track your points" href="https://www.sphskeyclub.org/Points" style="color: var(--KeyGold)">POINTS</a></li>
-            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Service page to discover service opportunities" href="https://www.sphskeyclub.org/Events">EVENTS</a></li>
-            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="https://www.sphskeyclub.org/Contact-Us">CONTACT US</a></li>
-            <li class="navbarMobileDropdownContent"><a aria-label="Back out of menu" onclick="closeDropdown()" style="color: var(--KeyCyan)">GO BACK</a></li>
-        </ul>
-    </div>
-    <div id="mainWindow">
+    <!-- NAVBAR START -->
+    <div id="nav">
+        <div id="aboutDropdown">
+            <ul id="navbarMobileDropdown">
+                <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'About the club' page" href="https://www.sphskeyclub.org/About">ABOUT</a></li>
+                <li class="navbarMobileDropdownContent"><a aria-label="Go to the Governor's Project page" href="https://www.sphskeyclub.org/Governor-Project">GOVERNOR'S PROJECT</a></li>
+                <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Service Events' page" href="https://www.sphskeyclub.org/Service-Events">SERVICE EVENTS</a></li>
+                <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Social Events' page" href="https://www.sphskeyclub.org/Social-Events">SOCIAL EVENTS</a></li>
+                <li class="navbarMobileDropdownContent"><a aria-label="Back out of menu" onclick="closeDropdownAbout()" style="color: var(--KeyCyan)">GO BACK</a></li>
+            </ul>
+        </div>
+        <div id="mobileDropdown">
+            <ul id="navbarMobileDropdown">
+                <li class="navbarMobileDropdownContent"><a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">HOME</a></li>
+                <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'About the club' page" onclick="getDropdownAbout()">ABOUT <i class="material-icons" style="font-size: 100%;">arrow_drop_down</i></a></li>
+                <li class="navbarMobileDropdownContent"><a aria-label="Go to the News page" href="https://www.sphskeyclub.org/News/">NEWS</a></li>
+                <li class="navbarMobileDropdownContent"><a aria-label="Go to the Points page to track your points" style="color: var(--KeyGold)" href="https://www.sphskeyclub.org/Points">POINTS</a></li>
+                <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="https://www.sphskeyclub.org/Contact-Us">CONTACT US</a></li>
+                <li class="navbarMobileDropdownContent"><a aria-label="Back out of menu" onclick="closeDropdown()" style="color: var(--KeyCyan)">GO BACK</a></li>
+            </ul>
+        </div>
         <div id="home">
             <ul id="navbarWeb">
                 <a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">
                     <li class="navbarWebContent">
-                        <img src="./imgs/logos/WordmarkSPHS-700w.webp" height="100px" alt="SPHS Key Club wordmark logo">
+                        <img src="./imgs/logos/WordmarkSPHS-700w.webp" height="100px">
                     </li>
                 </a>
                 <li class="navbarWebContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="https://www.sphskeyclub.org/Contact-Us">CONTACT US</a></li>
-                <li class="navbarWebContent"><a aria-label="Go to the Service page to discover service opportunities" href="https://www.sphskeyclub.org/Events">EVENTS</a></li>
-                <li class="navbarWebContent"><a aria-label="Go to the Points page to track your points" href="https://www.sphskeyclub.org/Points" style="color: var(--KeyGold)">POINTS</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the Points page to track your points" style="color: var(--KeyGold)" href="https://www.sphskeyclub.org/Points">POINTS</a></li>
                 <li class="navbarWebContent"><a aria-label="Go to the News page" href="https://www.sphskeyclub.org/News/">NEWS</a></li>
-                <li class="navbarWebContent"><a aria-label="Go to the 'About the club' page" href="https://www.sphskeyclub.org/About">ABOUT</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the 'About the club' page" onclick="getDropdownAbout()">ABOUT <i class="material-icons" style="font-size: 100%;">arrow_drop_down</i></a></li>
                 <li class="navbarWebContent"><a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">HOME</a></li>
             </ul>
             <ul id="navbarMobile">
                 <a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">
                     <li class="navbarMobileContent">
-                        <img src="./imgs/logos/WordmarkSPHS-700w.webp" height="100px" alt="SPHS Key Club wordmark logo">
+                        <img src="./imgs/logos/WordmarkSPHS-700w.webp" height="100px">
                     </li>
                 </a>
                 <li class="navbarMobileContent">
@@ -67,7 +75,6 @@
                     </a>
                 </li>
             </ul>
-
             <img 
                 srcset="./imgs/HomeImage-450w.webp 450w,
                     ./imgs/HomeImage-1000w.webp 1000w, 
@@ -75,6 +82,9 @@
                     ./imgs/HomeImage-3526w.webp 3526w"
                 width="100%" style="object-fit: cover; height: 60vh; border-radius: 0;" alt="SPHS' Key Club officers">
         </div>
+    </div>
+    <!-- NAVBAR END -->
+    <div id="mainWindow">
         <div id="mainContainer">
             <table id="infoContainerWeb">
                 <tbody>
