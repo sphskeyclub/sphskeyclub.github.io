@@ -28,7 +28,7 @@
     padding: 41px 2%;
     text-decoration: none;
 
-    font-family: myriad-pro, sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
 }
 
@@ -69,7 +69,7 @@
 
     margin-right: calc(60.5px - 3%); /* make some px value /// 363 x 600 */
 
-    font-family: myriad-pro, sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
 }
 
@@ -86,11 +86,18 @@
     width: 100vw;
 }
 
+#aboutDropdown {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+}
+
 #navbarMobileDropdown {
     list-style-type: none;
     text-align: center;
     overflow: hidden;
     background-color: #ffffff;
+    padding-left: 0;
 }
 
 .navbarMobileDropdownContent a {
@@ -101,9 +108,7 @@
 
     padding: 36px 5%;
 
-    margin-right: calc(60.5px - 3%); /* make some px value /// 363 x 600 */
-
-    font-family: myriad-pro, sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
 }
 

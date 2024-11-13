@@ -23,6 +23,10 @@
     --KeyGrey: #939598;
     --KeyGreyLight: #bcbec0;
 
+    --GPAccess: #FBB03C;
+    --GPCommunity: #FF914D;
+    --GPExposure: #DE7068;
+
     /* 
         To find more Key colors, go here (Key Club Officers: Be the Webmaster):
         https://c7adf50c-1ab1-4550-b63e-a88eac3b3661.filesusr.com/ugd/279046_bd
@@ -87,7 +91,9 @@ li {
 }
 
 u {
-    font-weight: 400;
+    font-weight: inherit; /* Inherit weight from h2 */
+    color: inherit; /* Inherit color from h2 */
+    font-size: inherit;
 }
 
 i {
