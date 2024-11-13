@@ -30,64 +30,308 @@
     <title>Events - SPHS Key Club</title>
 </head>
 <body>
-    <!-- NAVBAR START -->
-    <div id="aboutDropdown">
-        <ul id="navbarMobileDropdown">
-            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'About the club' page" href="https://www.sphskeyclub.org/About">ABOUT</a></li>
-            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Governor's Project page" href="https://www.sphskeyclub.org/Governor-Project">GOVERNOR'S PROJECT</a></li>
-            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Service Events' page" href="https://www.sphskeyclub.org/Service-Events">SERVICE EVENTS</a></li>
-            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Social Events' page" style="color: var(--KeyGold)" href="https://www.sphskeyclub.org/Social-Events">SOCIAL EVENTS</a></li>
-            <li class="navbarMobileDropdownContent"><a aria-label="Back out of menu" onclick="closeDropdownAbout()" style="color: var(--KeyCyan)">GO BACK</a></li>
-        </ul>
-    </div>
     <div id="mobileDropdown">
         <ul id="navbarMobileDropdown">
             <li class="navbarMobileDropdownContent"><a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">HOME</a></li>
-            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'About the club' page" style="color: var(--KeyGold)" onclick="getDropdownAbout()">ABOUT <i class="material-icons" style="font-size: 100%;">arrow_drop_down</i></a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'About the club' page" href="https://www.sphskeyclub.org/About">ABOUT</a></li>
             <li class="navbarMobileDropdownContent"><a aria-label="Go to the News page" href="https://www.sphskeyclub.org/News/">NEWS</a></li>
             <li class="navbarMobileDropdownContent"><a aria-label="Go to the Points page to track your points" href="https://www.sphskeyclub.org/Points">POINTS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Service page to discover service opportunities" style="color: var(--KeyGold)" href="https://www.sphskeyclub.org/Events">EVENTS</a></li>
             <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="https://www.sphskeyclub.org/Contact-Us">CONTACT US</a></li>
             <li class="navbarMobileDropdownContent"><a aria-label="Back out of menu" onclick="closeDropdown()" style="color: var(--KeyCyan)">GO BACK</a></li>
         </ul>
     </div>
-    <div id="home">
-        <ul id="navbarWeb">
-            <a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">
-                <li class="navbarWebContent">
-                    <img src="./imgs/logos/WordmarkSPHS-700w.webp" height="100px">
-                </li>
-            </a>
-            <li class="navbarWebContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="https://www.sphskeyclub.org/Contact-Us">CONTACT US</a></li>
-            <li class="navbarWebContent"><a aria-label="Go to the Points page to track your points" href="https://www.sphskeyclub.org/Points">POINTS</a></li>
-            <li class="navbarWebContent"><a aria-label="Go to the News page" href="https://www.sphskeyclub.org/News/">NEWS</a></li>
-            <li class="navbarWebContent"><a aria-label="Go to the 'About the club' page" style="color: var(--KeyGold)" onclick="getDropdownAbout()">ABOUT <i class="material-icons" style="font-size: 100%;">arrow_drop_down</i></a></li>
-            <li class="navbarWebContent"><a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">HOME</a></li>
-        </ul>
-        <ul id="navbarMobile">
-            <a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">
-                <li class="navbarMobileContent">
-                    <img src="./imgs/logos/WordmarkSPHS-700w.webp" height="100px">
-                </li>
-            </a>
-            <li class="navbarMobileContent">
-                <a aria-label="Open mobile dropdown to see link options" onclick="getDropdown()">
-                    <i class="medium material-icons">dehaze</i>
-                </a>
-            </li>
-        </ul>
-        <img 
-            srcset="./imgs/HomeImage-450w.webp 450w,
-                ./imgs/HomeImage-1000w.webp 1000w, 
-                ./imgs/HomeImage-2500w.webp 2500w, 
-                ./imgs/HomeImage-3526w.webp 3526w"
-            width="100%" style="object-fit: cover; height: 60vh; border-radius: 0;" alt="SPHS' Key Club officers">
-    </div>
-    <!-- NAVBAR END -->
     <div id="mainWindow">
+        <div id="home">
+            <ul id="navbarWeb">
+                <a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">
+                    <li class="navbarWebContent">
+                        <img src="./imgs/logos/WordmarkSPHS-700w.webp" height="100px" alt="SPHS Key Club wordmark logo">
+                    </li>
+                </a>
+                <li class="navbarWebContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="https://www.sphskeyclub.org/Contact-Us">CONTACT US</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the Service page to discover service opportunities" style="color: var(--KeyGold)" href="https://www.sphskeyclub.org/Events">EVENTS</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the Points page to track your points" href="https://www.sphskeyclub.org/Points">POINTS</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the News page" href="https://www.sphskeyclub.org/News/">NEWS</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the 'About the club' page" href="https://www.sphskeyclub.org/About">ABOUT</a></li>
+                <li class="navbarWebContent"><a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">HOME</a></li>
+            </ul>
+            <ul id="navbarMobile">
+                <a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">
+                    <li class="navbarMobileContent">
+                        <img src="./imgs/logos/WordmarkSPHS-700w.webp" height="100px" alt="SPHS Key Club wordmark logo">
+                    </li>
+                </a>
+                <li class="navbarMobileContent">
+                    <a aria-label="Open mobile dropdown to see link options" onclick="getDropdown()">
+                        <i class="medium material-icons">dehaze</i>
+                    </a>
+                </li>
+            </ul>
+
+            <img 
+                srcset="./imgs/HomeImage-450w.webp 450w,
+                    ./imgs/HomeImage-1000w.webp 1000w, 
+                    ./imgs/HomeImage-2500w.webp 2500w, 
+                    ./imgs/HomeImage-3526w.webp 3526w"
+                width="100%" style="object-fit: cover; height: 60vh; border-radius: 0;" alt="SPHS' Key Club officers">
+        </div>
         <div id="mainContainer">
+
+            <!-- INTRO -->
+            <div id="INTRODUCTION">
+                <table id="infoContainerWeb">
+                    <tbody>
+                        <tr>
+                            <td class="shadContainer" onclick="location.href='https://www.sphskeyclub.org/Events#SE-ABOUT'">
+                                <h2 style="font-size: 3.75vw;">Service Events</h2>
+                                <p>Click here to find more about our service events!</p>
+                            </td>
+                            <td class="shadContainer" onclick="location.href='https://www.sphskeyclub.org/Events#SO-ABOUT'">
+                                <h2 style="font-size: 3.75vw;">Social Events</h2>
+                                <p>Click here to find more about our social events!</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="infoContainerMobile">
+                    <tbody>
+                        <tr>
+                            <td class="shadContainer" onclick="location.href='https://www.sphskeyclub.org/Events#SE-ABOUT'">
+                                <h2 style="font-size: 7vw;">Service Events</h2>
+                                <p>Click here to find more about our service events!</p>
+                            </td>
+                            <td class="shadContainer" onclick="location.href='https://www.sphskeyclub.org/Events#SO-ABOUT'">
+                                <h2 style="font-size: 7vw;">Social Events</h2>
+                                <p>Click here to find more about our social events!</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr style="width: 50vw; background-color: var(--KeyGrey); border: solid 1px var(--KeyGrey); color: var(--KeyGrey);">
+
+            <!-- ABOUT -->
+            <div id="SE-ABOUT">
+                <table id="infoContainerWeb" style="border: 0;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer">
+                                <!-- <img src="./imgs/DCON-group3-100w.webp" width="25%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;"> -->
+                                <h1>Service Events</h1>
+                                <h2>Working Towards a Better Community</h2>
+                                <p style="margin-bottom: 0;">
+                                    Finding opportunities to serve your school and community is easy in Key Club. We'll provide the tools and connections you need to make the world a better place. Check out some service opportunities below!
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="infoContainerMobile" style="border: 0;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer">
+                                <h1>Service Events</h1>
+                                <h2>Working Towards a Better Community</h2>
+                                <p>
+                                    Finding opportunities to serve your school and community is easy in Key Club. We'll provide the tools and connections you need to make the world a better place. Check out some service opportunities below!
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr style="width: 50vw; background-color: var(--CustomGrey); border: solid 1px var(--CustomGrey); color: var(--CustomGrey);">
+
+            <div id="BLOOD-DRIVES">
+                <table id="infoContainerWeb" style="border: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer" colspan="4" >
+                                <img 
+                                    alt="Blood donation at blood drive" 
+                                    srcset="./imgs/BloodDrive23/Donation1-700w.webp 700w,
+                                    ./imgs/BloodDrive23/Donation1-961w.webp 961w"
+                                    width="55%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
+                                <h1>Blood Drives</h1>
+                                <h2>About</h2>
+                                <p>
+                                    SPHS Key Club partners with OneBlood to host blood drives for all students at SPHS. Volunteer opportunities are available for all Key Club members. OneBlood and Key Club's aim is to provide safe, available, and affordable blood to those in need.
+                                </p>
+                                <h2>Sign Up</h2>
+                                <p>
+                                    Donating blood: to schedule a time slot to donate blood, you can ask our volunteer teams that visit classrooms for an appointment or go to our sign-up table during lunch break on the days preceding the Blood Drive.
+                                </p>
+                                <p>
+                                    Volunteering (Key Club members only): the Chair of Blood Drives will post sign-ups on the <a aria-label="Be redirected to our Facebook page" href="https://www.sphskeyclub.org/FACEBOOK">Facebook page</a> in the weeks leading up to the drive. There are opportunities to be on the promotion team that visits classrooms during the school day, to manage the sign-up tables at lunch, and to staff the blood drive, performing tasks such as receiving donors, distributing food, and allocating donors to the buses. The blood drive necessitates a maximum of three volunteers per period.
+                                </p>
+                                <p>
+                                    If you have any questions, contact our Blood Drive committee chair, <a aria-label="Go to the Committee Chairs section on the Contact Us page" href="https://www.sphskeyclub.org/Contact-Us#COMMITTEE-CHAIRS">Anna Hewett</a>. Blood drive dates will be put on our <a aria-label="Go to our Calendar page" href="https://www.sphskeyclub.org/Contact-Us#CALENDAR">Google Calendar</a>.
+                                </p>
+                                <h2>Eligibility</h2>
+                                <p style="font-size: 1.2vw; margin-bottom: 0;">
+                                    To accept and promote the following ideals:
+                                </p>
+                                <ul style="color: var(--KeyBlack); font-size: 1.2vw; font-weight: 400; margin-top: 0;">
+                                    <li style="margin-left: 2em; margin-top: 1%;">be in good health,</li>
+                                    <li style="margin-left: 2em; margin-top: 1%;">be 16 years or older (and have a signed Parental Consent Form if you are 16), and</li>
+                                    <li style="margin-left: 2em; margin-top: 1%;">weigh 110 pounds or greater</li>
+                                </ul>
+                                <p style="font-size: 1.2vw; margin-bottom: 0;">
+                                    In addition, it is recommended that, before donating, you:
+                                </p>
+                                <ul style="color: var(--KeyBlack); font-size: 1.2vw; font-weight: 400; margin-top: 0;">
+                                    <li style="margin-left: 2em; margin-top: 1%;">drink plenty of water</li>
+                                    <li style="margin-left: 2em; margin-top: 1%;">eat a light meal</li>
+                                </ul>
+                                <p>
+                                    On donation day, make sure to bring an ID card (Student ID, driver license, or equivalent) and your appointment card!
+                                </p>
+                                <p>
+                                    ​You may still be turned away on the day of the blood drive for health-related reasons. A common reason for rejection is having a low iron level in your blood. In the days leading up to your donation, eating iron-rich foods can help ensure your donation proceeds successfully. For additional information on eligibility, visit <a aria-label="Find information about Oneblood's blood drive here" href="https://www.oneblood.org/give-blood/basics.html">https://www.oneblood.org/give-blood/basics.html</a>.
+                                </p>
+                                <p style="margin-bottom: 0;">
+                                    After donating, it is recommended that you drink water and avoid rigorous exercise.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="infoContainerMobile" style="border: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer">
+                                <h1>Blood Drives</h1>
+                                <h2>About</h2>
+                                <p>
+                                    SPHS Key Club partners with OneBlood to host blood drives for all students at SPHS. Volunteer opportunities are available for all Key Club members. OneBlood and Key Club's aim is to provide safe, available, and affordable blood to those in need.
+                                </p>
+                                <h2>Sign Up</h2>
+                                <p>
+                                    Donating blood: to schedule a time slot to donate blood, you can ask our volunteer teams that visit classrooms for an appointment or go to our sign-up table during lunch break on the days preceding the Blood Drive.
+                                </p>
+                                <p>
+                                    Volunteering (Key Club members only): the Chair of Blood Drives will post sign-ups on the <a aria-label="Be redirected to our Facebook page" href="https://www.sphskeyclub.org/FACEBOOK">Facebook page</a> in the weeks leading up to the drive. There are opportunities to be on the promotion team that visits classrooms during the school day, to manage the sign-up tables at lunch, and to staff the blood drive, performing tasks such as receiving donors, distributing food, and allocating donors to the buses. The blood drive necessitates a maximum of three volunteers per period.
+                                </p>
+                                <p>
+                                    If you have any questions, contact our Blood Drive committee chair, <a aria-label="Go to the Committee Chairs section on the Contact Us page" href="https://www.sphskeyclub.org/Contact-Us#COMMITTEE-CHAIRS">Anna Hewett</a>. Blood drive dates will be put on our <a aria-label="Go to our Calendar page" href="https://www.sphskeyclub.org/Contact-Us#CALENDAR">Google Calendar</a>.
+                                </p>
+                                <h2>Eligibility</h2>
+                                <p style="margin-bottom: 0;">
+                                    To accept and promote the following ideals:
+                                </p>
+                                <ul style="color: var(--KeyBlack); font-weight: 400; margin-top: 0;">
+                                    <li style="margin-left: 2em; margin-top: 3%;">be in good health,</li>
+                                    <li style="margin-left: 2em; margin-top: 3%;">be 16 years or older (and have a signed Parental Consent Form if you are 16), and</li>
+                                    <li style="margin-left: 2em; margin-top: 3%;">weigh 110 pounds or greater</li>
+                                </ul>
+                                <p style="margin-bottom: 0;">
+                                    In addition, it is recommended that, before donating, you:
+                                </p>
+                                <ul style="color: var(--KeyBlack); font-weight: 400; margin-top: 0;">
+                                    <li style="margin-left: 2em; margin-top: 3%;">drink plenty of water</li>
+                                    <li style="margin-left: 2em; margin-top: 3%;">eat a light meal</li>
+                                </ul>
+                                <p>
+                                    On donation day, make sure to bring an ID card (Student ID, driver license, or equivalent) and your appointment card!
+                                </p>
+                                <p>
+                                    ​You may still be turned away on the day of the blood drive for health-related reasons. A common reason for rejection is having a low iron level in your blood. In the days leading up to your donation, eating iron-rich foods can help ensure your donation proceeds successfully. For additional information on eligibility, visit <a aria-label="Find information about Oneblood's blood drive here" href="https://www.oneblood.org/give-blood/basics.html">https://www.oneblood.org/give-blood/basics.html</a>.
+                                </p>
+                                <p>
+                                    After donating, it is recommended that you drink water and avoid rigorous exercise.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img 
+                                    alt="Blood donation at blood drive" 
+                                    srcset="./imgs/BloodDrive23/Donation1-700w.webp 700w,
+                                    ./imgs/BloodDrive23/Donation1-961w.webp 961w"
+                                    width="100%" style="border-radius: 4vw;"> <!-- mobile => border-radius: 4vw -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                        
+            <hr style="width: 50vw; background-color: var(--CustomGrey); border: solid 1px var(--CustomGrey); color: var(--CustomGrey);">
+
+            <div id="HOMELESS-MEALS">
+                <table id="infoContainerWeb" style="border: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer" colspan="4">
+                                <img 
+                                    alt="Group participating in Homeless Meals" 
+                                    srcset="./imgs/HomelessMeals23/Group1-700w.webp 700w,
+                                    ./imgs/HomelessMeals23/Group1-1054w.webp 1054w"
+                                    width="55%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
+                                <h1>Homeless Meals</h1>
+                                <h2>About</h2>
+                                <p>
+                                    Homeless meals is a weekly service opportunity in which SPHS Key Club makes meals (including peanut butter and jelly sandwiches, snacks, and water) for the homeless.
+                                </p>
+                                <h2>Sign Up</h2>
+                                <p>
+                                    ​Homeless meals generally take place Fridays after school. During these point opportunities, members may help make sandwiches, donate supplies (jam, peanut butter, bread, juice boxes, snacks, etc.), or deliver the lunches to help support the project.
+                                </p>
+                                <p>
+                                    Attendance and supply slots are limited, so these are available by sign-up only. Sign-ups are usually made available on Tuesdays at 4:00 P.M. prior to assemblies.
+                                </p>
+                                <p style="margin-bottom: 0;">
+                                    For more information on the exact dates of the assemblies, supplies needed, and sign-ups, check the <a aria-label="Be redirected to our Facebook page" href="https://www.sphskeyclub.org/FACEBOOK">Facebook page</a> or contact our Homeless Meals Committee members, <a aria-label="Go to the Committee Chairs section on the Contact Us page" href="https://www.sphskeyclub.org/Contact-Us#COMMITTEE-CHAIRS">Sage Summers and Sally Rozelle</a>.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="infoContainerMobile" style="border: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer">
+                                <h1 style="font-size: 10vw">Homeless Meals</h1>
+                                <h2>About</h2>
+                                <p>
+                                    Homeless meals is a weekly service opportunity in which SPHS Key Club makes meals (including peanut butter and jelly sandwiches, snacks, and water) for the homeless.
+                                </p>
+                                <h2>Sign Up</h2>
+                                <p>
+                                    ​Homeless meals generally take place Fridays after school. During these point opportunities, members may help make sandwiches, donate supplies (jam, peanut butter, bread, juice boxes, snacks, etc.), or deliver the lunches to help support the project.
+                                </p>
+                                <p>
+                                    Attendance and supply slots are limited, so these are available by sign-up only. Sign-ups are usually made available on Tuesdays at 4:00 P.M. prior to assemblies.
+                                </p>
+                                <p>
+                                    For more information on the exact dates of the assemblies, supplies needed, and sign-ups, check the <a aria-label="Be redirected to our Facebook page" href="https://www.sphskeyclub.org/FACEBOOK">Facebook page</a> or contact our Homeless Meals Committee members, <a aria-label="Go to the Committee Chairs section on the Contact Us page" href="https://www.sphskeyclub.org/Contact-Us#COMMITTEE-CHAIRS">Sage Summers and Sally Rozelle</a>.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img 
+                                    alt="Group participating in Homeless Meals" 
+                                    srcset="./imgs/HomelessMeals23/Group1-700w.webp 700w,
+                                    ./imgs/HomelessMeals23/Group1-1054w.webp 1054w"
+                                    width="100%" style="border-radius: 4vw;"> <!-- mobile => border-radius: 4vw -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr style="width: 50vw; background-color: var(--KeyGrey); border: solid 1px var(--KeyGrey); color: var(--KeyGrey);">
+
             <!-- ABOUT -->
             <div id="SO-ABOUT">
-                <table id="infoContainerWeb">
+                <table id="infoContainerWeb" style="border: 0;">
                     <tbody>
                         <tr>
                             <td class="basicContainer">
@@ -102,7 +346,7 @@
                     </tbody>
                 </table>
 
-                <table id="infoContainerMobile">
+                <table id="infoContainerMobile" style="border: 0;">
                     <tbody>
                         <tr>
                             <td class="basicContainer">
