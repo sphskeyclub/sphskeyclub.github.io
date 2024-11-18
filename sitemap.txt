@@ -1,5 +1,5 @@
 https://www.sphskeyclub.org/
-https://www.sphskeyclub.org/About
+https://www.sphskeyclub.org/About//
 https://www.sphskeyclub.org/Points
 https://www.sphskeyclub.org/Contact-Us
 https://www.sphskeyclub.org/News/
@@ -10,6 +10,6 @@ https://www.sphskeyclub.org/Points-Archive
 https://www.sphskeyclub.org/News/articles/The-Monthly-Key-August24
 https://www.sphskeyclub.org/News/Archive
 https://www.sphskeyclub.org/News/articles/Key-Clubber-Awards-October24
-https://www.sphskeyclub.org/Governor-Project
-https://www.sphskeyclub.org/Service-Events
-https://www.sphskeyclub.org/Social-Events
+https://www.sphskeyclub.org/About//Governor-Project
+https://www.sphskeyclub.org/About//Service-Events
+https://www.sphskeyclub.org/About//Social-Events
