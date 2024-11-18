@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="icon" href="../imgs/logos/favicon-32x32.png">
+
+    <link rel="stylesheet" href="../styles/navbar.css">
+
+    <meta name="description" content="Find information 
+    about our Key Club's mission statement, values, and objectives, and also
+    how to join, the requirements, and our school's Key Club's rules.">
+    <meta name="author" content="Zachary Ratkiewicz">
+    <meta name="keywords" content="Key, Key Club, SPHS, St. Petersburg High School, St. Petersburg Senior High School">
+
+    <meta property='og:title' content='About - SPHS Key Club'/>
+    <meta property='og:image' content='https://sphskeyclub.org/imgs/SocialImage.jpg'/>
+    <meta property='og:description' content="Find information about our Key Club's mission statement, values, and objectives, and also how to join, the requirements, and our school's Key Club's rules."/>
+    <meta property='og:url' content="https://sphskeyclub.org"/>
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='630' />
+    <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
+    <meta property="og:type" content='website'/>
+    
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "What is Key Club?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Key Club is the oldest and largest service program for high school students. It is a student-led organization that teaches leadership through service to others. As members of the Kiwanis International family, Key Club members build themselves as they build their schools and communities. Key Club has over 251,000 members in approximately 5,000 clubs and is currently represented in 40 countries."
+            }
+          }, {
+            "@type": "Question",
+            "name": "Where and when did Key Club begin?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The first Key Club met at Sacramento High School in California in 1925. SPHS' Key Club was chartered May 13, 1941."
+            }
+          }, {
+            "@type": "Question",
+            "name": "What is Kiwanis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kiwanis is a global organization of volunteers dedicated to changing the world one child and one community at a time. Our members help shelter the homeless, feed the hungry, mentor the disadvantaged, and care for the sick. We develop youth as leaders, build playgrounds, raise funds for pediatric research, and more. Working together, members achieve what one person cannot accomplish alone."
+            }
+          }, {
+            "@type": "Question",
+            "name": "Who are SPHS Key Club's officers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Students of St. Petersburg High School make up SPHS Key Club's board. You can find out more about them and SPHS Key Club's advisor by <a aria-label='Go to the Contact Us page' href='https://sphskeyclub.org/Contact-Us'>clicking here to go to the club's 'Contact Us' page</a>."
+            }
+          }]
+        }
+    </script>
+    
+    <title>About - SPHS Key Club</title>
+</head>
+<body>
+    <!-- NAVBAR START -->
+    <div id="aboutDropdown">
+        <ul id="navbarMobileDropdown">
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'About the club' page" style="color: var(--KeyGold)" href="https://www.sphskeyclub.org/About/">ABOUT</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Governor's Project page" href="https://www.sphskeyclub.org/About/Governor-Project">GOVERNOR'S PROJECT</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Service Events' page" href="https://www.sphskeyclub.org/About/Service-Events">SERVICE EVENTS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Social Events' page" href="https://www.sphskeyclub.org/About/Social-Events">SOCIAL EVENTS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Back out of menu" onclick="closeDropdownAbout()" style="color: var(--KeyCyan)">GO BACK</a></li>
+        </ul>
+    </div>
+    <div id="mobileDropdown">
+        <ul id="navbarMobileDropdown">
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">HOME</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'About the club' page" style="color: var(--KeyGold)" onclick="getDropdownAbout()">ABOUT <i class="material-icons" style="font-size: 90%;">arrow_drop_down</i></a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the News page" href="https://www.sphskeyclub.org/News/">NEWS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Points page to track your points" href="https://www.sphskeyclub.org/Points">POINTS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="https://www.sphskeyclub.org/Contact-Us">CONTACT US</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Back out of menu" onclick="closeDropdown()" style="color: var(--KeyCyan)">GO BACK</a></li>
+        </ul>
+    </div>
+    <div id="home">
+        <ul id="navbarWeb">
+            <a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">
+                <li class="navbarWebContent">
+                    <img src="../imgs/logos/WordmarkSPHS-700w.webp" height="100px">
+                </li>
+            </a>
+            <li class="navbarWebContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="https://www.sphskeyclub.org/Contact-Us">CONTACT US</a></li>
+            <li class="navbarWebContent"><a aria-label="Go to the Points page to track your points" href="https://www.sphskeyclub.org/Points">POINTS</a></li>
+            <li class="navbarWebContent"><a aria-label="Go to the News page" href="https://www.sphskeyclub.org/News/">NEWS</a></li>
+            <li class="navbarWebContent"><a aria-label="Go to the 'About the club' page" style="color: var(--KeyGold)" onclick="getDropdownAbout()">ABOUT <i class="material-icons" style="font-size: 90%;">arrow_drop_down</i></a></li>
+            <li class="navbarWebContent"><a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">HOME</a></li>
+        </ul>
+        <ul id="navbarMobile">
+            <a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">
+                <li class="navbarMobileContent">
+                    <img src="../imgs/logos/WordmarkSPHS-700w.webp" height="100px">
+                </li>
+            </a>
+            <li class="navbarMobileContent">
+                <a aria-label="Open mobile dropdown to see link options" onclick="getDropdown()">
+                    <i class="medium material-icons">dehaze</i>
+                </a>
+            </li>
+        </ul>
+        <img 
+            srcset="../imgs/HomeImage-450w.webp 450w,
+                ../imgs/HomeImage-1000w.webp 1000w, 
+                ../imgs/HomeImage-2500w.webp 2500w, 
+                ../imgs/HomeImage-3526w.webp 3526w"
+            width="100%" style="object-fit: cover; height: 60vh; border-radius: 0;" alt="SPHS' Key Club officers">
+    </div>
+    <!-- NAVBAR END -->
+    <div id="mainWindow">
+        <div id="mainContainer">
+
+            <!-- ABOUT -->
+            <div id="ABOUT">
+                <table id="infoContainerWeb">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer" colspan="4">
+                                <img 
+                                    alt="Key Club group tapping" 
+                                    srcset="../imgs/Tapping23/Group1-850w.webp 850w, 
+                                    ../imgs/Tapping23/Group1-1020w.webp 1020w"
+                                    width="65%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
+                                <h1>About</h1>
+                                <h2>Mission Statement</h2>
+                                <p>
+                                    Key Club is an international student-led organization which provides its members with opportunities to provide service, build character, and develop leadership.
+                                </p>
+                                <h2>Vision</h2>
+                                <p>
+                                    We are caring and competent servant leaders transforming communities worldwide.
+                                </p>
+                                <h2>Core Values</h2>
+                                <p>
+                                    The core values of Key Club International are <span style="color: var(--KeyRed)">leadership</span>, <span style="color: var(--KeyMango)">character building</span>, <span style="color: var(--KeyGreen)">caring</span>, and <span style="color: var(--KeyCyan)">inclusiveness</span>.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="basicContainer" width="25%">
+                                <img alt="Inductions with former presidents" 
+                                    srcset="../imgs/Inductions23/Leadership1-700w.jpeg 700w, 
+                                    ../imgs/Inductions23/Leadership1-750w.jpeg 750w,
+                                    ../imgs/Inductions23/Leadership1-1250w.webp 1250w"
+                                    width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
+                            </td>
+                            <td class="basicContainer" width="25%">
+                                <h2 style="color: var(--KeyRed)">Leadership</h2>
+                                <p style="font-size: 1.5vw;">
+                                    Leadership is grounded in humility and service to others. A true leader listens, recognizes, and empowers.
+                                </p>
+                            </td>
+                            <td class="basicContainer" width="25%">
+                                <img 
+                                    alt="Mr. Benton smashing pumpkins" 
+                                    srcset="../imgs/PumpskinSmashing23/CharacterBuilding1-700w.webp 700w,
+                                    ../imgs/PumpskinSmashing23/CharacterBuilding1-1250w.webp 1250w"
+                                    width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
+                            </td>
+                            <td class="basicContainer" width="25%">
+                                <h2 style="color: var(--KeyMango)">Character Building</h2>
+                                <p style="font-size: 1.5vw;">
+                                    Character is built by everyday acts of kindness, integrity and teamwork to grow stronger relationships and communities.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="basicContainer" width="25%">
+                                <h2 style="color: var(--KeyGreen)">Caring</h2>
+                                <p style="font-size: 1.5vw;">
+                                    Compassion for others is a cornerstone of the Key Club experience, inspiring action and service to one's community.
+                                </p>
+                            </td>
+                            <td class="basicContainer" width="25%">
+                                <img 
+                                    alt="Key Club members setting up Mad Hatters 2023" 
+                                    srcset="../imgs/MadHatters23/Service1-700w.webp 700w,
+                                    ../imgs/MadHatters23/Service1-4032w.webp 4032w"
+                                    width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
+                            </td>
+                            <td class="basicContainer" width="25%">
+                                <h2 style="color: var(--KeyCyan)">Inclusiveness</h2>
+                                <p style="font-size: 1.5vw;">
+                                    We welcome people of all backgrounds and ethnicities to join in serving and making a positive difference in our world.
+                                </p>
+                            </td>
+                            <td class="basicContainer" width="25%">
+                                <img 
+                                    alt="Key Clubbers' tapping" 
+                                    srcset="../imgs/Tapping23/Inclusiveness1-700w.webp 700w,
+                                    ../imgs/Tapping23/Inclusiveness1-1200w.webp 1200w"
+                                    width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="basicContainer">
+                                <img 
+                                    alt="Quinn with ghost" 
+                                    srcset="../imgs/Inductions23/Motto1-700w.webp 700w,
+                                    ../imgs/Inductions23/Motto1-1250w.webp 1250w"
+                                    width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
+                            </td>
+                            <td class="basicContainer">
+                                <h2 style="font-size: 3.5vw;">Motto</h2>
+                                <p style="font-size: 1.5vw;">
+                                    "Caring — Our Way of Life"
+                                </p>
+                            </td>
+                            <td class="basicContainer">
+                                <img 
+                                    alt="Two K's demonstrating togetherness"
+                                    srcset="../imgs/Tapping23/Pledge1-700w.webp 700w, 
+                                    ../imgs/Tapping23/Pledge1-1200w.webp 1200w"
+                                    width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(250px, 30vh)">
+                            </td>
+                            <td class="basicContainer">
+                                <h2 style="font-size: 3.5vw; color: var(--KeyGold)">Pledge</h2>
+                                <p style="font-size: 1.3vw;">
+                                    I pledge, on my honor, to uphold the Objects of Key Club International; to build my home, school and community; to serve my nation and world; and combat all forces which tend to undermine these institutions.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="infoContainerMobile">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer" colspan="2">
+                                <h1>About</h1>
+                                <h2>Mission Statement</h2>
+                                <p style="font-size: 3.5vw;">
+                                    Key Club is an international student-led organization which provides its members with opportunities to provide service, build character, and develop leadership.
+                                </p>
+                                <h2>Vision</h2>
+                                <p style="font-size: 3.5vw;">
+                                    We are caring and competent servant leaders transforming communities worldwide.
+                                </p>
+                                <h2>Core Values</h2>
+                                <p style="font-size: 3.5vw;">
+                                    The core values of Key Club International are <span style="color: var(--KeyRed)">leadership</span>, <span style="color: var(--KeyMango)">character building</span>, <span style="color: var(--KeyGreen)">caring</span>, and <span style="color: var(--KeyCyan)">inclusiveness</span>.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="basicContainer" colspan="2">
+                                <img 
+                                    alt="Key Club group tapping" 
+                                    srcset="../imgs/Tapping23/Group1-850w.webp 850w,
+                                    ../imgs/Tapping23/Group1-1020w.webp 1020w"
+                                    width="100%" style="border-radius: 4vw;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="basicContainer" style="width: 50%">
+                                <img 
+                                    alt="Inductions with former presidents" 
+                                    srcset="../imgs/Inductions23/Leadership1-700w.jpeg 700w,
+                                    ../imgs/Inductions23/Leadership1-750w.webp 750w,
+                                    ../imgs/Inductions23/Leadership1-1250w.webp 1250w"
+                                    width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
+                            </td>
+                            <td class="basicContainer" style="width: 50%">
+                                <h2 style="color: var(--KeyRed)">Leadership</h2>
+                                <p style="font-size: 3vw;">
+                                    Leadership is grounded in humility and service to others. A true leader listens, recognizes, and empowers.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="basicContainer" width="50%">
+                                <h2 style="color: var(--KeyMango)">Character Building</h2>
+                                <p style="font-size: 3vw;">
+                                    Character is built by everyday acts of kindness, integrity and teamwork to grow stronger relationships and communities.
+                                </p>
+                            </td>
+                            <td class="basicContainer" width="50%">
+                                <img 
+                                    alt="Mr. Benton smashing pumpkins" 
+                                    srcset="../imgs/PumpskinSmashing23/CharacterBuilding1-700w.webp 700w,
+                                    ../imgs/PumpskinSmashing23/CharacterBuilding1-1250w.webp 1250w"
+                                    width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="basicContainer" width="50%">
+                                <img 
+                                    alt="Key Club members setting up Mad Hatters 2023" 
+                                    src="../imgs/MadHatters23/Service1-700w.webp"
+                                    width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
+                            </td>
+                            <td class="basicContainer" width="50%">
+                                <h2 style="color: var(--KeyGreen)">Caring</h2>
+                                <p style="font-size: 3vw;">
+                                    Compassion for others is a cornerstone of the Key Club experience, inspiring action and service to one's community.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="basicContainer" width="50%">
+                                <h2 style="font-size: 5vw; color: var(--KeyCyan)">Inclusiveness</h2>
+                                <p style="font-size: 3vw;">
+                                    We welcome people of all backgrounds and ethnicities to join in serving and making a positive difference in our world.
+                                </p>
+                            </td>
+                            <td class="basicContainer" width="50%">
+                                <img 
+                                    alt="Key Clubbers' tapping" 
+                                    srcset="../imgs/Tapping23/Inclusiveness1-700w.webp 700w,
+                                    ../imgs/Tapping23/Inclusiveness1-1200w.webp 1200w"
+                                    width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="basicContainer" width="50%">
+                                <img 
+                                    alt="Quinn with ghost" 
+                                    srcset="../imgs/Inductions23/Motto1-700w.webp 700w,
+                                    ../imgs/Inductions23/Motto1-1250w.webp 1250w" 
+                                    width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
+                            </td>
+                            <td class="basicContainer" width="50%">
+                                <h2>Motto</h2>
+                                <p style="font-size: 3vw;">
+                                    "Caring — Our Way of Life"
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="basicContainer" width="50%">
+                                <h2 style="color: var(--KeyGold)">Pledge</h2>
+                                <p style="font-size: 2.6vw;">
+                                    I pledge, on my honor, to uphold the Objects of Key Club International; to build my home, school and community; to serve my nation and world; and combat all forces which tend to undermine these institutions.
+                                </p>
+                            </td>
+                            <td class="basicContainer" width="50%">
+                                <img 
+                                    alt="Two K's demonstrating togetherness" 
+                                    srcset="../imgs/Tapping23/Pledge1-700w.webp 700w,
+                                    ../imgs/Tapping23/Pledge1-1200w.webp 1200w"
+                                    width="100%" style="object-fit: cover; border-radius: 1.5vw; height: max(200px, 30vh)">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr style="width: 50vw; background-color: var(--CustomGrey); border: solid 1px var(--CustomGrey); color: var(--CustomGrey);">
+
+            <!-- OBJECTIVES -->
+            <div id="OBJECTIVES">
+                <table id="infoContainerWeb" style="border: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer">
+                                <img 
+                                    alt="SPHS Key Club at DCON 2024" 
+                                    srcset="../imgs/DCON24/Group3-850w.webp 850w,
+                                    ../imgs/DCON24/Group3-1200w.webp 1200w"
+                                    width="55%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
+                                <h1>Objectives</h1>
+                                <h2>1. 
+                                    <span style="color: var(--KeyBlack); font-size: 1.2vw; ">
+                                        To develop initiative and leadership.
+                                    </span>
+                                </h2>
+                                <h2>2. 
+                                    <span style="color: var(--KeyBlack); font-size: 1.2vw; ">
+                                        To provide experience in living and working together.
+                                    </span>
+                                </h2>
+                                <h2>3. 
+                                    <span style="color: var(--KeyBlack); font-size: 1.2vw; ">
+                                        To serve the school and community.
+                                    </span>
+                                </h2>
+                                <h2>4. 
+                                    <span style="color: var(--KeyBlack); font-size: 1.2vw; ">
+                                        To cooperate with the school principal.
+                                    </span>
+                                </h2>
+                                <h2>5. 
+                                    <span style="color: var(--KeyBlack); font-size: 1.2vw; ">
+                                        To prepare for useful citizenship.
+                                    </span>
+                                </h2>
+                                <h2>6. 
+                                    <span style="color: var(--KeyBlack); font-size: 1.2vw; ">
+                                        To accept and promote the following ideals:
+                                    </span>
+                                    <ul style="color: var(--KeyBlack); font-size: 1.2vw; font-weight: 400; margin-top: 0; margin-bottom: 0;">
+                                        <li style="margin-left: 2em; margin-top: 1%;">To give primacy to the human and spiritual, rather than to the material values of life.</li>
+                                        <li style="margin-left: 2em; margin-top: 1%;">To encourage the daily living of the Golden Rule in all human relationships.</li>
+                                        <li style="margin-left: 2em; margin-top: 1%;">To promote the adoption and application of higher standards in scholarship, sportsmanship and social contacts.</li>
+                                        <li style="margin-left: 2em; margin-top: 1%;">To develop, by precept and example, a more intelligent, aggressive, and serviceable citizenship.</li>
+                                        <li style="margin-left: 2em; margin-top: 1%;">To provide a practical means to form enduring friendships, to render unselfish service and to build better communities.</li>
+                                        <li style="margin-left: 2em; margin-top: 1%;">To cooperate in creating and maintaining that sound public opinion and high idealism which makes possible the increase of righteousness, justice, patriotism and good will.</li>
+                                    </ul>
+                                </h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="basicContainer">
+                                <p style="font-style: italic; text-align: center;">
+                                    For more about Key Club's aims, goals, and structure, see the <a aria-label="Go to the bylaws section" href="https://www.sphskeyclub.org/About/#BYLAWS">bylaws</a> section.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="infoContainerMobile" style="border: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer">
+                                <h1>Objectives</h1>
+                                <h2>1. 
+                                    <span style="color: var(--KeyBlack); font-size: 3vw;">
+                                        To develop initiative and leadership.
+                                    </span>
+                                </h2>
+                                <h2>2. 
+                                    <span style="color: var(--KeyBlack); font-size: 3vw;">
+                                        To provide experience in living and working together.
+                                    </span>
+                                </h2>
+                                <h2>3. 
+                                    <span style="color: var(--KeyBlack); font-size: 3vw;">
+                                        To serve the school and community.
+                                    </span>
+                                </h2>
+                                <h2>4. 
+                                    <span style="color: var(--KeyBlack); font-size: 3vw;">
+                                        To cooperate with the school principal.
+                                    </span>
+                                </h2>
+                                <h2>5. 
+                                    <span style="color: var(--KeyBlack); font-size: 3vw;">
+                                        To prepare for useful citizenship.
+                                    </span>
+                                </h2>
+                                <h2>6. 
+                                    <span style="color: var(--KeyBlack); font-size: 3vw;">
+                                        To accept and promote the following ideals:
+                                    </span>
+                                    <ul style="color: var(--KeyBlack); font-weight: 400; margin-top: 0; margin-bottom: 0;">
+                                        <li style="margin-left: 2em; margin-top: 1%; font-size: 2.5vw;">To give primacy to the human and spiritual, rather than to the material values of life.</li>
+                                        <li style="margin-left: 2em; margin-top: 1%; font-size: 2.5vw;">To encourage the daily living of the Golden Rule in all human relationships.</li>
+                                        <li style="margin-left: 2em; margin-top: 1%; font-size: 2.5vw;">To promote the adoption and application of higher standards in scholarship, sportsmanship and social contacts.</li>
+                                        <li style="margin-left: 2em; margin-top: 1%; font-size: 2.5vw;">To develop, by precept and example, a more intelligent, aggressive, and serviceable citizenship.</li>
+                                        <li style="margin-left: 2em; margin-top: 1%; font-size: 2.5vw;">To provide a practical means to form enduring friendships, to render unselfish service and to build better communities.</li>
+                                        <li style="margin-left: 2em; margin-top: 1%; font-size: 2.5vw;">To cooperate in creating and maintaining that sound public opinion and high idealism which makes possible the increase of righteousness, justice, patriotism and good will.</li>
+                                    </ul>
+                                </h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="basicContainer">
+                                <img 
+                                    alt="SPHS Key Club at DCON 2024" 
+                                    srcset="../imgs/DCON24/Group3-850w.webp 850w,
+                                    ../imgs/DCON24/Group3-1200w.webp 1200w"
+                                    width="100%" style="border-radius: 1.5vw;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="basicContainer">
+                                <p style="font-style: italic; text-align: center;">
+                                    For more about Key Club's aims, goals, and structure, see the <a aria-label="Go to the bylaws section" href="https://www.sphskeyclub.org/About/#BYLAWS">bylaws</a> section.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr style="width: 50vw; background-color: var(--CustomGrey); border: solid 1px var(--CustomGrey); color: var(--CustomGrey);">
+
+            <!-- JOIN -->
+            <div id="JOIN">
+                <table id="infoContainerWeb" style="border-top: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer">
+                                <img 
+                                    srcset="../imgs/Goldfever24/Group3-650w.webp 650w,
+                                    ../imgs/Goldfever24/Group3-1200w.webp 1200w,
+                                    ../imgs/Goldfever24/Group3-4032w.webp 4032w"
+                                    alt="Goldfever 2024 participants and Mr. Benton"
+                                    width="55%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 3%;">
+                                <h1>Join</h1>
+                                <h2>Application Process</h2>
+                                <p>
+                                    St. Petersburg High School has a joint application process for all service clubs in the beginning of the year. All students in any grade level may apply.
+                                </p>
+                                <p>
+                                    Applications are now CLOSED for the 2024-25 school year! If you were unable to make it to auditions, please <a aria-label="Complete the Key Club Audition Makeup form" href="https://forms.gle/avNpaY54AbBZUFXNA">complete this audition makeup form</a>. For further inquiries, contact our club advisor, Mr. Benton, in room 01-223 or the Key Board email at <a aria-label="Email the SPHS' Key Board" href="mailto:board@sphskeyclub.org">board@sphskeyclub.org</a>.
+                                </p>
+                                <h2>Auditions</h2>
+                                <p>
+                                    Following the conclusion of the application process, each service club at SPHS will invite members that applied to them to their auditions. During auditions, candidates for membership will be asked questions that vary by topic, specificity, and seriousness.
+                                </p>
+                                <p>
+                                    All current members of Key Club are invited to attend auditions and pose questions for candidates to answer. Afterwards, candidates must wait for notification that their application and audition were accepted or rejected. A list of new members will be found on the gym doors.
+                                </p>
+                                <h2>During the Year</h2>
+                                <p>
+                                    Unfortunately, neither Key Club nor any other service club at SPHS accepts new members during the course of the school year. Students seeking to join Key must wait until the beginning of the following year to participate in the annual service club application process.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="infoContainerMobile" style="border-top: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer">
+                                <h1>Join</h1>
+                                <h2>Application Process</h2>
+                                <p>
+                                    St. Petersburg High School has a joint application process for all service clubs in the beginning of the year. Beginning this year, all students, including freshmen, may apply.
+                                </p>
+                                <p>
+                                    Applications are now CLOSED for the 2024-25 school year! If you were unable to make it to auditions, please <a aria-label="Complete the Key Club Audition Makeup form" href="https://forms.gle/avNpaY54AbBZUFXNA">complete this audition makeup form</a>. For further inquiries, contact our club advisor, Mr. Benton, in room 01-223 or the Key Board email at <a aria-label="Email the SPHS' Key Board" href="mailto:board@sphskeyclub.org">board@sphskeyclub.org</a>.
+                                </p>
+                                <h2>Auditions</h2>
+                                <p>
+                                    Following the conclusion of the application process, each service club at SPHS will invite members that applied to them to their auditions. During auditions, candidates for membership will be asked questions that vary by topic, specificity, and seriousness.
+                                </p>
+                                <p>
+                                    All current members of Key Club are invited to attend auditions and pose questions for candidates to answer. Afterwards, candidates must wait for notification that their application and audition were accepted or rejected. A list of new members will be found on the gym doors.
+                                </p>
+                                <h2>During the Year</h2>
+                                <p>
+                                    Unfortunately, neither Key Club nor any other service club at SPHS accepts new members during the course of the school year. Students seeking to join Key must wait until the beginning of the following year to participate in the annual service club application process.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="basicContainer">
+                                <img 
+                                    srcset="../imgs/Goldfever24/Group3-650w.webp 650w,
+                                    ../imgs/Goldfever24/Group3-1200w.webp 1200w,
+                                    ../imgs/Goldfever24/Group3-4032w.webp 4032w"
+                                    alt="Goldfever 2024 participants and Mr. Benton"
+                                    width="100%">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr style="width: 50vw; background-color: var(--CustomGrey); border: solid 1px var(--CustomGrey); color: var(--CustomGrey);">
+
+            <!-- REQUIREMENTS -->
+            <div id="REQUIREMENTS">
+                <table id="infoContainerWeb" style="border-top: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer">
+                                <h1>Requirements</h1>
+                                <h2>General Points System</h2>
+                                <p>
+                                    All members should obtain a minimum of 25 points in the first semester through various service and social opportunities. Members do not meet this minimum by the deadline are put on probation or are dismissed from the club, according to the <a aria-label="Go to the policies section" href="#POLICIES">policies</a> laid out below. The deadline is announced on the SPHS Key Club <a aria-label="Be redirected to our Facebook page" href="https://www.sphskeyclub.org/FACEBOOK">Facebook page</a>. 
+                                    This semester, due to Hurricane Helene and Hurricane Milton, each current member must obtain only 18 points by the end of the first semester. 
+                                </p>
+                                <p>
+                                    Each member must have accumulated 50 points for the year by the end of the second semester. Members that do not meet this minimum by the deadline are assessed disciplinary action as laid out below in the <a aria-label="Go to the policies section" href="#POLICIES">policies</a> section. The deadline will also be announced on our <a aria-label="Be redirected to our Facebook page" href="https://www.sphskeyclub.org/FACEBOOK">Facebook page</a>.
+                                </p>
+                                <p>
+                                    The Key Club Board may institute a small point requirement over the summer. Failure to meet the requirement over the summer will result in any point deficit being added to the first semester. This year's summer point requirement is 5 points.
+                                </p>
+                                <p>
+                                    Members may obtain more than 25 points in the first semester and any extra hours will count toward the year-end 50-point requirement. However, if a member fails to obtain the minimum amount of hours and is already on probation, that member will be dismissed from SPHS Key Club. Extra points gained in one year will roll over to the next.
+                                </p>
+                                <h2>Exceptions</h2>
+                                <p>
+                                    Inductees: new members of any grade have a reduced point requirement for the first semester. Inductees will need to obtain 15 points. 
+                                    This semester, due to Hurricane Helene and Hurricane Milton, inductees must obtain only 10 points by the end of the first semester.
+                                </p>
+                                <p>
+                                    Freshmen: freshmen have a reduced point requirement for both semesters. The first-semester reduction for inductees additionally applies to the second semester, meaning that freshmen will need to obtain 15 points per semester; 30 total points over the year. 
+                                    This semester, due to Hurricane Helene and Hurricane Milton, freshmen must obtain only 10 points by the end of the first semester.
+                                </p>
+                                <p>
+                                    Seniors: graduating seniors have a reduced point requirement for the second semester. Seniors will need to obtain 15 points.
+                                </p>
+                                <h2 id="POLICIES">Probation and Dismissal Policies</h2>
+                                <p>
+                                    Members are put on probation because they did not meet the point requirement for a semester, but had a reasonable amount by the deadline. Members must make up their point deficit as well as fulfill the new requirement during the following period, otherwise they will be dismissed. Members put on probation during Semester 2 must make up their point deficit during the summer.
+                                </p>
+                                <p>
+                                    Members that failed to obtain the minimum amount of points while on probation or had an amount considerably below the minimum points required will receive notification from the current Sergeant-at-Arms notifying them of their dismissal from Key. Dismissal from Key Club or any other service club denies students the chance to join another service club until the next year. Students must wait until the next application process to re-interview for another service club. Members that have been dismissed from and re-apply to Key will not be considered for membership.
+                                </p>
+                                <p>
+                                    Members are dismissed because of their lack of interest and involvement in the club. There are plenty of activities and service projects to participate in and it is the responsibility of each member to be active and passionate in service. <u>Key Club is a leadership and service club; it is not a title.</u> Key Club must make room for students who truly love service and want to be active.
+                                </p>
+                                <p>
+                                    If you have been dismissed but still believe you fulfill this description, you may make an appeal of your dismissal to the members of the Board within a reasonable amount of time.
+                                </p>
+                                <p>
+                                    For any further questions regarding probation, dismissal, or points in general, contact either <a aria-label="Go to the Officers section on the Contact Us page for contact information" href="https://www.sphskeyclub.org/Contact-Us#OFFICERS">Sergeant-at-Arms Maya Daly or Secretary Jocelyne Lioe</a>.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="infoContainerMobile" style="border-top: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer">
+                                <h1>Requirements</h1>
+                                <h2>General Points System</h2>
+                                <p>
+                                    All members should obtain a minimum of 25 points in the first semester through various service and social opportunities. Members do not meet this minimum by the deadline are put on probation or are dismissed from the club, according to the <a aria-label="Go to the policies section" href="#POLICIES">policies</a> laid out below. The deadline is announced on the SPHS Key Club <a aria-label="Be redirected to our Facebook page" href="https://www.sphskeyclub.org/FACEBOOK">Facebook page</a>. 
+                                    This semester, due to Hurricane Helene and Hurricane Milton, each current member must obtain 18 points by the end of the first semester. 
+                                </p>
+                                <p>
+                                    Each member must have accumulated 50 points for the year by the end of the second semester. Members that do not meet this minimum by the deadline are assessed disciplinary action as laid out below in the <a aria-label="Go to the policies section" href="#POLICIES">policies</a> section. The deadline will also be announced on our <a aria-label="Be redirected to our Facebook page" href="https://www.sphskeyclub.org/FACEBOOK">Facebook page</a>.
+                                </p>
+                                <p>
+                                    The Key Club Board may institute a small point requirement over the summer. Failure to meet the requirement over the summer will result in any point deficit being added to the first semester. This year's summer point requirement is 5 points.
+                                </p>
+                                <p>
+                                    Members may obtain more than 25 points in the first semester and any extra hours will count toward the year-end 50-point requirement. However, if a member fails to obtain the minimum amount of hours and is already on probation, that member will be dismissed from SPHS Key Club. Extra points gained in one year will roll over to the next.
+                                </p>
+                                <h2>Exceptions</h2>
+                                <p>
+                                    Inductees: new members of any grade have a reduced point requirement for the first semester. Inductees will need to obtain 15 points.
+                                    This semester, due to Hurricane Helene and Hurricane Milton, inductees must obtain only 10 points by the end of the first semester.
+                                </p>
+                                <p>
+                                    Freshmen: freshmen have a reduced point requirement for both semesters. The first-semester reduction for inductees additionally applies to the second semester, meaning that freshmen will need to obtain 15 points per semester; 30 total points over the year.
+                                    This semester, due to Hurricane Helene and Hurricane Milton, freshmen must obtain only 10 points by the end of the first semester.
+                                </p>
+                                <p>
+                                    Seniors: graduating seniors have a reduced point requirement for the second semester. Seniors will need to obtain 15 points.
+                                </p>
+                                <h2 id="POLICIES">Probation and Dismissal Policies</h2>
+                                <p>
+                                    Members are put on probation because they did not meet the point requirement for a semester, but had a reasonable amount by the deadline. Members must make up their point deficit as well as fulfill the new requirement during the following period, otherwise they will be dismissed. Members put on probation during Semester 2 must make up their point deficit during the summer.
+                                </p>
+                                <p>
+                                    Members that failed to obtain the minimum amount of points while on probation or had an amount considerably below the minimum points required will receive notification from the current Sergeant-at-Arms notifying them of their dismissal from Key. Dismissal from Key Club or any other service club denies students the chance to join another service club until the next year. Students must wait until the next application process to re-interview for another service club. Members that have been dismissed from and re-apply to Key will not be considered for membership.
+                                </p>
+                                <p>
+                                    Members are dismissed because of their lack of interest and involvement in the club. There are plenty of activities and service projects to participate in and it is the responsibility of each member to be active and passionate in service. <u>Key Club is a leadership and service club; it is not a title.</u> Key Club must make room for students who truly love service and want to be active.
+                                </p>
+                                <p>
+                                    If you have been dismissed but still believe you fulfill this description, you may make an appeal of your dismissal to the members of the Board within a reasonable amount of time.
+                                </p>
+                                <p>
+                                    For any further questions regarding probation, dismissal, or points in general, contact either <a aria-label="Go to the Officers section on the Contact Us page for contact information" href="https://www.sphskeyclub.org/Contact-Us#OFFICERS">Sergeant-at-Arms Maya Daly or Secretary Jocelyne Lioe</a>.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr style="width: 50vw; background-color: var(--CustomGrey); border: solid 1px var(--CustomGrey); color: var(--CustomGrey);">
+
+            <!-- BYLAWS -->
+            <div id="BYLAWS">
+                <table id="infoContainerWeb" style="border-top: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer">
+                                <h1>Bylaws</h1>
+                                <h2>Key Club International Guidebook</h2>
+                                <p>
+                                    Find the Key Club International Bylaws and Policies by <a aria-label="Go to Key Club International Guidebook page" href="https://www.keyclub.org/resources/guidebook/">clicking here</a>.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="infoContainerMobile" style="border-top: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer">
+                                <h1>Bylaws</h1>
+                                <h2>Key Club International Guidebook</h2>
+                                <p>
+                                    Find the Key Club International Bylaws and Policies by <a aria-label="Go to Key Club International Guidebook page" href="https://www.keyclub.org/resources/guidebook/">clicking here</a>.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr style="width: 50vw; background-color: var(--CustomGrey); border: solid 1px var(--CustomGrey); color: var(--CustomGrey);">
+
+            <!-- FAQs -->
+            <div id="FAQs">
+                <table id="infoContainerWeb" style="border-top: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer">
+                                <h1>FAQs</h1>
+                                <h2>What is Key Club?</h2>
+                                <p>
+                                    Key Club is the oldest and largest service program for high school students. It is a student-led organization that teaches leadership through service to others. As members of the Kiwanis International family, Key Club members build themselves as they build their schools and communities. Key Club has over 251,000 members in approximately 5,000 clubs and is currently represented in 40 countries. ​
+                                </p>
+                                <h2>What is the cost of membership?</h2>
+                                <p>
+                                    Dues of $ ??? must be paid per member at the beginning of each year. If a member has financial problems, do not hesitate on consulting with our current club presidents, Brody and Tucker, or our club advisor, Mr. Benton, in room 01-223.​
+                                </p>
+                                <h2>Where can I buy Key Club merchandise?</h2>
+                                <p>
+                                    To purchase other Key Club merchandise than the T-shirts offered through SPHS' Key Club, visit <a aria-label="Go to the Kiwanis online store" href="https://store.kiwanis.org/home">the Kiwanis online store</a>. This year's t-shirt is currently being worked on by the Creative Committee.
+                                </p>
+                                <h2>How did Key Club get started?</h2>
+                                <p>
+                                    The original concept was to develop a vocational guidance program aimed to combat the problems of a student fraternity. The idea evolved into the formation of a youth service organization for the home, school and community.
+                                </p>
+                                <h2>Where and when did Key Club begin?</h2>
+                                <p>
+                                    The first Key Club met at Sacramento High School in California in 1925. SPHS' Key Club was chartered May 13, 1941.
+                                </p>
+                                <h2>How did Key Club get its name?</h2>
+                                <p>
+                                    In 1925, California State Commissioner of Schools Albert C. Olney and vocational education teacher Frank C. Vincent worked to establish the first Key Club at Sacramento High School in California. This club was comprised of the key boys in the school, willing to serve the school in any way possible and to create better school spirit. Thus, the club was dubbed Key Club.
+                                </p>
+                                <h2>Who are Key Club's service partners and how does Key Club support them?</h2>
+                                <p>
+                                    UNICEF (and the ELIMINATE project), March of Dimes, and Children’s Miracle Network are all service partners. Key Club members provide fundraising support for each of these groups. Find out more at <a aria-label="Go to Key Club's service partners page" href="https://www.keyclub.org/about/partnership/">Key Club's service partners page</a>.
+                                </p>
+                                <h2>What is Kiwanis?</h2>
+                                <p>
+                                    Kiwanis is a global organization of volunteers dedicated to changing the world one child and one community at a time. Our members help shelter the homeless, feed the hungry, mentor the disadvantaged, and care for the sick. We develop youth as leaders, build playgrounds, raise funds for pediatric research, and more. Working together, members achieve what one person cannot accomplish alone.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="infoContainerMobile" style="border-top: none;">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer">
+                                <h1>FAQs</h1>
+                                <h2>What is Key Club?</h2>
+                                <p>
+                                    Key Club is the oldest and largest service program for high school students. It is a student-led organization that teaches leadership through service to others. As members of the Kiwanis International family, Key Club members build themselves as they build their schools and communities. Key Club has over 251,000 members in approximately 5,000 clubs and is currently represented in 40 countries. ​
+                                </p>
+                                <h2>What is the cost of membership?</h2>
+                                <p>
+                                    Dues of $ ??? must be paid per member at the beginning of each year. If a member has financial problems, do not hesitate on consulting with our current club presidents, Brody and Tucker, or our club advisor, Mr. Benton, in room 01-223.​
+                                </p>
+                                <h2>Where can I buy Key Club merchandise?</h2>
+                                <p>
+                                    To purchase other Key Club merchandise than the T-shirts offered through SPHS' Key Club, visit <a aria-label="Go to the Kiwanis online store" href="https://store.kiwanis.org/home">the Kiwanis online store</a>. This year's t-shirt is currently being worked on by the Creative Committee.
+                                </p>
+                                <h2>How did Key Club get started?</h2>
+                                <p>
+                                    The original concept was to develop a vocational guidance program aimed to combat the problems of a student fraternity. The idea evolved into the formation of a youth service organization for the home, school and community.
+                                </p>
+                                <h2>Where and when did Key Club begin?</h2>
+                                <p>
+                                    The first Key Club met at Sacramento High School in California in 1925. SPHS' Key Club was chartered May 13, 1941.
+                                </p>
+                                <h2>How did Key Club get its name?</h2>
+                                <p>
+                                    In 1925, California State Commissioner of Schools Albert C. Olney and vocational education teacher Frank C. Vincent worked to establish the first Key Club at Sacramento High School in California. This club was comprised of the key boys in the school, willing to serve the school in any way possible and to create better school spirit. Thus, the club was dubbed Key Club.
+                                </p>
+                                <h2>Who are Key Club's service partners and how does Key Club support them?</h2>
+                                <p>
+                                    UNICEF (and the ELIMINATE project), March of Dimes, and Children’s Miracle Network are all service partners. Key Club members provide fundraising support for each of these groups. Find out more at <a aria-label="Go to Key Club's service partners page" href="https://www.keyclub.org/about/partnership/">Key Club's service partners page</a>.
+                                </p>
+                                <h2>What is Kiwanis?</h2>
+                                <p>
+                                    Kiwanis is a global organization of volunteers dedicated to changing the world one child and one community at a time. Our members help shelter the homeless, feed the hungry, mentor the disadvantaged, and care for the sick. We develop youth as leaders, build playgrounds, raise funds for pediatric research, and more. Working together, members achieve what one person cannot accomplish alone.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div id="footnoteContainer">
+            <h1>2024-25 Key Club of St. Petersburg Senior High School (Florida District Division 13, Zone E)</h1>
+        </div>
+    </div>
+
+    <script src="../logic/dropdown.js"></script>
+</body>
+</html>

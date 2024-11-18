@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="icon" href="../imgs/logos/favicon-32x32.png">
+
+    <link rel="stylesheet" href="../styles/navbar.css">
+
+    <meta name="description" content="Find information about our Key Club's district's 2024-2025 Governor's Project, Lit for Life.">
+    <meta name="author" content="Zachary Ratkiewicz">
+    <meta name="keywords" content="Governor's Project, Lit for Life, Key, Key Club, SPHS, St. Petersburg High School, St. Petersburg Senior High School">
+
+    <meta property='og:title' content="Governor's Project - SPHS Key Club"/>
+    <meta property='og:image' content='https://sphskeyclub.org/imgs/SocialImage.jpg'/>
+    <meta property='og:description' content="Find information about our Key Club's district's 2024-2025 Governor's Project, Lit for Life."/>
+    <meta property='og:url' content="https://sphskeyclub.org"/>
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='630' />
+    <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
+    <meta property="og:type" content='website'/>
+    
+    <title>Governor's Project - SPHS Key Club</title>
+</head>
+<body>
+    <!-- NAVBAR START -->
+    <div id="aboutDropdown">
+        <ul id="navbarMobileDropdown">
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'About the club' page" href="https://www.sphskeyclub.org/About/">ABOUT</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Governor's Project page" style="color: var(--KeyGold)" href="https://www.sphskeyclub.org/About/Governor-Project">GOVERNOR'S PROJECT</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Service Events' page" href="https://www.sphskeyclub.org/About/Service-Events">SERVICE EVENTS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Social Events' page" href="https://www.sphskeyclub.org/About/Social-Events">SOCIAL EVENTS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Back out of menu" onclick="closeDropdownAbout()" style="color: var(--KeyCyan)">GO BACK</a></li>
+        </ul>
+    </div>
+    <div id="mobileDropdown">
+        <ul id="navbarMobileDropdown">
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">HOME</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'About the club' page" style="color: var(--KeyGold)" onclick="getDropdownAbout()">ABOUT <i class="material-icons" style="font-size: 90%;">arrow_drop_down</i></a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the News page" href="https://www.sphskeyclub.org/News/">NEWS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Points page to track your points" href="https://www.sphskeyclub.org/Points">POINTS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="https://www.sphskeyclub.org/Contact-Us">CONTACT US</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Back out of menu" onclick="closeDropdown()" style="color: var(--KeyCyan)">GO BACK</a></li>
+        </ul>
+    </div>
+    <div id="home">
+        <ul id="navbarWeb">
+            <a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">
+                <li class="navbarWebContent">
+                    <img src="../imgs/logos/WordmarkSPHS-700w.webp" height="100px">
+                </li>
+            </a>
+            <li class="navbarWebContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="https://www.sphskeyclub.org/Contact-Us">CONTACT US</a></li>
+            <li class="navbarWebContent"><a aria-label="Go to the Points page to track your points" href="https://www.sphskeyclub.org/Points">POINTS</a></li>
+            <li class="navbarWebContent"><a aria-label="Go to the News page" href="https://www.sphskeyclub.org/News/">NEWS</a></li>
+            <li class="navbarWebContent"><a aria-label="Go to the 'About the club' page" style="color: var(--KeyGold)" onclick="getDropdownAbout()">ABOUT <i class="material-icons" style="font-size: 90%;">arrow_drop_down</i></a></li>
+            <li class="navbarWebContent"><a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">HOME</a></li>
+        </ul>
+        <ul id="navbarMobile">
+            <a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">
+                <li class="navbarMobileContent">
+                    <img src="../imgs/logos/WordmarkSPHS-700w.webp" height="100px">
+                </li>
+            </a>
+            <li class="navbarMobileContent">
+                <a aria-label="Open mobile dropdown to see link options" onclick="getDropdown()">
+                    <i class="medium material-icons">dehaze</i>
+                </a>
+            </li>
+        </ul>
+        <img 
+            srcset="../imgs/HomeImage-450w.webp 450w,
+                ../imgs/HomeImage-1000w.webp 1000w, 
+                ../imgs/HomeImage-2500w.webp 2500w, 
+                ../imgs/HomeImage-3526w.webp 3526w"
+            width="100%" style="object-fit: cover; height: 60vh; border-radius: 0;" alt="SPHS' Key Club officers">
+    </div>
+    <!-- NAVBAR END -->
+    <div id="mainWindow">
+        <div id="mainContainer">
+
+            <!-- GOVERNOR'S PROJECT -->
+            <div id="PROJECT">
+                <table id="infoContainerWeb">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer" colspan="4">
+                                <img 
+                                    alt="Key Club group tapping" 
+                                    srcset="../imgs/GovernorsProject24-25/Books1-1698w.webp 1698w,
+                                    ../imgs/GovernorsProject24-25/Books1-600w.webp 600w,
+                                    ../imgs/GovernorsProject24-25/Books1-200w.webp 200w"
+                                    width="50%" style="border-radius: 1.5vw; float: right; margin-left: 3%; margin-bottom: 0;">
+                                <h1>Governor's Project</h1>
+                                <h2><i>Lit for Life</i></h2>
+                                <p>
+                                    This year's Governor's Project by Alejandro Ganaza (Florida District Governor) 
+                                    sets out to make sure every child is given the opportunity to foster proper literacy skills.
+                                </p>
+                                <p class="quote">
+                                    To leave <u>legacies</u> of literacy, we need <b>your</b> active involvement!
+                                </p>
+                                <p>
+                                    <a href="https://commons.wikimedia.org/wiki/File:Books_HD_(8314929977).jpg">Abhi Sharma from India</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons
+                                </p>
+                                <h2>We Are In: <span style="color: var(--GPCommunity); font-weight: 800;">Phase 2 (Community)</span></spanPhase></h2>
+                                <p>
+                                    Lit for Life is divided into three phases: <span style="color: var(--GPAccess); font-weight: 800;">Access</span> 
+                                    (May through August), <span style="color: var(--GPCommunity); font-weight: 800;">Community</span> (September 
+                                    through December), and <span style="color: var(--GPExposure); font-weight: 800;">Exposure</span> (January through March).
+                                </p>
+                                <p>
+                                    In the months from September through December, we are in Phase 2 (Community). 
+                                    Phase 2 aims to develop strong relationships with our community through a 
+                                    shared love of literature.
+                                </p>
+                                <h2>How Can SPHS Key Club Help?</h2>
+                                <p>
+                                    Stay updated on how SPHS Key Club is working towards Lit for Life's goal through our <a aria-label="Go to our News page" href="https://www.sphskeyclub.org/News/">newsletters and other articles</a>!
+                                </p>
+                                <p style="margin-bottom: 0;">
+                                    When posting about our Governor's Project, make sure to use the hashtag: <span class="articleImportant" style="font-weight: 800">#LitForLifeFLKC</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="infoContainerMobile">
+                    <tbody>
+                        <tr>
+                            <td class="basicContainer" colspan="4">
+                                <h1>Governor's Project</h1>
+                                <h2><i>Lit for Life</i></h2>
+                                <p>
+                                    This year's Governor's Project by Alejandro Ganaza (Florida District Governor) 
+                                    sets out to make sure every child is given the opportunity to foster proper literacy skills.
+                                </p>
+                                <p class="quote">
+                                    To leave <u>legacies</u> of literacy, we need <b>your</b> active involvement!
+                                </p>
+                                <h2>We Are In: <span style="color: var(--GPCommunity); font-weight: 800;">Phase 2 (Community)</span></spanPhase></h2>
+                                <p>
+                                    Lit for Life is divided into three phases: <span style="color: var(--GPAccess); font-weight: 800;">Access</span> 
+                                    (May through August), <span style="color: var(--GPCommunity); font-weight: 800;">Community</span> (September 
+                                    through December), and <span style="color: var(--GPExposure); font-weight: 800;">Exposure</span> (January through March).
+                                </p>
+                                <p>
+                                    In the months from September through December, we are in Phase 2 (Community). 
+                                    Phase 2 aims to develop strong relationships with our community through a 
+                                    shared love of literature.
+                                </p>
+                                <h2>How Can SPHS Key Club Help?</h2>
+                                <p>
+                                    Stay updated on how SPHS Key Club is working towards Lit for Life's goal through our <a aria-label="Go to our News page" href="https://www.sphskeyclub.org/News/">newsletters and other articles</a>!
+                                </p>
+                                <p>
+                                    When posting about our Governor's Project, make sure to use the hashtag: <span class="articleImportant" style="font-weight: 800">#LitForLifeFLKC</span>
+                                </p>
+                                <img 
+                                    alt="Key Club group tapping" 
+                                    srcset="../imgs/GovernorsProject24-25/Books1-1698w.webp 1698w,
+                                    ../imgs/GovernorsProject24-25/Books1-600w.webp 600w,
+                                    ../imgs/GovernorsProject24-25/Books1-200w.webp 200w"
+                                    width="100%" style="border-radius: 1.5vw; float: right; margin-bottom: 3%;">
+                                <p>
+                                    <a href="https://commons.wikimedia.org/wiki/File:Books_HD_(8314929977).jpg">Abhi Sharma from India</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="footnoteContainer">
+            <h1>2024-25 Key Club of St. Petersburg Senior High School (Florida District Division 13, Zone E)</h1>
+        </div>
+    </div>
+
+    <script src="../logic/dropdown.js"></script>
+</body>
+</html>
