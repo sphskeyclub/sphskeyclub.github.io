@@ -1,6 +1,7 @@
 :root {
     --KeyBlue: #003366; /* rgb(0, 51, 102) */
-    --KeyCyan: #00aeef; /* #005A80 */
+    --KeyBlueT: #005485;
+    --KeyCyan: #007ac1; /* #005A80 */
     --KeyGold: #b49759;
     --KeyBlack: #231f20;
     --KeyOrange: #f58025;
@@ -41,7 +42,7 @@
 }
 
 .blueT {
-    color: var(--KeyBlue);
+    color: var(--KeyBlueT);
     font-family: sans-serif;
 }
 
@@ -135,7 +136,7 @@ a:hover {
 
 .headingTWeb {
     padding-top: 3vh;
-    color: var(--KeyCyan);
+    color: var(--KeyBlueT);
     text-align: center;
 
     font-size: 6vw; /* max(4vw, 5vh) */
@@ -143,7 +144,7 @@ a:hover {
 
 .headingTMobile {
     padding-top: 3vh;
-    color: var(--KeyCyan);
+    color: var(--KeyBlueT);
     text-align: center;
 
     font-size: 12vw; /* max(4vw, 5vh) */
@@ -228,7 +229,7 @@ a:hover {
 
     width: 100vw;
 
-    background-color: white;
+    background-color: #ffffff;
 }
 
 #infoContainerWeb {
@@ -283,7 +284,7 @@ a:hover {
     margin: 0;
     font-size: 1.8vw; /* max(1.8vw, 2.1vh) */
 
-    color: var(--KeyCyan);
+    color: var(--KeyBlueT);
 }
 
 .shadContainer p {
@@ -326,14 +327,14 @@ a:hover {
     margin: 0;
     font-size: 6vw;
 
-    color: var(--KeyCyan);
+    color: var(--KeyBlueT);
 }
 
 .basicContainer h2 {
     margin: 0;
     font-size: 2.5vw;
 
-    color: var(--KeyMagenta);
+    color: var(--KeyCyan);
 }
 
 .newsContainer {
@@ -356,14 +357,14 @@ a:hover {
     margin: 0;
     font-size: 2.5vw;
 
-    color: var(--KeyCyan);
+    color: var(--KeyBlueT);
 }
 
 .newsContainer h2 {
     margin: 0;
     font-size: 1.2vw;
 
-    color: var(--KeyMagenta);
+    color: var(--KeyCyan);
 }
 
 .emphContainer {
@@ -377,7 +378,7 @@ a:hover {
 }
 
 .emphContainer a {
-    color: var(--KeyCyan);
+    color: var(--KeyBlueT);
 }
 
 .addShadow:hover {
@@ -491,7 +492,7 @@ p {
         margin: 0;
         font-size: 5.7vw;
     
-        color: var(--KeyCyan);
+        color: var(--KeyBlueT);
     }
 
     .basicContainer {
@@ -502,14 +503,14 @@ p {
         margin: 0;
         font-size: 12vw;
     
-        color: var(--KeyCyan);
+        color: var(--KeyBlueT);
     }
 
     .basicContainer h2 {
         margin: 0;
         font-size: 5.7vw;
     
-        color: var(--KeyMagenta);
+        color: var(--KeyCyan);
     }
 
     .newsContainer {
@@ -522,14 +523,14 @@ p {
         margin: 0;
         font-size: 5.7vw;
     
-        color: var(--KeyCyan);
+        color: var(--KeyBlueT);
     }
 
     .newsContainer h2 {
         margin: 0;
         font-size: 3.5vw;
     
-        color: var(--KeyMagenta);
+        color: var(--KeyCyan);
     }
 
     .emphContainer {
@@ -620,7 +621,7 @@ p {
 
     z-index: 99;
 
-    background-color: rgba(255, 255, 255);
+    background-color: #ffffff; 
     opacity: 100%;
 
     border-radius: 2vw;
@@ -682,7 +683,7 @@ p {
 }
 
 .articleImportant {
-    color: var(--KeyCyan);
+    color: var(--KeyBlueT);
 }
 
 .center {
