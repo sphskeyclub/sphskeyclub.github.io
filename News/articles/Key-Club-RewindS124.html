@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../styles/style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="icon" href="../../imgs/logos/favicon-32x32.png">
+
+    <link rel="stylesheet" href="../../styles/navbar.css">
+
+    <meta name="description" content="What happened in Semester 1 (2024-2025) for 
+    SPHS' Key Club? Find out by reading this article!">
+    <meta name="author" content="Zachary Ratkiewicz">
+    <meta name="keywords" content="Key, Key Club, SPHS, St. Petersburg High School, St. Petersburg Senior High School, Key Club Rewind">
+    
+    <meta property='og:title' content='Key Club Rewind: S1 2024'/>
+    <meta property='og:image' content='https://sphskeyclub.org/News/articles/imgs/DCON24/Group4.jpg'/>
+    <meta property='og:description' content="What happened in Semester 1 (2024-2025) for SPHS' Key Club? Find out by reading this article!"/>
+    <meta property='og:url' content="https://sphskeyclub.org"/>
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='630' />
+    <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
+    <meta property="og:type" content='article'/>
+    
+    <title>Key Club Rewind: S1 2024</title>
+</head>
+<body>
+    <!-- NAVBAR START -->
+    <div id="aboutDropdown">
+        <ul id="navbarMobileDropdown">
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'About the club' page" href="https://www.sphskeyclub.org/About/">ABOUT</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Governor's Project page" href="https://www.sphskeyclub.org/About/Governor-Project">GOVERNOR'S PROJECT</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Service Events' page" href="https://www.sphskeyclub.org/About/Service-Events">SERVICE EVENTS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Social Events' page" href="https://www.sphskeyclub.org/About/Social-Events">SOCIAL EVENTS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Back out of menu" onclick="closeDropdownAbout()" style="color: var(--KeyCyan)">GO BACK</a></li>
+        </ul>
+    </div>
+    <div id="mobileDropdown">
+        <ul id="navbarMobileDropdown">
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">HOME</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'About the club' page" onclick="getDropdownAbout()">ABOUT <i class="material-icons" style="font-size: 90%;">arrow_drop_down</i></a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the News page" style="color: var(--KeyGold)" href="https://www.sphskeyclub.org/News/">NEWS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Points page to track your points" href="https://www.sphskeyclub.org/Points">POINTS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="https://www.sphskeyclub.org/Contact-Us">CONTACT US</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Back out of menu" onclick="closeDropdown()" style="color: var(--KeyCyan)">GO BACK</a></li>
+        </ul>
+    </div>
+    <div id="home">
+        <ul id="navbarWeb">
+            <a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">
+                <li class="navbarWebContent">
+                    <img src="../../imgs/logos/WordmarkSPHS-700w.webp" height="100px">
+                </li>
+            </a>
+            <li class="navbarWebContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="https://www.sphskeyclub.org/Contact-Us">CONTACT US</a></li>
+            <li class="navbarWebContent"><a aria-label="Go to the Points page to track your points" href="https://www.sphskeyclub.org/Points">POINTS</a></li>
+            <li class="navbarWebContent"><a aria-label="Go to the News page" style="color: var(--KeyGold)" href="https://www.sphskeyclub.org/News/">NEWS</a></li>
+            <li class="navbarWebContent"><a aria-label="Go to the 'About the club' page" onclick="getDropdownAbout()">ABOUT <i class="material-icons" style="font-size: 90%;">arrow_drop_down</i></a></li>
+            <li class="navbarWebContent"><a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">HOME</a></li>
+        </ul>
+        <ul id="navbarMobile">
+            <a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">
+                <li class="navbarMobileContent">
+                    <img src="../../imgs/logos/WordmarkSPHS-700w.webp" height="100px">
+                </li>
+            </a>
+            <li class="navbarMobileContent">
+                <a aria-label="Open mobile dropdown to see link options" onclick="getDropdown()">
+                    <i class="medium material-icons">dehaze</i>
+                </a>
+            </li>
+        </ul>
+        <img 
+            srcset="../../imgs/HomeImage-450w.webp 450w,
+                ../../imgs/HomeImage-1000w.webp 1000w, 
+                ../../imgs/HomeImage-2500w.webp 2500w, 
+                ../../imgs/HomeImage-3526w.webp 3526w"
+            width="100%" style="object-fit: cover; height: 60vh; border-radius: 0;" alt="SPHS' Key Club officers">
+    </div>
+    <!-- NAVBAR END -->
+    <div id="mainWindow">
+        <div id="mainContainer">
+            
+            <table id="infoContainerWeb">
+                <tbody>
+                    <tr>
+                        <td class="basicContainer">
+                            <p style="margin-top: 0;">Find more articles by <a aria-label="Go to the 'News' page" href="https://www.sphskeyclub.org/News/">clicking here</a>.</p>
+                            <p style="color: var(--KeyBlue); margin-bottom: 0;">RECAP</p>
+                            <h1>Key Club Rewind: S1 2024</h1>
+                            <h2>By: Zachary Ratkiewicz (Webmaster)</h2>
+                            <p>Updated 10:12 AM EDT, December 19, 2024</p>
+
+                            <!-- click here to share: https://www.sphskeyclub.org/News/articles/[name] -->
+                            <p style="margin-bottom: 0;"><span style="cursor: pointer;" class="remindContainer" onclick="navigator.clipboard.writeText('https://www.sphskeyclub.org/News/articles/Key-Club-RewindS124')">Click here to copy this article's link.</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer">
+                            <img 
+                                srcset="./imgs/End24/Group1-1600w.webp 1600w,
+                                ./imgs/End24/Group1-1200w.webp 1200w,
+                                ./imgs/End24/Group1-720w.webp 720w"
+                                width="80%" style="border-radius: 0;" 
+                                class="center" alt="SPHS' Key Club Board at Inductions">
+                            <p style="margin-bottom: 0; text-align: center;">SPHS' Key Club Board at Inductions (November 15, 2024)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer" style="padding-left: 5vw; padding-right: 5vw;">
+                            <h2>Introduction</h2>
+                            <p>
+                                Zachary Ratkiewicz (Webmaster) — Hi everyone, I hope you all 
+                                have had a keytastic first semester of school and service so far! Get ready for some crazy totals... 
+                                as of December 18th, 2024, our club has accumulated a total of <span class="articleImportant">1365 hours</span> in just Semester 1! That's 
+                                <span class="articleImportant">56.875 days</span> of service and fun activities... WOWZERS, flipping BONKERS!!!
+                            </p>
+                            <p>
+                                See how we got to this crazy total in the different club activities we did this semester...
+                            </p>
+                            <img 
+                                alt="Mr. Benton looking at his portrait" 
+                                srcset="./imgs/End24/Benton1-1000w.webp 1000w,
+                                ./imgs/End24/Benton1-650w.webp 650w,
+                                ./imgs/End24/Benton1-300w.webp 300w"
+                                width="45%" style="float: right; margin-left: 3%;">
+                            <h2>Interviews, "Rushing", and Inductions</h2>
+                            <p>
+                                After Interviews and "Rushing", we gained <span class="articleImportant">63 new members</span>, increasing our 
+                                membership by <span class="articleImportant">107%</span>! Thank you so much for joining Key (you're obviously 
+                                goated)!!
+                            </p>
+                            <p>
+                                On November 15th, we had Inductions, where we introduced our new members to the club! Our theme 
+                                for this year's Inductions was <span class="articleImportant">'A Museum Visit'</span>, where paintings came to life and stole Mr. Benton's 
+                                amazing portrait (made by Alison Ashley, the Creative Committee Chair). The thief? Don't be fooled, 
+                                it was a group effort: <span class="articleImportant">A Sunday Afternoon on the Island of La Grande Jatte (Lily Cuddy) and The Swing (Joy Santiago) stole it</span>! Thanks for coming to Inductions and 
+                                see you next year!!
+                            </p>
+                            <h2>Blood Drive</h2>
+                            <p>
+                                For the Key Blood Drive, we didn't let the hurricanes affect us! On December 5th at the Key Blood Drive, <span class="articleImportant">we were able to 
+                                gather the highest amount of donations in over 4 years</span>!
+                            </p>
+                            <p class="quote">
+                                Thank you all so much for donating, advertising, and volunteering to help make this increadible feat happen!
+                            </p>
+                            <h2>Homeless Meals</h2>
+                            <p>
+                                This semester, we served <span class="articleImportant">426 hours</span> for the homeless through our 
+                                Homeless Meals service opportunity! If you want to learn more about 
+                                our Homeless Meals service opportunity, 
+                                <a aria-label="Go to Homeless Meals info on 'Service' page" href="https://www.sphskeyclub.org/About/Service-Events#HOMELESS-MEALS">click here</a>.
+                            </p>
+                            <h2>The 2024 Gecko Fest</h2>
+                            <p>
+                                This semester, Key Club participated in Gulfport's 2024 Gecko Fest! We set up the 'Kid's Craft Corner' with 
+                                Gulfport Kiwanis, and it was flipping fire if I do say so myself. At this event, we accumulated a total of 
+                                <span class="articleImportant">23.5 service hours</span>!!
+                            </p>
+                            <img 
+                                alt="Key Club at the 2024 Coffee Pot Turkey Trot" 
+                                srcset="./imgs/End24/Turkey1-2200w.webp 2200w,
+                                ./imgs/End24/Turkey1-1200w.webp 1200w,
+                                ./imgs/End24/Turkey1-800w.webp 800w,
+                                ./imgs/End24/Turkey1-450w.webp 450w"
+                                width="45%" style="float: left; margin-right: 3%;">
+                            <h2>The 2024 Coffee Pot Turkey Trot</h2>
+                            <p>
+                                On Thanksgiving, November 28th, Key Club volunteered at the 2024 Coffee Pot Turkey Trot, accumulating a total of 
+                                <span class="articleImportant">48 service hours</span>! WOWZAH, turkey is pawsome.
+                            </p>
+                            <h2>December DCM</h2>
+                            <p>
+                                At December DCM, we created amazing chalk art with our own hands! We also had cookies and discussed divisional 
+                                and district updates! We had frosted sugar cookies — and they were goated. Come to the next one unless you're an opp!!
+                            </p>
+                            <h2>KCKC (Key Club Kickoff Conference)</h2>
+                            <p>
+                                At KCKC, we did officer trainings and networked with other Key Clubbers across Zones E-M! The KCKC theme was 'Saddle Up For Service', so 
+                                of course we had to dress up like the wild west (meow). Come to the next KCKC if you want to learn more about the Florida District 
+                                and Key Club International!
+                            </p>
+                            <h2>Mad Hatter's Tea Party</h2>
+                            <p>
+                                On August 11th, we had a grand 'ol time helping St. Petersburg Kiwanis with the Mad Hatter's Tea Party! 
+                                There, we blew up balloons, created a balloon arch, face painted, tattooed, made crafts, and danced! 
+                                See the mighty, mighty balloon arch we created (below)!
+                            </p>
+                            <img 
+                                srcset="./imgs/MadHatters24/Balloons1-1280w.webp 1280w,
+                                ./imgs/MadHatters24/Balloons1-640w.webp 640w,
+                                ./imgs/MadHatters24/Balloons1-320w.webp 320w"
+                                width="80%"
+                                class="center" style="margin-bottom: 2%;" alt="SPHS' Key Club Board at Inductions">
+                            <h2>Conclusion</h2>
+                            <p>
+                                Thank you so much for reading you snugglemuffin-y Key Clubber! Happy holidays, have a good break, and see you next year!
+                            </p>
+                            <p>
+                                Didn't get to do all the fun things we did this semester? See what you can do next semester by checking out our 
+                                <a aria-label="Go to the 'Service' page" href="https://www.sphskeyclub.org/About/Service-Events">Service page</a>,  
+                                <a aria-label="Go to the 'Calendar' page" href="https://www.sphskeyclub.org/Contact-Us#CALENDAR">event calendar</a>,
+                                and <a aria-label="See December/January point opps" href="https://docs.google.com/document/d/1R0V9fwjZmJx07RqQxg5h8WUC9nVLupYl4FtNrVVODQk/edit?tab=t.0#heading=h.v0veyoluatkw">point opportunity document</a>!
+                            </p>
+                            <p>__</p>
+                            <p>
+                                Written by: Zachary Ratkiewicz (Webmaster)
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="infoContainerMobile">
+                <tbody>
+                    <tr>
+                        <td class="basicContainer">
+                            <p style="margin-top: 0;">Find more articles by <a aria-label="Go to the 'News' page" href="https://www.sphskeyclub.org/News/">clicking here</a>.</p>
+                            <p style="color: var(--KeyBlue); margin-bottom: 0;">RECAP</p>
+                            <h1>Key Club Rewind: S1 2024</h1>
+                            <h2>By: Zachary Ratkiewicz (Webmaster)</h2>
+                            <p>Updated 10:12 AM EDT, December 19, 2024</p>
+
+                            <!-- click here to share: https://www.sphskeyclub.org/News/articles/[name] -->
+                            <p style="margin-bottom: 0;"><span style="cursor: pointer;" class="remindContainer" onclick="navigator.clipboard.writeText('https://www.sphskeyclub.org/News/articles/Key-Club-RewindS124')">Click here to copy this article's link.</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer">
+                            <img 
+                                srcset="./imgs/End24/Group1-1600w.webp 1600w,
+                                ./imgs/End24/Group1-1200w.webp 1200w,
+                                ./imgs/End24/Group1-720w.webp 720w"
+                                width="100%" style="border-radius: 0;" alt="SPHS' Key Club Board at Inductions">
+                            <p style="margin-bottom: 0; text-align: center;">SPHS' Key Club Board at Inductions (November 15, 2024)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer" style="padding-left: 7vw; padding-right: 7vw;">
+                            <h2>Introduction</h2>
+                            <p>
+                                Zachary Ratkiewicz (Webmaster) — Hi everyone, I hope you all 
+                                have had a keytastic first semester of school and service so far! Get ready for some crazy totals... 
+                                as of December 18th, 2024, our club has accumulated a total of <span class="articleImportant">1365 hours</span> in just Semester 1! That's 
+                                <span class="articleImportant">56.875 days</span> of service and fun activities... WOWZERS, flipping BONKERS!!!
+                            </p>
+                            <p>
+                                See how we got to this crazy total in the different club activities we did this semester...
+                            </p>
+                            <img 
+                                alt="Mr. Benton looking at his portrait" 
+                                srcset="./imgs/End24/Benton1-1000w.webp 1000w,
+                                ./imgs/End24/Benton1-650w.webp 650w,
+                                ./imgs/End24/Benton1-300w.webp 300w"
+                                style="margin-bottom: 3%;" width="100%">
+                            <h2>Interviews, "Rushing", and Inductions</h2>
+                            <p>
+                                After Interviews and "Rushing", we gained <span class="articleImportant">63 new members</span>, increasing our 
+                                membership by <span class="articleImportant">107%</span>! Thank you so much for joining Key (you're obviously 
+                                goated)!!
+                            </p>
+                            <p>
+                                On November 15th, we had Inductions, where we introduced our new members to the club! Our theme 
+                                for this year's Inductions was <span class="articleImportant">'A Museum Visit'</span>, where paintings came to life and stole Mr. Benton's 
+                                amazing portrait (made by Alison Ashley, the Creative Committee Chair). The thief? Don't be fooled, 
+                                it was a group effort: <span class="articleImportant">A Sunday Afternoon on the Island of La Grande Jatte (Lily Cuddy) and The Swing (Joy Santiago) stole it</span>! Thanks for coming to Inductions and 
+                                see you next year!!
+                            </p>
+                            <h2>Blood Drive</h2>
+                            <p>
+                                For the Key Blood Drive, we didn't let the hurricanes affect us! On December 5th at the Key Blood Drive, <span class="articleImportant">we were able to 
+                                gather the highest amount of donations in over 4 years</span>!
+                            </p>
+                            <p class="quote">
+                                Thank you all so much for donating, advertising, and volunteering to help make this increadible feat happen!
+                            </p>
+                            <h2>Homeless Meals</h2>
+                            <p>
+                                This semester, we served <span class="articleImportant">426 hours</span> for the homeless through our 
+                                Homeless Meals service opportunity! If you want to learn more about 
+                                our Homeless Meals service opportunity, 
+                                <a aria-label="Go to Homeless Meals info on 'Service' page" href="https://www.sphskeyclub.org/About/Service-Events#HOMELESS-MEALS">click here</a>.
+                            </p>
+                            <h2>The 2024 Gecko Fest</h2>
+                            <p>
+                                This semester, Key Club participated in Gulfport's 2024 Gecko Fest! We set up the 'Kid's Craft Corner' with 
+                                Gulfport Kiwanis, and it was flipping fire if I do say so myself. At this event, we accumulated a total of 
+                                <span class="articleImportant">23.5 service hours</span>!!
+                            </p>
+                            <img
+                                alt="Key Club at the 2024 Coffee Pot Turkey Trot" 
+                                srcset="./imgs/End24/Turkey1-2200w.webp 2200w,
+                                ./imgs/End24/Turkey1-1200w.webp 1200w,
+                                ./imgs/End24/Turkey1-800w.webp 800w,
+                                ./imgs/End24/Turkey1-450w.webp 450w"
+                                style="margin-bottom: 3%;" width="100%">
+                            <h2>The 2024 Coffee Pot Turkey Trot</h2>
+                            <p>
+                                On Thanksgiving, November 28th, Key Club volunteered at the 2024 Coffee Pot Turkey Trot, accumulating a total of 
+                                <span class="articleImportant">48 service hours</span>! WOWZAH, turkey is pawsome.
+                            </p>
+                            <h2>December DCM</h2>
+                            <p>
+                                At December DCM, we created amazing chalk art with our own hands! We also had cookies and discussed divisional 
+                                and district updates! We had frosted sugar cookies — and they were goated. Come to the next one unless you're an opp!!
+                            </p>
+                            <h2>KCKC (Key Club Kickoff Conference)</h2>
+                            <p>
+                                At KCKC, we did officer trainings and networked with other Key Clubbers across Zones E-M! The KCKC theme was 'Saddle Up For Service', so 
+                                of course we had to dress up like the wild west (meow). Come to the next KCKC if you want to learn more about the Florida District 
+                                and Key Club International!
+                            </p>
+                            <h2>Mad Hatter's Tea Party</h2>
+                            <p>
+                                On August 11th, we had a grand 'ol time helping St. Petersburg Kiwanis with the Mad Hatter's Tea Party! 
+                                There, we blew up balloons, created a balloon arch, face painted, tattooed, made crafts, and danced! 
+                                See the mighty, mighty balloon arch we created (below)!
+                            </p>
+                            <img 
+                                srcset="./imgs/MadHatters24/Balloons1-1280w.webp 1280w,
+                                ./imgs/MadHatters24/Balloons1-640w.webp 640w,
+                                ./imgs/MadHatters24/Balloons1-320w.webp 320w"
+                                style="margin-bottom: 3%;" width="100%">
+                            <h2>Conclusion</h2>
+                            <p>
+                                Thank you so much for reading you snugglemuffin-y Key Clubber! Happy holidays, have a good break, and see you next year!
+                            </p>
+                            <p>
+                                Didn't get to do all the fun things we did this semester? See what you can do next semester by checking out our 
+                                <a aria-label="Go to the 'Service' page" href="https://www.sphskeyclub.org/About/Service-Events">Service page</a>,  
+                                <a aria-label="Go to the 'Calendar' page" href="https://www.sphskeyclub.org/Contact-Us#CALENDAR">event calendar</a>,
+                                and <a aria-label="See December/January point opps" href="https://docs.google.com/document/d/1R0V9fwjZmJx07RqQxg5h8WUC9nVLupYl4FtNrVVODQk/edit?tab=t.0#heading=h.v0veyoluatkw">point opportunity document</a>!
+                            </p>
+                            <p>__</p>
+                            <p>
+                                Written by: Zachary Ratkiewicz (Webmaster)
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+        <div id="footnoteContainer">
+            <h1>2024-25 Key Club of St. Petersburg Senior High School (Florida District Division 13, Zone E)</h1>
+        </div>
+    </div>
+
+    <!--
+        Copy text to clipboard: remind @
+    -->
+
+    <script src="../../logic/dropdown.js"></script>
+</body>
+</html>

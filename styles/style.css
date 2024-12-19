@@ -2,6 +2,7 @@
     --KeyBlue: #003366; /* rgb(0, 51, 102) */
     --KeyBlueT: #005485;
     --KeyCyan: #007ac1; /* #005A80 */
+    --KeyArticleBlue: #0085c3;
     --KeyGold: #b49759;
     --KeyBlack: #231f20;
     --KeyOrange: #f58025;
@@ -683,7 +684,7 @@ p {
 }
 
 .articleImportant {
-    color: var(--KeyBlueT);
+    color: var(--KeyArticleBlue);
 }
 
 .center {
