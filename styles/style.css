@@ -1,10 +1,13 @@
 :root {
-    --KeyBlue: #003366; /* rgb(0, 51, 102) */
-    --KeyBlueT: #005485;
-    --KeyCyan: #007ac1; /* #005A80 */
-    --KeyArticleBlue: #0085c3;
-    --KeyGold: #b49759;
-    --KeyBlack: #231f20;
+    /* primary colors */
+    --KeyBlue: #003366; /* shaded containers // misc. */
+    --KeyBlueT: #005485; /* h1 // titles */
+    --KeyCyan: #007ac1; /* h2 // subtitles */
+    --KeyArticleBlue: #0085c3; /* highlighted text */
+    --KeyGold: #b49759; /* linked text */
+    --KeyBlack: #231f20; /* basic text */
+
+    /* secondary random colors */
     --KeyOrange: #f58025;
     --KeyBrown: #91381e;
     --KeyRed: #c41230;
@@ -65,7 +68,7 @@ body {
 }
 
 * {
-    font-family: sans-serif; /* myriad-pro */
+    font-family: sans-serif;
     font-weight: 600;
     animation-name: load-in;
     animation-duration: 0.6s;
