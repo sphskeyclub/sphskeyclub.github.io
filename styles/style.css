@@ -4,7 +4,10 @@
     --KeyBlueT: #005485; /* h1 // titles */
     --KeyCyan: #007ac1; /* h2 // subtitles */
     --KeyArticleBlue: #0085c3; /* highlighted text */
-    --KeyGold: #b49759; /* linked text */
+    --KeyGold: #005AA3; /* linked text b49759 005AA3 */
+    --KeyGoBack: #AD102A;
+    --KeyGoldLine: #b49759; /* border */
+    --KeyFootnote: #896F3E;
     --KeyBlack: #231f20; /* basic text */
 
     /* secondary random colors */
@@ -81,7 +84,10 @@ p {
 }
 
 a {
-    font-weight: 400;
+    color: var(--KeyGold);
+    text-decoration: underline;
+
+    font-weight: bold;
 
     cursor: pointer;
 }
@@ -123,19 +129,16 @@ b {
     to {opacity: 0.7;}
 }
 
-a {
-    color: var(--KeyGold);
-    text-decoration: none;
-}
-
 a:hover {
     color: var(--KeyYellow);
     text-decoration: underline;
+    font-weight: bold;
 }
 
 .remindContainer:hover {
     color: var(--KeyYellow);
     text-decoration: underline;
+    font-weight: bold;
 }
 
 .headingTWeb {
@@ -157,7 +160,7 @@ a:hover {
 #infoContainerMobile {
     padding: 0 4vw 0 4vw;
 
-    border-top: solid 8px var(--KeyGold);
+    border-top: solid 8px var(--KeyGoldLine);
 
     border-spacing: 2.25vh;
 }
@@ -241,7 +244,7 @@ a:hover {
 
     width: 100%;
 
-    border-top: solid 8px var(--KeyGold);
+    border-top: solid 8px var(--KeyGoldLine);
 
     border-spacing: 2vw;
 }
@@ -249,7 +252,7 @@ a:hover {
 #infoContainerWebContact {
     padding: 2vh 12vw 2vh 12vw;
 
-    border-top: solid 8px var(--KeyGold);
+    border-top: solid 8px var(--KeyGoldLine);
 
     border-spacing: 1.25vw;
 }
@@ -257,7 +260,7 @@ a:hover {
 #infoContainerMobileContact {
     padding: 2vh 8vw 2vh 8vw;
 
-    border-top: solid 8px var(--KeyGold);
+    border-top: solid 8px var(--KeyGoldLine);
 
     border-spacing: 2vw;
 }
@@ -265,7 +268,7 @@ a:hover {
 #infoContainerWebContactChairs {
     padding: 2vh 21.5vw 2vh 21.5vw;
 
-    border-top: solid 8px var(--KeyGold);
+    border-top: solid 8px var(--KeyGoldLine);
 
     border-spacing: 1.25vw;
 }
@@ -297,7 +300,7 @@ a:hover {
 
 .shadContainer:hover {
     transition: 0.4s;
-    background-color: var(--KeyGold);
+    background-color: var(--KeyGoldLine);
 
     cursor: pointer;
 }
@@ -382,7 +385,23 @@ a:hover {
 }
 
 .emphContainer a {
-    color: var(--KeyGold);
+    color: var(--KeyGoldLine);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.emphContainer a:hover {
+    color: var(--KeyYellow);
+}
+
+.contactLink {
+    color: var(--KeyGoldLine);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.contactLink:hover {
+    color: var(--KeyYellow);
 }
 
 .addShadow:hover {
@@ -399,7 +418,7 @@ a:hover {
     margin: 0;
     font-size: 2.6vw; /* max(2.6vw, 3vh) */
 
-    color: var(--KeyGold);
+    color: var(--KeyGoldLine);
 }
 
 .emphContainer p {
@@ -419,13 +438,13 @@ p {
     text-align: center;
     padding: 3vh;
 
-    border-top: solid 8px var(--KeyGold);
+    border-top: solid 8px var(--KeyGoldLine);
 
     background-color: #ffffff;
 }
 
 #footnoteContainer h1 {
-    color: var(--KeyGold);
+    color: var(--KeyFootnote);
     font-size: 1.6vw;
 }
 
@@ -478,7 +497,7 @@ p {
 
         width: 100%;
 
-        border-top: solid 8px var(--KeyGold);
+        border-top: solid 8px var(--KeyGoldLine);
 
         border-spacing: 2vw;
     }
@@ -606,7 +625,7 @@ p {
     #mainNewsContainer {
         padding: 0 4vw 0 4vw;
     
-        border-top: solid 8px var(--KeyGold);
+        border-top: solid 8px var(--KeyGoldLine);
     
         border-spacing: 2.25vh;
     }
@@ -622,11 +641,11 @@ p {
 }
 
 .remindContainer {
-    color: var(--KeyGold);
+    color: var(--KeyGoldLine);
 }
 
 .remindContainer h2 {
-    color: var(--KeyGold);
+    color: var(--KeyGoldLine);
 }
 
 #officerAboutContainer {
