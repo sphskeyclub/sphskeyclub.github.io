@@ -135,6 +135,10 @@ a:hover {
     font-weight: bold;
 }
 
+#classCode {
+    font-weight: bold;
+}
+
 .remindContainer:hover {
     color: var(--KeyYellow);
     text-decoration: underline;
