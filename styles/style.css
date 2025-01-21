@@ -164,7 +164,7 @@ a:hover {
 #infoContainerMobile {
     padding: 0 4vw 0 4vw;
 
-    border-top: solid 8px var(--KeyGoldLine);
+    
 
     border-spacing: 2.25vh;
 }
@@ -248,7 +248,7 @@ a:hover {
 
     width: 100%;
 
-    border-top: solid 8px var(--KeyGoldLine);
+    
 
     border-spacing: 2vw;
 }
@@ -256,7 +256,7 @@ a:hover {
 #infoContainerWebContact {
     padding: 2vh 12vw 2vh 12vw;
 
-    border-top: solid 8px var(--KeyGoldLine);
+    
 
     border-spacing: 1.25vw;
 }
@@ -264,7 +264,7 @@ a:hover {
 #infoContainerMobileContact {
     padding: 2vh 8vw 2vh 8vw;
 
-    border-top: solid 8px var(--KeyGoldLine);
+    
 
     border-spacing: 2vw;
 }
@@ -272,7 +272,7 @@ a:hover {
 #infoContainerWebContactChairs {
     padding: 2vh 21.5vw 2vh 21.5vw;
 
-    border-top: solid 8px var(--KeyGoldLine);
+    
 
     border-spacing: 1.25vw;
 }
@@ -501,7 +501,7 @@ p {
 
         width: 100%;
 
-        border-top: solid 8px var(--KeyGoldLine);
+        
 
         border-spacing: 2vw;
     }
@@ -629,7 +629,7 @@ p {
     #mainNewsContainer {
         padding: 0 4vw 0 4vw;
     
-        border-top: solid 8px var(--KeyGoldLine);
+        
     
         border-spacing: 2.25vh;
     }
