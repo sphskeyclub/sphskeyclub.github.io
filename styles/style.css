@@ -130,6 +130,7 @@ b {
 }
 
 a:hover {
+    transition: ease-out 0.2s;
     color: var(--KeyYellow);
     text-decoration: underline;
     font-weight: bold;
@@ -140,6 +141,21 @@ a:hover {
 }
 
 .remindContainer:hover {
+    transition: ease-out 0.2s;
+    color: var(--KeyYellow);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.copyLink {
+    color: var(--KeyGold);
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.copyLink:hover {
+    transition: ease-out 0.2s;
     color: var(--KeyYellow);
     text-decoration: underline;
     font-weight: bold;
@@ -395,6 +411,7 @@ a:hover {
 }
 
 .emphContainer a:hover {
+    transition: ease-out 0.2s;
     color: var(--KeyYellow);
 }
 
@@ -405,6 +422,7 @@ a:hover {
 }
 
 .contactLink:hover {
+    transition: ease-out 0.2s;
     color: var(--KeyYellow);
 }
 
