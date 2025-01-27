@@ -764,6 +764,11 @@ p {
     color: var(--KeyArticleBlue);
 }
 
+.articleImportantGold {
+    color: var(--KeyGoBack);
+    font-weight: 800;
+}
+
 .center {
     display: block; 
     margin-left: auto; 
