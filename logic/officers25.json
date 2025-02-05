@@ -1,6 +1,4 @@
-var element = document.getElementById("officerAboutContainer");
-
-const officerInfo25 = {
+{
     "officers": [
         {
             "title": "Co-Presidents",
@@ -145,60 +143,4 @@ const officerInfo25 = {
             ]
         }
     ]
-};
-
-element.onclick = function() {
-    document.getElementById("officerAboutContainer").style.display = "none";
-    document.getElementById("officerAboutInfoContainer").style.display = "none";
-
-    document.getElementById(`infoOfficers`).style.display = "none";
-}
-
-//
-//
-//
-
-function getInfo(num, web) {
-    document.getElementById("officerAboutContainer").style.display = "block";
-    document.getElementById("officerAboutInfoContainer").style.display = "block";
-
-    let data = getOfficerInfo(num);
-
-    if (web) {
-        document.getElementById("officerTitleWeb").innerHTML = data.title;
-        document.getElementById("officerAboutWeb").innerHTML = data.about;
-        let i = 0;
-        for (i=0; i < data.officers.length; i++) {
-            document.getElementById(`officer${i}NameWeb`).innerHTML = data.officers[i].name;
-            document.getElementById(`officer${i}AboutWeb`).innerHTML = data.officers[i].about;
-        }
-        if (i==1) {
-            document.getElementById(`officer1NameWeb`).style.display = "none";
-            document.getElementById(`officer1AboutWeb`).style.display = "none";
-        } else {
-            document.getElementById(`officer1NameWeb`).style.display = "block";
-            document.getElementById(`officer1AboutWeb`).style.display = "block";
-        }
-    } else {
-        document.getElementById("officerTitleMobile").innerHTML = data.title;
-        document.getElementById("officerAboutMobile").innerHTML = data.about;
-        let i = 0;
-        for (i=0; i < data.officers.length; i++) {
-            document.getElementById(`officer${i}NameMobile`).innerHTML = data.officers[i].name;
-            document.getElementById(`officer${i}AboutMobile`).innerHTML = data.officers[i].about;
-        }
-        if (i==1) {
-            document.getElementById(`officer1NameMobile`).style.display = "none";
-            document.getElementById(`officer1AboutMobile`).style.display = "none";
-        } else {
-            document.getElementById(`officer1NameMobile`).style.display = "block";
-            document.getElementById(`officer1AboutMobile`).style.display = "block";
-        }
-    }
-
-    document.getElementById(`infoOfficers`).style.display = "block";
-}
-
-function getOfficerInfo(num) {
-    return officerInfo25.officers[num];
 }
