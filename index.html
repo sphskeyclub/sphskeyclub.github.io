@@ -113,7 +113,6 @@
                 ./imgs/HomeImage-1000w.webp 1000w, 
                 ./imgs/HomeImage-2500w.webp 2500w, 
                 ./imgs/HomeImage-3526w.webp 3526w"
-            sizes="100vw"
             src="./imgs/HomeImage-1000w.webp 1000w"
             style="object-fit: cover; height: 60vh; border-radius: 0; width: 100vw" alt="SPHS' Key Club officers">
     </div>
@@ -365,8 +364,8 @@
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const images = document.querySelectorAll("img[object-fit-cover]");
+        window.addEventListener("load", function () {
+            const images = document.querySelectorAll("img");
             
             images.forEach(img => {
                 const parent = img.parentElement.getBoundingClientRect();
