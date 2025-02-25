@@ -471,6 +471,14 @@ p {
 }
 
 @media screen and (min-width: 850px) and (min-height: 380px) { /* w:1100px h:380px */
+    .web {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+
+
     #infoContainerWeb {
         display: block;
     }
@@ -526,6 +534,14 @@ p {
 }
 
 @media (max-width: 849px) or (max-height: 379px) { /* w:1099px h:379px */
+    .web {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+
+
     #infoContainerWeb {
         display: none;
     }
