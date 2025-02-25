@@ -364,14 +364,15 @@
     </div>
 
     <script>
-        window.addEventListener("load", function () {
-            const images = document.querySelectorAll("img");
-            
-            images.forEach(img => {
+        function updateImageSizes() {
+            document.querySelectorAll("img").forEach(img => {
                 const parent = img.parentElement.getBoundingClientRect();
                 img.sizes = `${Math.ceil(parent.width)}px`;
             });
-        });
+        }
+        window.addEventListener("load", updateImageSizes);
+        window.addEventListener("resize", updateImageSizes);
+        window.addEventListener("orientationchange", updateImageSizes);
     </script>
     <script src="./logic/dropdown.js"></script>
 </body>
