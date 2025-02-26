@@ -1,7 +1,8 @@
 function updateImageSizes() {
     document.querySelectorAll("img").forEach(img => {
-        const parent = img.parentElement.getBoundingClientRect();
-        img.sizes = `${Math.ceil(parent.width)}px`;
+        let displayedWidth = img.offsetWidth || img.clientWidth || img.naturalWidth;  
+        console.log(displayedWidth);
+        img.sizes = `${Math.ceil(displayedWidth)}px`;
 
         // Force browser to re-evaluate `srcset`
         img.src = img.src;
