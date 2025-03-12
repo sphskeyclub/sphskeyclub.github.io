@@ -339,7 +339,7 @@ let data = {
             "year": "9999",
             "classification": "ARCHIVE",
             "class-style": "margin: 0; color: var(--KeyPurple)",
-            "url-bio": "Read this article by ",
+            "url-bio": "Read past articles by ",
             "url": "https://www.sphskeyclub.org/News/Archive",
             "img": {
                 "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
