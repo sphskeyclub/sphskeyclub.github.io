@@ -355,17 +355,86 @@ function toggleArchive() {
 
     arcMobile.appendChild(document.createElement("br"));
 
-    for (let i = 8; i < data.articles.length-2; i++) {
-        let temp = document.createElement("a");
-        temp.textContent = `${data.articles[i].title} [${data.articles[i].author} ${data.articles[i].year}]`;
-        temp.href = `${data.articles[i].url}`;
-        temp.setAttribute("aria-label", "Click here to see this article");
+    let temp;
 
+    for (let i = 8; i < data.articles.length-2; i++) {
+        temp = makeLink(`${data.articles[i].title} [${data.articles[i].author} ${data.articles[i].year}]`, data.articles[i].url, "Click here to see this article");
         arcWeb.appendChild(temp);
         arcMobile.appendChild(temp.cloneNode(true));
         arcWeb.appendChild(document.createElement("br"));
         arcMobile.appendChild(document.createElement("br"));
     }
+}
+
+function toggleNews() {
+    createNewsTd(data.articles.length-2);
+    for (let i = 0; i < 8; i++) {
+        createNewsTd(i);
+    }
+    createNewsTd(data.articles.length-1);
+}
+
+function toggleFeaturedNews() {
+    let featuredArticle = data.articles[0];
+
+    // WEB --->
+    const containerWeb = document.getElementById("featuredNewsWeb");
+    containerWeb.appendChild(makeImg(featuredArticle.img.srcset.replace(/articles/g, "News/articles"), featuredArticle.img.alt, null, "width: 60%; border-radius: 1.5vw; float: right; margin-left: 3%;"));
+    containerWeb.appendChild(makeText("h1", "News", null));
+    let newsLink = makeText("p", "Discover club news by ", "margin-top: 0;");
+    newsLink.appendChild(makeLink("clicking here.", "https://www.sphskeyclub.org/News/", "Go to the 'News' page"));
+    containerWeb.appendChild(newsLink);
+    containerWeb.appendChild(makeText("h2", featuredArticle.title, "color: var(--KeyBlueT)"));
+    containerWeb.appendChild(makeText("h2", `By: ${featuredArticle.author} (${featuredArticle.position})`, "margin-top: 1%; font-size: 1.2vw;"));
+    containerWeb.appendChild(makeText("p", `${featuredArticle.bio.slice(0, 146)}...`, null));
+    let urlLink = makeText("p", featuredArticle["url-bio"], "margin-bottom: 0;");
+    urlLink.appendChild(makeLink("clicking here.", featuredArticle.url, "Click here to see this article"));
+    containerWeb.appendChild(urlLink);
+
+    // MOBILE (news container) --->
+    const containerMobile = document.getElementById("featuredNewsMobile");
+    containerMobile.appendChild(makeText("h1", "News", null));
+    containerMobile.appendChild(newsLink.cloneNode(true));
+    containerMobile.appendChild(makeText("h2", featuredArticle.title, "color: var(--KeyBlueT)"));
+    containerMobile.appendChild(makeText("h2", `By: ${featuredArticle.author} (${featuredArticle.position})`, "margin-top: 1%; font-size: 3.5vw;"));
+    containerMobile.appendChild(makeText("p", `${featuredArticle.bio.slice(0, 146)}...`, null));
+    containerMobile.appendChild(urlLink.cloneNode(true));
+    // MOBILE (img container) --->
+    const imgMobile = document.getElementById("featuredNewsImgMobile");
+    imgMobile.appendChild(makeImg(featuredArticle.img.srcset.replace(/articles/g, "News/articles"), featuredArticle.img.alt, null, "width: 100%; border-radius: 4vw;"));
+}
+
+//              srcset, alt, class, style
+function makeImg(srcset, alt, c, s) {
+    let img = document.createElement("img");
+    img.srcset = srcset;
+    img.alt = alt;
+    if (c != null) {
+        img.setAttribute("class", c);
+    }
+    if (s != null) {
+        img.setAttribute("style", s);
+    }
+    return img;
+}
+
+//          element, text, style
+function makeText(e, text, s) {
+    let p = document.createElement(e);
+    p.textContent = text;
+    if (s != null) {
+        p.setAttribute("style", s);
+    }
+    return p;
+}
+
+//                text, url, aria-label
+function makeLink(text, url, aria) {
+    let link = document.createElement("a");
+    link.textContent = text;
+    link.href = url;
+    link.setAttribute("aria-label", aria);
+    return link;
 }
 
 function createNewsTd(i) {
@@ -376,48 +445,26 @@ function createNewsTd(i) {
     let content = document.createElement("td");
     content.setAttribute("class", "newsContainer");
 
-    let img = document.createElement("img");
-    img.setAttribute("class", "newsArticlePreviewImage");
-    img.srcset = data.articles[i].img.srcset;
-    img.alt = data.articles[i].img.alt;
-    content.appendChild(img);
+    // image
+    content.appendChild(makeImg(data.articles[i].img.srcset, data.articles[i].img.alt, "newsArticlePreviewImage", null));
 
-    let classP = document.createElement("p");
-    classP.textContent = data.articles[i].classification;
-    classP.setAttribute("style", data.articles[i]["class-style"]);
-    content.appendChild(classP);
+    // author paragraph
+    content.appendChild(makeText("p", data.articles[i].classification, data.articles[i]["class-style"]));
 
-    let mainTitleH = document.createElement("h1");
-    mainTitleH.textContent = data.articles[i].title;
-    content.appendChild(mainTitleH);
+    // main title
+    content.appendChild(makeText("h1", data.articles[i].title, null));
 
-    let authorH = document.createElement("h2");
-    authorH.setAttribute("style", "margin-top: 1%;");
-    authorH.textContent = `By: ${data.articles[i].author} (${data.articles[i].position})`;
-    content.appendChild(authorH);
+    // make author and board position
+    content.appendChild(makeText("h2", `By: ${data.articles[i].author} (${data.articles[i].position})`, "style", "margin-top: 1%;"));
 
-    let articleBio = document.createElement("p");
-    articleBio.textContent = data.articles[i].bio;
-    content.appendChild(articleBio);
+    // make article information
+    content.appendChild(makeText("p", data.articles[i].bio, null));
 
-    let urlLink = document.createElement("p");
-    urlLink.setAttribute("style", "margin-bottom: 0;");
-    urlLink.textContent = data.articles[i]["url-bio"];
-    let url = document.createElement("a");
-    url.textContent = "clicking here.";
-    url.href = data.articles[i].url;
-    url.setAttribute("aria-label", "Click here to see this article");
-    urlLink.appendChild(url);
+    // make link to article
+    let urlLink = makeText("p", data.articles[i]["url-bio"], "margin-bottom: 0;");
+    urlLink.appendChild(makeLink("clicking here.", data.articles[i].url, "Click here to see this article"));
     content.appendChild(urlLink);
 
     main.appendChild(content);
     news.appendChild(main);
-}
-
-function toggleNews() {
-    createNewsTd(data.articles.length-2);
-    for (let i = 0; i < 8; i++) {
-        createNewsTd(i);
-    }
-    createNewsTd(data.articles.length-1);
 }

@@ -230,27 +230,7 @@
                 <table id="infoContainerWeb" style="border-top: none;">
                     <tbody>
                         <tr>
-                            <td class="basicContainer" colspan="3">
-                                <img 
-                                    alt="SPHS Key Club making kindness kits - featured on Key Club's website!" 
-                                    srcset="./News/articles/imgs/KindnessKits/Group1-500w.webp 500w,
-                                    ./News/articles/imgs/KindnessKits/Group1-1200w.webp 1200w,
-                                    ./News/articles/imgs/KindnessKits/Group1-1600w.webp 1600w"
-                                    width="60%" style="border-radius: 1.5vw; float: right; margin-left: 3%;">
-                                <h1>News</h1>
-                                <p style="margin-top: 0;">Discover club news by <a aria-label="Go to the 'News' page" href="https://www.sphskeyclub.org/News/">clicking here</a>.</p>
-                                <h2 style="color: var(--KeyBlueT)">Collaborating On Kindness</h2>
-                                <h2 style="margin-top: 1%; font-size: 1.2vw;">
-                                    By: Anna Wei (Editor)
-                                </h2>
-                                <p>
-                                    It all started when a local K-Kids club president had an idea: kindness kits. As a result, 
-                                    the newly chartered K-Kids club in Azalea Elementary...
-                                </p>
-                                <p style="margin-bottom: 0;">
-                                    Read this article <a aria-label="Go to the featured news article" href="https://www.keyclub.org/news/collaborating-on-kindness/">on the official Key Club Website</a>!
-                                </p>
-                            </td>
+                            <td id="featuredNewsWeb" class="basicContainer" colspan="3"></td>
                         </tr>
                         <tr>
                             <td class="basicContainer">
@@ -300,33 +280,10 @@
                 <table id="infoContainerMobile" style="border-top: none;">
                     <tbody>
                         <tr>
-                            <td class="basicContainer">
-                                <h1>News</h1>
-                                <p style="margin-top: 0;">Discover club news by <a aria-label="Go to the 'News' page" href="https://www.sphskeyclub.org/News/">clicking here</a>.</p>
-                                <h2 style="color: var(--KeyBlueT)">Collaborating On Kindness</h2>
-                                <h2 style="margin-top: 1%; font-size: 3.5vw;">
-                                    By: Anna Wei (Editor)
-                                </h2>
-                                <p>
-                                    It all started when a local K-Kids club president had an idea: kindness kits. As a result, 
-                                    the newly chartered K-Kids club in Azalea Elementary in Florida, U.S., sparked a 
-                                    collaboration with the St. Petersburg Senior High School Key Club and the Sunshine City, St. 
-                                    Petersburg Kiwanis Club....
-                                </p>
-                                <p style="margin-bottom: 0;">
-                                    Read this article <a aria-label="Go to the featured news article" href="https://www.keyclub.org/news/collaborating-on-kindness/">on the official Key Club Website</a>!
-                                </p>
-                            </td>
+                            <td class="basicContainer" id="featuredNewsMobile"></td>
                         </tr>
                         <tr>
-                            <td>
-                                <img 
-                                alt="SPHS Key Club making kindness kits - featured on Key Club's website!" 
-                                srcset="./News/articles/imgs/KindnessKits/Group1-500w.webp 500w,
-                                ./News/articles/imgs/KindnessKits/Group1-1200w.webp 1200w,
-                                ./News/articles/imgs/KindnessKits/Group1-1600w.webp 1600w"
-                                    width="100%" style="border-radius: 4vw;"> <!-- mobile => border-radius: 4vw -->
-                            </td>
+                            <td id="featuredNewsImgMobile"></td>
                         </tr>
                         <tr>
                             <td class="emphContainer" style="border-radius: 4vw;">
@@ -370,5 +327,12 @@
 
     <script src="./logic/img_sizes.js"></script>
     <script src="./logic/dropdown.js"></script>
+    <script src="./News/logic/news.js"></script>
+    <!-- on load, initiate toggleFeaturedNews() function in ./logic/news.js -->
+    <script>
+        window.onload = function() {
+            toggleFeaturedNews();
+        }
+    </script>
 </body>
 </html>
