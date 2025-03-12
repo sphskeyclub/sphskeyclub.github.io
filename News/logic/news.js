@@ -402,7 +402,6 @@ function createNewsTd(i) {
 
     let urlLink = document.createElement("p");
     urlLink.setAttribute("style", "margin-bottom: 0;");
-    console.log(data.articles[i]["url-bio"]);
     urlLink.textContent = data.articles[i]["url-bio"];
     let url = document.createElement("a");
     url.textContent = "clicking here.";
