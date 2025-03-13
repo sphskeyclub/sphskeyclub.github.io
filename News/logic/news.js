@@ -376,11 +376,22 @@ function toggleNews() {
 
 function randomNews() {
     let featuredArticle;
+    let recentNewsletter;
+
+    for (i=0; i<data.articles.length; i++) {
+        if (data.articles[i].classification == "NEWSLETTER") {
+            recentNewsletter = i;
+            break;
+        }
+    }
 
     while (true) {
-        featuredArticle = data.articles[Math.floor(Math.random() * (data.articles.length - 2))];
+        let ran = Math.floor(Math.random() * (data.articles.length - 2));
+        featuredArticle = data.articles[ran];
         if (featuredArticle.img != null && featuredArticle.bio != null) {
-            break;
+            if (featuredArticle.classification != "NEWSLETTER" || ran == recentNewsletter) {
+                break;
+            }
         }
     }
 
