@@ -374,8 +374,21 @@ function toggleNews() {
     createNewsTd(data.articles.length-1);
 }
 
+function randomNews() {
+    let featuredArticle;
+
+    while (true) {
+        featuredArticle = data.articles[Math.floor(Math.random() * (data.articles.length - 2))];
+        if (featuredArticle.img != null && featuredArticle.bio != null && featuredArticle.classification != "PINNED ⚲ POINT OPPS") {
+            break;
+        }
+    }
+
+    return featuredArticle;
+}
+
 function toggleFeaturedNews() {
-    let featuredArticle = data.articles[0];
+    let featuredArticle = randomNews();
 
     // WEB --->
     const containerWeb = document.getElementById("featuredNewsWeb");
@@ -386,7 +399,7 @@ function toggleFeaturedNews() {
     containerWeb.appendChild(newsLink);
     containerWeb.appendChild(makeText("h2", featuredArticle.title, "color: var(--KeyBlueT)"));
     containerWeb.appendChild(makeText("h2", `By: ${featuredArticle.author} (${featuredArticle.position})`, "margin-top: 1%; font-size: 1.2vw;"));
-    containerWeb.appendChild(makeText("p", `${featuredArticle.bio.slice(0, 146)}...`, null));
+    containerWeb.appendChild(makeText("p", `${featuredArticle.bio.slice(0, 125)}...`, null));
     let urlLink = makeText("p", featuredArticle["url-bio"], "margin-bottom: 0;");
     urlLink.appendChild(makeLink("clicking here.", featuredArticle.url, "Click here to see this article"));
     containerWeb.appendChild(urlLink);
@@ -397,7 +410,7 @@ function toggleFeaturedNews() {
     containerMobile.appendChild(newsLink.cloneNode(true));
     containerMobile.appendChild(makeText("h2", featuredArticle.title, "color: var(--KeyBlueT)"));
     containerMobile.appendChild(makeText("h2", `By: ${featuredArticle.author} (${featuredArticle.position})`, "margin-top: 1%; font-size: 3.5vw;"));
-    containerMobile.appendChild(makeText("p", `${featuredArticle.bio.slice(0, 146)}...`, null));
+    containerMobile.appendChild(makeText("p", `${featuredArticle.bio.slice(0, 125)}...`, null));
     containerMobile.appendChild(urlLink.cloneNode(true));
     // MOBILE (img container) --->
     const imgMobile = document.getElementById("featuredNewsImgMobile");
