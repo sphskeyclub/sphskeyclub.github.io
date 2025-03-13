@@ -397,8 +397,9 @@ function randomNews() {
         }
     }
 
+    let ran;
     while (true) {
-        let ran = Math.floor(Math.random() * (data.articles.length - 2));
+        ran = Math.floor(Math.random() * (data.articles.length - 2));
         featuredArticle = data.articles[ran];
         if (featuredArticle.img != null && featuredArticle.bio != null) {
             if (featuredArticle.classification != "NEWSLETTER" || ran == recentNewsletter) {
