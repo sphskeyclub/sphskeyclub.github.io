@@ -379,7 +379,7 @@ function randomNews() {
 
     while (true) {
         featuredArticle = data.articles[Math.floor(Math.random() * (data.articles.length - 2))];
-        if (featuredArticle.img != null && featuredArticle.bio != null && featuredArticle.classification != "PINNED ⚲ POINT OPPS") {
+        if (featuredArticle.img != null && featuredArticle.bio != null) {
             break;
         }
     }
