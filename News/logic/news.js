@@ -298,10 +298,18 @@ let data = {
         },
         {
             "title": "Collaborating On Kindness",
+            "classification": "EVENT",
             "author": "Anna Wei",
             "position": "Editor",
+            "class-style": "margin: 0; color: var(--KeyBlue)",
             "year": "2024",
-            "url": "https://www.keyclub.org/news/collaborating-on-kindness/"
+            "bio": "It all started when a local K-Kids club president had an idea: kindness kits. As a result, the newly chartered K-Kids club in Azalea Elementary in Florida, U.S., sparked a collaboration with the St. Petersburg High School Key Club and the Sunshine City, St. Petersburg Kiwanis Club.",
+            "url": "https://www.keyclub.org/news/collaborating-on-kindness/",
+            "url-bio": "Read this article by ",
+            "img": {
+                "srcset": "./articles/imgs/KindnessKits/Group1-500w.webp 500w, ./articles/imgs/KindnessKits/Group1-1200w.webp 1200w, ./articles/imgs/KindnessKits/Group1-1600w.webp 1600w",
+                "alt": "Collaborating on Kindness Image"
+            }
         },
         {
             "title": "The Monthly Key: April 2024",
