@@ -357,6 +357,7 @@ let data = {
     ]
 };
 
+// for the /News/Archive.html page
 function toggleArchive() {
     const arcWeb = document.getElementById("archiveWeb");
     const arcMobile = document.getElementById("archiveMobile");
@@ -374,6 +375,7 @@ function toggleArchive() {
     }
 }
 
+// for the /News/index.html page
 function toggleNews() {
     createNewsTd(data.articles.length-2);
     for (let i = 0; i < 8; i++) {
@@ -382,10 +384,12 @@ function toggleNews() {
     createNewsTd(data.articles.length-1);
 }
 
+// randomize the featured news article on the homepage
 function randomNews() {
     let featuredArticle;
     let recentNewsletter;
 
+    // make sure only the most recent newsletter can be featured
     for (i=0; i<data.articles.length; i++) {
         if (data.articles[i].classification == "NEWSLETTER") {
             recentNewsletter = i;
@@ -406,6 +410,7 @@ function randomNews() {
     return featuredArticle;
 }
 
+// for the homepage
 function toggleFeaturedNews() {
     let featuredArticle = randomNews();
 
@@ -469,6 +474,7 @@ function makeLink(text, url, aria) {
     return link;
 }
 
+// for the /News/index.html page
 function createNewsTd(i) {
     const news = document.getElementById("addNewsContainer");
 
