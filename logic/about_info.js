@@ -97,7 +97,7 @@ const officerInfo25 = {
             ]
         },
         {
-            "title": "Homeless Meals<br>Committee",
+            "title": "Homeless Meals Chairs",
             "about": "Organize our Friday homeless meal events and make sure we have people+supplies, as well as delivering it all to the homeless shelter!",
             "officers": [
                 {
