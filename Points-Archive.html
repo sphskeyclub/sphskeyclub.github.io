@@ -98,17 +98,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="basicContainer">
-                            <a aria-label="See the 2024-25 Semester 2 Point Log" href="https://docs.google.com/spreadsheets/d/1lzmD1roUn6V-HHibVzdtIVGYB9V8efnnEX9MGuU6wsU/edit?usp=sharing">2024-25 Semester 2 Point Log (ACTIVE)</a>
-                            <br>
-                            <a aria-label="See the 2024-25 Semester 1 Point Log" href="https://docs.google.com/spreadsheets/d/1XXv6HC7Cm5N_tLMy6FRfc0tWfklTOneFjNbvr8Sn8pA/edit?gid=1705831881#gid=1705831881">2024-25 Semester 1 Point Log</a>
-                            <br>
-                            <a aria-label="See the 2024-25 Summer Point Log" href="https://docs.google.com/spreadsheets/u/0/d/1DmVF_PqrtLY9H2wfNsX58DKPOsdlG0XnX_czqZGta1E/htmlview">2024-25 Summer Point Log</a>
-                            <br>
-                            <a aria-label="See the 2023-24 Semester 2 Point Log" href="https://docs.google.com/spreadsheets/d/1B08cDx1TPqOLTpgwQuPJurtN1_LaRvaSyBlVOPZ5M2U/edit#gid=1930468918">2023-24 Semester 2 Point Log</a>
-                            <br>
-                            <a aria-label="See the 2023-24 Semester 1 Point Log" href="https://docs.google.com/spreadsheets/d/15l3sazN2qAe7AmWfpzjTvZ-H34w4gnkrSUxccak_Ons/edit#gid=0">2023-24 Semester 1 Point Log</a>
-                        </td>
+                        <td class="basicContainer" id="pointsListWeb"></td>
                     </tr>
                 </tbody>
             </table>
@@ -118,18 +108,9 @@
                     <tr>
                         <td class="basicContainer">
                             <h1>Points Archive</h1>
-                            <p style="margin-bottom: 0;">
+                            <p style="margin-bottom: 0;" id="pointsListMobile">
                                 Click on the links below to see archived point logs. If you have any questions, please contact Jocelyne Lioe via <a href="mailto:secretary@sphskeyclub.org">e-mail [secretary@sphskeyclub.org]</a> or <a href="tel:7276564793">phone [(727) 656-4793]</a>.
                                 <br><br>
-                                <a aria-label="See the 2024-25 Semester 2 Point Log" href="https://docs.google.com/spreadsheets/d/1lzmD1roUn6V-HHibVzdtIVGYB9V8efnnEX9MGuU6wsU/edit?usp=sharing">2024-25 Semester 2 Point Log (ACTIVE)</a>
-                                <br>
-                                <a aria-label="See the 2024-25 Semester 1 Point Log" href="https://docs.google.com/spreadsheets/d/1XXv6HC7Cm5N_tLMy6FRfc0tWfklTOneFjNbvr8Sn8pA/edit?gid=1705831881#gid=1705831881">2024-25 Semester 1 Point Log</a>
-                                <br>
-                                <a aria-label="See the 2024-25 Summer Point Log" href="https://docs.google.com/spreadsheets/u/0/d/1DmVF_PqrtLY9H2wfNsX58DKPOsdlG0XnX_czqZGta1E/htmlview">2024-25 Summer Point Log</a>
-                                <br>
-                                <a aria-label="See the 2023-24 Semester 2 Point Log" href="https://docs.google.com/spreadsheets/d/1B08cDx1TPqOLTpgwQuPJurtN1_LaRvaSyBlVOPZ5M2U/edit#gid=1930468918">2023-24 Semester 2 Point Log</a>
-                                <br>
-                                <a aria-label="See the 2023-24 Semester 1 Point Log" href="https://docs.google.com/spreadsheets/d/15l3sazN2qAe7AmWfpzjTvZ-H34w4gnkrSUxccak_Ons/edit#gid=0">2023-24 Semester 1 Point Log</a>
                             </p>
                         </td>
                     </tr>
@@ -147,5 +128,12 @@
 
     <script src="./logic/img_sizes.js"></script>
     <script src="./logic/dropdown.js"></script>
+    <script src="./logic/points.js"></script>
+    <!-- on load, initiate toggleArchive() function in ./logic/points.js -->
+    <script>
+        window.onload = function() {
+            toggleArchive();
+        }
+    </script>
 </body>
 </html>
