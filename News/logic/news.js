@@ -1,6 +1,21 @@
 let data = {
     "articles": [
         {
+            "title": "March 15th Newsletter",
+            "classification": "NEWSLETTER",
+            "class-style": "margin: 0; color: var(--KeyBlue)",
+            "author": "Anna Wei",
+            "position": "Editor",
+            "year": "2025",
+            "bio": "Hey Keyple, hope everyone had a great Spring Break! Here's this week's newsletter :) Show your Key Club Spirit this week by celebrating Key Club International's 100th Birthday and joining the March DCM! Make sure you're looking for updates in your inbox if you'll be attending DCON as well...",
+            "url-bio": "Read this article by ",
+            "url": "https://mcusercontent.com/9fdb42a48e3d5710b12cadcdc/files/65f75e0e-d80e-bb98-0907-b7796e727fae/Key_Club_Newsletter_March_25th.pdf",
+            "img": {
+                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+                "alt": "SPHS Key Club Banner"
+            }
+        },
+        {
             "title": "March 11th Newsletter",
             "classification": "NEWSLETTER",
             "class-style": "margin: 0; color: var(--KeyBlue)",
