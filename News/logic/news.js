@@ -1,7 +1,7 @@
 let data = {
     "articles": [
         {
-            "title": "March 15th Newsletter",
+            "title": "March 25th Newsletter",
             "classification": "NEWSLETTER",
             "class-style": "margin: 0; color: var(--KeyBlue)",
             "author": "Anna Wei",
@@ -474,7 +474,7 @@ function makeImg(srcset, alt, c, s) {
 //          element, text, style
 function makeText(e, text, s) {
     let p = document.createElement(e);
-    p.textContent = text;
+    p.innerHTML = text; // innerHTML: if you want, you can use <b>, <i>, etc. tags in the article's bio
     if (s != null) {
         p.setAttribute("style", s);
     }
@@ -484,7 +484,7 @@ function makeText(e, text, s) {
 //                text, url, aria-label
 function makeLink(text, url, aria) {
     let link = document.createElement("a");
-    link.textContent = text;
+    link.innerHTML = text;
     link.href = url;
     link.setAttribute("aria-label", aria);
     return link;
