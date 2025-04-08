@@ -7,7 +7,7 @@ let data = {
             "author": "Anna Wei",
             "position": "Editor",
             "year": "2025",
-            "bio": "Hey Keyple, we are very sorry to say this, but because we didn't reach our point requirement last semester, the Florida District has told us that our club has been unchartered. This is the last year of SPHS Key Club, which has been active since 1941.",
+            "bio": "Hey Keyple, we are very sorry to say this, but because we didn't reach our point requirement last semester, the Florida District has told us that our club has been unchartered. This is the last year of SPHS Key Club, which has been active since 1941. (April Fools!!)",
             "url-bio": "Read more by ",
             "url": "https://mcusercontent.com/9fdb42a48e3d5710b12cadcdc/files/cf903bcf-36a3-cdde-d7bf-71578e543268/Key_Club_Newsletter_April_1st.01.pdf",
             "img": {
