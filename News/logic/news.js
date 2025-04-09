@@ -1,6 +1,21 @@
 let data = {
     "articles": [
         {
+            "title": "April 8th Newsletter",
+            "classification": "NEWSLETTER",
+            "class-style": "margin: 0; color: var(--KeyBlue)",
+            "author": "Anna Wei",
+            "position": "Editor",
+            "year": "2025",
+            "bio": "Hey Keyple here's this week's newsletter :) Make sure you sign up for some of the festive new opportunities available in this final stretch of service, especially for the Blood Drive! We'll be having a lunch meeting on Friday to talk more about these events.",
+            "url-bio": "Read this article by ",
+            "url": "https://mcusercontent.com/9fdb42a48e3d5710b12cadcdc/files/9536bfc6-720d-2cf8-4023-196d9abc0ba7/Key_Club_Newsletter_April_8th.pdf",
+            "img": {
+                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+                "alt": "SPHS Key Club Banner"
+            }
+        },
+        {
             "title": "April 1st Newsletter",
             "classification": "NEWSLETTER",
             "class-style": "margin: 0; color: var(--KeyBlue)",
@@ -8,7 +23,7 @@ let data = {
             "position": "Editor",
             "year": "2025",
             "bio": "Hey Keyple, we are very sorry to say this, but because we didn't reach our point requirement last semester, the Florida District has told us that our club has been unchartered. This is the last year of SPHS Key Club, which has been active since 1941. (April Fools!!)",
-            "url-bio": "Read more by ",
+            "url-bio": "Read this article by ",
             "url": "https://mcusercontent.com/9fdb42a48e3d5710b12cadcdc/files/cf903bcf-36a3-cdde-d7bf-71578e543268/Key_Club_Newsletter_April_1st.01.pdf",
             "img": {
                 "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
