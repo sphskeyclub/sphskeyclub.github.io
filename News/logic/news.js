@@ -7,7 +7,7 @@ let data = {
             "author": "Zachary Ratkiewicz",
             "position": "Webmaster",
             "year": "2025",
-            "bio": "Bonjour Keyples!! You may have wondered what were the results of each meeting's 'ethical' question, which I make everyone at the meeting do (MWAHAHA)! Well today, you're in luck!",
+            "bio": "Bonjour Keyples!! You may have wondered what were the results of each meeting's 'ethical' question, which I make everyone at the meeting answer (MWAHAHA)! Well today, you're in luck!",
             "url-bio": "Read this article by ",
             "url": "https://www.sphskeyclub.org/News/articles/Key-Meeting-Results-Fun-April25",
             "img": {
