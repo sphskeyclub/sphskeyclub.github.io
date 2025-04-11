@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../styles/style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="icon" href="../../imgs/logos/favicon-32x32.png">
+
+    <link rel="stylesheet" href="../../styles/navbar.css">
+
+    <meta name="description" content="Gaze upon the results of the club's meeting questions!">
+    <meta name="author" content="Zachary Ratkiewicz">
+    <meta name="keywords" content="Key, Key Club, SPHS, St. Petersburg High School, St. Petersburg Senior High School, Key Clubbers of the Month, Benton's Best">
+    
+    <meta property='og:title' content='Key Meeting FUN Results: April 2025'/>
+    <meta property='og:image' content='https://sphskeyclub.org/News/articles/imgs/MadHatters24/Balloons1-1280w.jpg'/>
+    <meta property='og:description' content="Gaze upon the results of the club's meeting questions!"/>
+    <meta property='og:url' content="https://sphskeyclub.org/News/articles/Key-Meeting-Results-Fun-April25"/>
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='630' />
+    <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
+    <meta property="og:type" content='article'/>
+    
+    <title>Key Meeting FUN Results: April 2025</title>
+</head>
+<body>
+    <!-- NAVBAR START -->
+    <div id="aboutDropdown">
+        <ul id="navbarMobileDropdown">
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'About the club' page" href="https://www.sphskeyclub.org/About/">ABOUT</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Governor's Project page" href="https://www.sphskeyclub.org/About/Governor-Project">GOVERNOR'S PROJECT</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Service Events' page" href="https://www.sphskeyclub.org/About/Service-Events">SERVICE EVENTS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Social Events' page" href="https://www.sphskeyclub.org/About/Social-Events">SOCIAL EVENTS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Back out of menu" rel="nofollow" onclick="closeDropdownAbout()" style="color: var(--KeyGoBack)">GO BACK</a></li>
+        </ul>
+    </div>
+    <div id="mobileDropdown">
+        <ul id="navbarMobileDropdown">
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">HOME</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'About the club' page" onclick="getDropdownAbout()">ABOUT <i class="material-icons" style="font-size: 90%;">arrow_drop_down</i></a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the News page" style="color: var(--KeyGold)" href="https://www.sphskeyclub.org/News/">NEWS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the Points page to track your points" href="https://www.sphskeyclub.org/Points">POINTS</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="https://www.sphskeyclub.org/Contact-Us">CONTACT US</a></li>
+            <li class="navbarMobileDropdownContent"><a aria-label="Back out of menu" rel="nofollow" onclick="closeDropdown()" style="color: var(--KeyGoBack)">GO BACK</a></li>
+        </ul>
+    </div>
+    <div id="home">
+        <ul id="navbarWeb">
+            <a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">
+                <li class="navbarWebContent">
+                    <img src="../../imgs/logos/WordmarkSPHS-R-650w.webp" height="100px" alt="SPHS Key Club Wordmark">
+                </li>
+            </a>
+            <li class="navbarWebContent"><a aria-label="Go to the 'Contact Us' page to discover officer contact information and social media" href="https://www.sphskeyclub.org/Contact-Us">CONTACT US</a></li>
+            <li class="navbarWebContent"><a aria-label="Go to the Points page to track your points" href="https://www.sphskeyclub.org/Points">POINTS</a></li>
+            <li class="navbarWebContent"><a aria-label="Go to the News page" style="color: var(--KeyGold)" href="https://www.sphskeyclub.org/News/">NEWS</a></li>
+            <li class="navbarWebContent"><a aria-label="Go to the 'About the club' page" rel="nofollow" onclick="getDropdownAbout()">ABOUT <i class="material-icons" style="font-size: 90%;">arrow_drop_down</i></a></li>
+            <li class="navbarWebContent"><a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">HOME</a></li>
+        </ul>
+        <ul id="navbarMobile">
+            <a aria-label="Go to the Home page" href="https://www.sphskeyclub.org/">
+                <li class="navbarMobileContent">
+                    <img src="../../imgs/logos/WordmarkSPHS-R-650w.webp" height="100px" alt="SPHS Key Club Wordmark">
+                </li>
+            </a>
+            <li class="navbarMobileContent">
+                <a aria-label="Open mobile dropdown to see link options" rel="nofollow" onclick="getDropdown()">
+                    <i class="medium material-icons">dehaze</i>
+                </a>
+            </li>
+        </ul>
+        <img 
+            srcset="../../imgs/HomeImage-300w.webp 300w,
+                ../../imgs/HomeImage-721w.webp 721w, 
+                ../../imgs/HomeImage-1080w.webp 1080w, 
+                ../../imgs/HomeImage-1420w.webp 1420w,
+                ../../imgs/HomeImage-1690w.webp 1690w, 
+                ../../imgs/HomeImage-1920w.webp 1920w,
+                ../../imgs/HomeImage-2048w.webp 2048w, 
+                ../../imgs/HomeImage-2500w.webp 2500w"
+            src="../../imgs/HomeImage-1080w.webp 1080w"
+            style="object-fit: cover; height: 60vh; border-radius: 0; width: 100vw" alt="SPHS' Key Club officers">
+    </div>
+    <!-- NAVBAR END -->
+    <div id="mainWindow">
+        <div id="mainContainer">
+
+            <table id="infoContainerWeb">
+                <tbody>
+                    <tr>
+                        <td class="basicContainer">
+                            <p style="margin-top: 0;">Find more articles by <a aria-label="Go to the 'News' page" href="https://www.sphskeyclub.org/News/">clicking here</a>.</p>
+                            <p style="color: var(--KeyBlue); margin-bottom: 0;">RECAP</p>
+                            <h1>Key Meeting FUN Results: April 2025</h1>
+                            <h2>By: Zachary Ratkiewicz (Webmaster)</h2>
+                            <p>Updated 1:52 PM EDT, April 11, 2025</p>
+
+                            <!-- click here to share: https://www.sphskeyclub.org/News/articles/[name] -->
+                            <p style="margin-bottom: 0;"><span class="copyLink" onclick="navigator.clipboard.writeText('https://sphskeyclub.org/News/articles/Key-Meeting-Results-Fun-April25')">Click here to copy this article's link.</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer">
+                            <img 
+                                srcset="./imgs/MadHatters24/Balloons1-320w.webp 320w,
+                                ./imgs/MadHatters24/Balloons1-640w.webp 640w,
+                                ./imgs/MadHatters24/Balloons1-1280w.webp 1280w"
+                                width="80%" style="border-radius: 0;" 
+                                class="center" alt="SPHS Key Club at Mad Hatters 2024">
+                            <p style="margin-bottom: 0; text-align: center;">SPHS Key Club setting up the balloon arch at Mad Hatter's Tea Party (August 11, 2024)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer" style="padding-left: 5vw; padding-right: 5vw;">
+                            <h2>Introduction</h2>
+                            <p>
+                                Zachary Ratkiewicz — Bonjour Keyples!! You may have wondered what were the results of each meeting's "ethical" question, which I make everyone at the meeting do (MWAHAHA)! Well today, you're in luck!
+                            </p>   
+                            <h2>December 13th Meeting</h2>
+                            <p class="quote">
+                                "If one healthy person's organs could save five lives, is it ethical to sacrifice them?" <span style="font-style: normal;">(Created by Zachary Ratkiewicz!)</span>
+                            </p>
+                            <p>
+                                Ummm so this one is kind of dark and scary... whoops! However, despite its darkness, <span class="articleImportant">42 of you (56%)</span> said it IS ethical to sacrifice one person to save five lives. I sure hope none of you guys will be my doctor holy cow.
+                            </p>
+                            <h2>January 31st Meeting</h2>
+                            <p class="quote">
+                                "Is it ethical to repurpose dead bodies in a facility for conservation purposes (fertilizer, saving graveyard space, etc.) if they didn't give consent?" <span style="font-style: normal;">(Created by Brody Whiteside!)</span>
+                            </p>
+                            <p>
+                                So, for the last question, most of you said it's okay to sacrifice someone — but for this one, only <span class="articleImportant">26 of you (36.1%)</span> said it's ethical to repurpose dead bodies in a facility for conservation?? I mean I guess the last one didn't say if it was <i>ethical</i> or not... sorry for these emo questions (this is only a glimpse into my dark and twisted world)!!
+                            </p>
+                            <h2>February 21st Meeting</h2>
+                            <p class="quote">
+                                "Would you rather lose all your memories or have everyone lose all their memories of you?" <span style="font-style: normal;">(Created by Joy Santiago!)</span>
+                            </p>
+                            <p>
+                                This one scares me highkey. Anyways, <span class="articleImportant">38 of our wonderful Keyple friends (66.7%)</span> said that they'd rather LOSE THEIR MEMORIES, instead of having everyone else lose their memories of them. For this one, I agree: I'd probably receive my IB diploma without taking any exams (out of pity). SOUNDS LIKE A DEAL!!! Who's going into a 2 month coma with me!?
+                            </p>
+                            <h2>March 14th Meeting</h2>
+                            <p class="quote">
+                                "Is it ethical for students to receive additional benefits (scholarships, extra-credit, etc.) for participating in extracurricular activities even when some students do not have the opportunity to participate (due to work, family obligations, etc.)?" <span style="font-style: normal;">(Created by Mrs. Hack!)</span>
+                            </p>
+                            <p>
+                                This one's probably the most realistic and actually "ethical" question we've asked... probably because this question was created by Mrs. Hack! Anyways, an overwhelming <span class="articleImportant">48 of you (94.1%)</span> said that it IS ethical for students to receive additional benefits! INTERESTING!
+                            </p>
+                            <h2>April 11th Meeting</h2>
+                            <p class="quote">
+                                "If you could have one (currently existing) non-monetary item/thing that instantly reappears after being used or consumed (no money, gold, or anything that could easily be sold), what would you choose? (Why? Be specific!)" <span style="font-style: normal;">(Created by Zachary Ratkiewicz!)</span>
+                            </p>
+                            <p>
+                                Finally, our last question. AND THE MOST ETHICAL OF ALL: what cool thing would you like potentially an infinite amount of!? This one was just for funsies: it was a short response and you (yes YOU!) HAD to answer. Let's see what some of yall came up with...
+                            </p>
+                            <p class="quote">
+                                "your mom. she's the best" <span style="font-style: normal;">(Tucker Henry, Co-President)</span>
+                            </p>
+                            <p>
+                                Real funny Tucker!! (CHECK YOUR PILLOW FOR A FUN SURPRISE LIL BRO.)
+                            </p>
+                            <p class="quote">
+                                "the McDonald's Minecraft meal with the grimace egg" <span style="font-style: normal;">(Evelyn Pettigrew)</span>
+                            </p>
+                            <p>
+                                Highkey could be the move!!!
+                            </p>
+                            <p class="quote">
+                                "i'm brain dead pls don't make me answer this" <span style="font-style: normal;">(Julianna Ingram)</span>
+                            </p>
+                            <p>
+                                Poop my bad
+                            </p>
+                            <p class="quote">
+                                "Frogs for happiness" <span style="font-style: normal;">(Joe Rozelle)</span>
+                            </p>
+                            <p>
+                                RIBBIT RIBBIT RIBBIT RIBBIT RIBBIT
+                            </p>
+                            <p class="quote">
+                                "A rat statue" <span style="font-style: normal;">(Marlie Kern)</span>
+                            </p>
+                            <p>
+                                Someone needs to make a RATkiewicz statue for REAL :D
+                            </p>
+                            <p class="quote">
+                                "Krispy Kreme Glazed Donut" <span style="font-style: normal;">(Liam Poole)</span>
+                            </p>
+                            <p>
+                                One time I ate like 6 krispy kreme glazed donuts and afterwards i felt like i was about to see <i>the</i> light. BE CAREFUL.
+                            </p>
+                            <p class="quote">
+                                "C4. I love C4. I have a C4 addiction." <span style="font-style: normal;">(Aurora Henderson)</span>
+                            </p>
+                            <p>
+                                Mr. Benton coming in clutch 🙏
+                            </p>
+                            <p class="quote">
+                                "A juicy freaking delicious burger" <span style="font-style: normal;">(Kai Lopez)</span>
+                            </p>
+                            <p>
+                                I'M WITH YOU!!! This would be my answer if I went to the meeting :_( lol whoops
+                            </p>
+                            <h2>Conclusion</h2>
+                            <p>
+                                Welp. Thank you everyone for coming to the club meetings! They're very important and I hope you had fun answering these sometimes perchance "weird" questions. Have a great rest of your day!! :D
+                            </p>
+                            <p>__</p>
+                            <p>
+                                Written by: Zachary Ratkiewicz (Webmaster)
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="infoContainerMobile">
+                <tbody>
+                    <tr>
+                        <td class="basicContainer">
+                            <p style="margin-top: 0;">Find more articles by <a aria-label="Go to the 'News' page" href="https://www.sphskeyclub.org/News/">clicking here</a>.</p>
+                            <p style="color: var(--KeyBlue); margin-bottom: 0;">RECAP</p>
+                            <h1>Key Meeting FUN Results: April 2025</h1>
+                            <h2>By: Zachary Ratkiewicz (Webmaster)</h2>
+                            <p>Updated 1:52 PM EDT, April 11, 2025</p>
+
+                            <!-- click here to share: https://www.sphskeyclub.org/News/articles/[name] -->
+                            <p style="margin-bottom: 0;"><span class="copyLink" onclick="navigator.clipboard.writeText('https://sphskeyclub.org/News/articles/Key-Meeting-Results-Fun-April25')">Click here to copy this article's link.</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer">
+                            <img 
+                                srcset="./imgs/MadHatters24/Balloons1-320w.webp 320w,
+                                ./imgs/MadHatters24/Balloons1-640w.webp 640w,
+                                ./imgs/MadHatters24/Balloons1-1280w.webp 1280w"
+                                width="100%" style="border-radius: 0;" alt="SPHS Key Club at Mad Hatters 2024">
+                            <p style="margin-bottom: 0; text-align: center;">SPHS Key Club setting up the balloon arch at Mad Hatter's Tea Party (August 11, 2024)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="basicContainer" style="padding-left: 7vw; padding-right: 7vw;">
+                            <h2>Introduction</h2>
+                            <p>
+                                Zachary Ratkiewicz — Bonjour Keyples!! You may have wondered what were the results of each meeting's "ethical" question, which I make everyone at the meeting do (MWAHAHA)! Well today, you're in luck!
+                            </p>   
+                            <h2>December 13th Meeting</h2>
+                            <p class="quote">
+                                "If one healthy person's organs could save five lives, is it ethical to sacrifice them?" <span style="font-style: normal;">(Created by Zachary Ratkiewicz!)</span>
+                            </p>
+                            <p>
+                                Ummm so this one is kind of dark and scary... whoops! However, despite its darkness, <span class="articleImportant">42 of you (56%)</span> said it IS ethical to sacrifice one person to save five lives. I sure hope none of you guys will be my doctor holy cow.
+                            </p>
+                            <h2>January 31st Meeting</h2>
+                            <p class="quote">
+                                "Is it ethical to repurpose dead bodies in a facility for conservation purposes (fertilizer, saving graveyard space, etc.) if they didn't give consent?" <span style="font-style: normal;">(Created by Brody Whiteside!)</span>
+                            </p>
+                            <p>
+                                So, for the last question, most of you said it's okay to sacrifice someone — but for this one, only <span class="articleImportant">26 of you (36.1%)</span> said it's ethical to repurpose dead bodies in a facility for conservation?? I mean I guess the last one didn't say if it was <i>ethical</i> or not... sorry for these emo questions (this is only a glimpse into my dark and twisted world)!!
+                            </p>
+                            <h2>February 21st Meeting</h2>
+                            <p class="quote">
+                                "Would you rather lose all your memories or have everyone lose all their memories of you?" <span style="font-style: normal;">(Created by Joy Santiago!)</span>
+                            </p>
+                            <p>
+                                This one scares me highkey. Anyways, <span class="articleImportant">38 of our wonderful Keyple friends (66.7%)</span> said that they'd rather LOSE THEIR MEMORIES, instead of having everyone else lose their memories of them. For this one, I agree: I'd probably receive my IB diploma without taking any exams (out of pity). SOUNDS LIKE A DEAL!!! Who's going into a 2 month coma with me!?
+                            </p>
+                            <h2>March 14th Meeting</h2>
+                            <p class="quote">
+                                "Is it ethical for students to receive additional benefits (scholarships, extra-credit, etc.) for participating in extracurricular activities even when some students do not have the opportunity to participate (due to work, family obligations, etc.)?" <span style="font-style: normal;">(Created by Mrs. Hack!)</span>
+                            </p>
+                            <p>
+                                This one's probably the most realistic and actually "ethical" question we've asked... probably because this question was created by Mrs. Hack! Anyways, an overwhelming <span class="articleImportant">48 of you (94.1%)</span> said that it IS ethical for students to receive additional benefits! INTERESTING!
+                            </p>
+                            <h2>April 11th Meeting</h2>
+                            <p class="quote">
+                                "If you could have one (currently existing) non-monetary item/thing that instantly reappears after being used or consumed (no money, gold, or anything that could easily be sold), what would you choose? (Why? Be specific!)" <span style="font-style: normal;">(Created by Zachary Ratkiewicz!)</span>
+                            </p>
+                            <p>
+                                Finally, our last question. AND THE MOST ETHICAL OF ALL: what cool thing would you like potentially an infinite amount of!? This one was just for funsies: it was a short response and you (yes YOU!) HAD to answer. Let's see what some of yall came up with...
+                            </p>
+                            <p class="quote">
+                                "your mom. she's the best" <span style="font-style: normal;">(Tucker Henry, Co-President)</span>
+                            </p>
+                            <p>
+                                Real funny Tucker!! (CHECK YOUR PILLOW FOR A FUN SURPRISE LIL BRO.)
+                            </p>
+                            <p class="quote">
+                                "the McDonald's Minecraft meal with the grimace egg" <span style="font-style: normal;">(Evelyn Pettigrew)</span>
+                            </p>
+                            <p>
+                                Highkey could be the move!!!
+                            </p>
+                            <p class="quote">
+                                "i'm brain dead pls don't make me answer this" <span style="font-style: normal;">(Julianna Ingram)</span>
+                            </p>
+                            <p>
+                                Poop my bad
+                            </p>
+                            <p class="quote">
+                                "Frogs for happiness" <span style="font-style: normal;">(Joe Rozelle)</span>
+                            </p>
+                            <p>
+                                RIBBIT RIBBIT RIBBIT RIBBIT RIBBIT
+                            </p>
+                            <p class="quote">
+                                "A rat statue" <span style="font-style: normal;">(Marlie Kern)</span>
+                            </p>
+                            <p>
+                                Someone needs to make a RATkiewicz statue for REAL :D
+                            </p>
+                            <p class="quote">
+                                "Krispy Kreme Glazed Donut" <span style="font-style: normal;">(Liam Poole)</span>
+                            </p>
+                            <p>
+                                One time I ate like 6 krispy kreme glazed donuts and afterwards i felt like i was about to see <i>the</i> light. BE CAREFUL.
+                            </p>
+                            <p class="quote">
+                                "C4. I love C4. I have a C4 addiction." <span style="font-style: normal;">(Aurora Henderson)</span>
+                            </p>
+                            <p>
+                                Mr. Benton coming in clutch 🙏
+                            </p>
+                            <p class="quote">
+                                "A juicy freaking delicious burger" <span style="font-style: normal;">(Kai Lopez)</span>
+                            </p>
+                            <p>
+                                I'M WITH YOU!!! This would be my answer if I went to the meeting :_( lol whoops
+                            </p>
+                            <h2>Conclusion</h2>
+                            <p>
+                                Welp. Thank you everyone for coming to the club meetings! They're very important and I hope you had fun answering these sometimes perchance "weird" questions. Have a great rest of your day!! :D
+                            </p>
+                            <p>__</p>
+                            <p>
+                                Written by: Zachary Ratkiewicz (Webmaster)
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+        <div id="footnoteContainer">
+            <h1>2024-25 Key Club of St. Petersburg Senior High School (Florida District Division 13, Zone E)</h1>
+        </div>
+    </div>
+
+    <!--
+        Copy text to clipboard: remind @
+    -->
+
+    <script src="../logic/img_sizes.js"></script>
+    <script src="../../logic/dropdown.js"></script>
+</body>
+</html>

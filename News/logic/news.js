@@ -1,6 +1,21 @@
 let data = {
     "articles": [
         {
+            "title": "Key Meeting FUN Results: April 2025",
+            "classification": "RECAP",
+            "class-style": "margin: 0; color: var(--KeyBlue)",
+            "author": "Zachary Ratkiewicz",
+            "position": "Webmaster",
+            "year": "2025",
+            "bio": "Bonjour Keyples!! You may have wondered what were the results of each meeting's 'ethical' question, which I make everyone at the meeting do (MWAHAHA)! Well today, you're in luck!",
+            "url-bio": "Read this article by ",
+            "url": "https://www.sphskeyclub.org/News/articles/Key-Meeting-Results-Fun-April25",
+            "img": {
+                "srcset": "./articles/imgs/MadHatters24/Balloons1-320w.webp 320w, ./articles/imgs/MadHatters24/Balloons1-640w.webp 640w, ./articles/imgs/MadHatters24/Balloons1-1280w.webp 1280w",
+                "alt": "Balloons and SPHS Key Club at MadHatters",
+            }
+        },
+        {
             "title": "April 8th Newsletter",
             "classification": "NEWSLETTER",
             "class-style": "margin: 0; color: var(--KeyBlue)",
