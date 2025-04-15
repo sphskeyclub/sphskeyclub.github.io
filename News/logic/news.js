@@ -1,6 +1,21 @@
 let data = {
     "articles": [
         {
+            "title": "April 15th Newsletter",
+            "classification": "NEWSLETTER",
+            "class-style": "margin: 0; color: var(--KeyBlue)",
+            "author": "Anna Wei",
+            "position": "Editor",
+            "year": "2025",
+            "bio": "Hey Keyple, here's this week's newsletter :) Some amazing service happened last week and we're super grateful for everyone who's been attending - continue this super service streak by signing up for adopt a block and homeless meals this week! ;)",
+            "url-bio": "Read this article by ",
+            "url": "https://mcusercontent.com/9fdb42a48e3d5710b12cadcdc/files/25e253ea-a89e-6303-bc89-76cb5f583183/Key_Club_Newsletter_April_15th.pdf",
+            "img": {
+                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+                "alt": "SPHS Key Club Banner"
+            }
+        },
+        {
             "title": "Key Meeting FUN Results: April 2025",
             "classification": "RECAP",
             "class-style": "margin: 0; color: var(--KeyBlue)",
