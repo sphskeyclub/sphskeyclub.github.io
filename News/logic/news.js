@@ -435,6 +435,7 @@ let data = {
             "author": "SPHS Key Club",
             "position": "Board",
             "year": "9999",
+            "bio": "Where all past news articles are accessible"
             "classification": "ARCHIVE",
             "class-style": "margin: 0; color: var(--KeyPurple)",
             "url-bio": "Read past articles by ",
