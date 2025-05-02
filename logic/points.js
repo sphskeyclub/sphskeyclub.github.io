@@ -8,23 +8,53 @@ const data = {
         {
             "name": "2024-25 Semester 1 Point Log",
             "shorthand": "2024-25 S1",
-            "url": "https://docs.google.com/spreadsheets/d/1XXv6HC7Cm5N_tLMy6FRfc0tWfklTOneFjNbvr8Sn8pA/edit?gid=1705831881#gid=1705831881"
+            "url": "https://docs.google.com/spreadsheets/d/1XXv6HC7Cm5N_tLMy6FRfc0tWfklTOneFjNbvr8Sn8pA/edit?usp=sharing"
         },
         {
-            "name": "2024-25 Summer Point Log",
-            "shorthand": "2024-25 Summer",
-            "url": "https://docs.google.com/spreadsheets/d/1XXv6HC7Cm5N_tLMy6FRfc0tWfklTOneFjNbvr8Sn8pA/edit?gid=1705831881#gid=1705831881"
+            "name": "2024 Summer Point Log",
+            "shorthand": "2024 Summer",
+            "url": "https://docs.google.com/spreadsheets/d/1DmVF_PqrtLY9H2wfNsX58DKPOsdlG0XnX_czqZGta1E/edit?usp=sharing"
         },
         {
             "name": "2023-24 Semester 2 Point Log",
             "shorthand": "2023-24 S2",
-            "url": "https://docs.google.com/spreadsheets/d/1XXv6HC7Cm5N_tLMy6FRfc0tWfklTOneFjNbvr8Sn8pA/edit?gid=1705831881#gid=1705831881"
+            "url": "https://docs.google.com/spreadsheets/d/1B08cDx1TPqOLTpgwQuPJurtN1_LaRvaSyBlVOPZ5M2U/edit?usp=sharing"
         },
         {
             "name": "2023-24 Semester 1 Point Log",
             "shorthand": "2023-24 S1",
-            "url": "https://docs.google.com/spreadsheets/d/1XXv6HC7Cm5N_tLMy6FRfc0tWfklTOneFjNbvr8Sn8pA/edit?gid=1705831881#gid=1705831881"
+            "url": "https://docs.google.com/spreadsheets/d/15l3sazN2qAe7AmWfpzjTvZ-H34w4gnkrSUxccak_Ons/edit?usp=sharing"
         },
+        {
+            "name": "2023 Summer Point Log",
+            "shorthand": "2023 Summer",
+            "url": "https://docs.google.com/spreadsheets/d/1_CoOC-GJK2m5NbmrbvX2gIKBSR7g2ceB5rfQd93wR8k/edit?usp=sharing"
+        },
+        {
+            "name": "2022-23 Semester 2 Point Log",
+            "shorthand": "2022-23 S2",
+            "url": "https://docs.google.com/spreadsheets/d/10bh5UE9Q40lQK1YyidLze5EgJH7rrwvdcbwdAMqO850/edit?usp=sharing"
+        },
+        {
+            "name": "2022-23 Semester 1 Point Log",
+            "shorthand": "2022-23 S1",
+            "url": "https://docs.google.com/spreadsheets/d/19o9h7oKUKbVU9RbOpY3VXtCatF1xYN7k2YYRNGhkZug/edit?usp=sharing"
+        },
+        {
+            "name": "2022 Summer Point Log",
+            "shorthand": "2022 Summer",
+            "url": "https://docs.google.com/spreadsheets/d/1kEOhXqwNTy0njh1nm6eXjeaqpnX2pMk7DKnNJunZ_P0/edit?usp=sharing"
+        },
+        {
+            "name": "2021-22 Semester 2 Point Log",
+            "shorthand": "2021-22 S2",
+            "url": "https://docs.google.com/spreadsheets/d/1SC_GK1lWyPga7LSL1jMNsduoEWbBLclz-hiyiT1bjYc/edit?usp=sharing"
+        },
+        {
+            "name": "2021-22 Semester 1 Point Log",
+            "shorthand": "2021-22 S1",
+            "url": "https://docs.google.com/spreadsheets/d/1d7A7_vE-aTdZVbvsJco7k9X6augW8IPduuySGJppxDM/edit?usp=sharing"
+        }
     ]
 };
 
