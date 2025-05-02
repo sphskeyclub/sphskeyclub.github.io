@@ -148,7 +148,6 @@ const officerInfo25 = {
 };
 
 const officerInfo26 = {
-    //TODO: UPDATE THIS FOR 2025-26 OFFICERS
     "officers": [
         {
             "title": "Co-President",
@@ -192,7 +191,7 @@ const officerInfo26 = {
         },
         {
             "title": "Webmaster",
-            "about": "Hey, I'm Julian and I'm the webmaster! I manage this website and all the SPHS Key Club accounts. You can ask me about any issues relating to SPHS Key Club online. Personally, I'm a programmer, I play Clarinet in Jazz Band, and I'm a chronic video game addict. I'm excited to be your webmaster for the 2025-2026 school year!",
+            "about": "Hey, I'm Julian and I'm the webmaster! I manage this website and all the SPHS Key Club accounts. You can ask me about any issues relating to SPHS Key Club that's online. Personally, I'm a programmer, I play Clarinet in Jazz Band, and I'm a chronic video game addict. I'm excited to be your webmaster for the 2025-2026 school year!",
         },
         {
             "title": "Editor",
@@ -323,14 +322,26 @@ function getInfo(num, web) {
         }
     } else {
         document.getElementById("infoContainerMobileHeader").innerHTML = "Oops!";
-    //     document.getElementById("officerTitleMobile").innerHTML = data.title;
-    //     document.getElementById("officerAboutMobile").innerHTML = data.about;
-    //     if (data.hasOwnProperty("informalimgsrc")) {
-    //         document.getElementById("officerImageMobile").srcset = data.informalimgsrc;
-    //     }
-    //     else {
-    //         document.getElementById("officerrImageMobile").srcset = "./imgs/logos/SPHSlogo-600w.webp 600w";
-    //     }
+        document.getElementById("officerTitleMobile").innerHTML = data.title;
+        document.getElementById("officerAboutMobile").innerHTML = data.about;
+        if (data.hasOwnProperty("informalimgsrc")) {
+            document.getElementById("officerImageMobile").srcset = data.informalimgsrc;
+        }
+        else {
+            document.getElementById("officerImageMobile").srcset = "./imgs/logos/SPHSlogo-600w.webp 600w";
+        }
+        if (data.hasOwnProperty("multiple")) {
+            document.getElementById("infoContainerMobileHeader").innerHTML = "Meet a";
+        }
+        else {
+            document.getElementById("infoContainerMobileHeader").innerHTML = "Meet the";
+        }
+        if (num >= 10) {
+            document.getElementById("officerTitleMobile").style.fontSize = "6vw";
+        }
+        else {
+            document.getElementById("officerTitleMobile").style.fontSize = "7vw";
+        }
     }
 
     document.getElementById(`infoOfficers`).style.display = "block";
