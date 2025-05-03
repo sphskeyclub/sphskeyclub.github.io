@@ -1,3 +1,4 @@
+// TODO: MAKE THE DROPDOWN AN ACTUAL DROPDOWN ON DESKTOP
 var onMobile = false;
 
 function getDropdown() {

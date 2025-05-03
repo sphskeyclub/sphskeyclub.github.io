@@ -1,5 +1,20 @@
 let data = {
     "articles": [
+        // {
+        //     "title": "April 29th Newsletter",
+        //     "classification": "NEWSLETTER",
+        //     "class-style": "margin: 0; color: var(--KeyBlue)",
+        //     "author": "Aurora Henderson",
+        //     "position": "Editor",
+        //     "year": "2025",
+        //     "bio": "Our members who attended DCON picked up tons of memories (and awards, too!) over the weekend. Let's give them a warm Key-style welcome back with continued service throughout the final month of school!",
+        //     "url-bio": "Read this article by ",
+        //     "url": "",
+        //     "img": {
+        //         "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+        //         "alt": "SPHS Key Club Banner"
+        //     }
+        // },
         {
             "title": "April 22nd Newsletter",
             "classification": "NEWSLETTER",
@@ -175,6 +190,21 @@ let data = {
             "bio": "Hey Keyple! Here's this week's newsletter, congrats to all newly elected Key Board members! Plenty of opportunities are up for grabs and sign ups for Blood Drive are out, let's make this next drive another smash hit!",
             "url-bio": "Read this article by ",
             "url": "https://mcusercontent.com/9fdb42a48e3d5710b12cadcdc/files/0793605f-9186-6db2-a50c-1d47342ec1ce/Key_Club_Newsletter_February_4th.pdf",
+            "img": {
+                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+                "alt": "SPHS Key Club Banner"
+            }
+        },
+        {
+            "title": "Point Opportunities Document (February)",
+            "classification": "POINT OPPS",
+            "class-style": "margin: 0; color: var(--KeyPurple)",
+            "author": "Ava Masi",
+            "position": "VP of Service",
+            "year": "2025",
+            "bio": "The Service Point Opportunity Document that is consistently updating to be up to date, including ALL Key point opportunities of the month. All the details surrounding point worth, place to be, and time are on here!",
+            "url-bio": "See this month's point opportunities by ",
+            "url": "https://docs.google.com/document/d/1nGRwuih5X-iqU9Ip2k-C-eH-IUb3n8TAgUXCmvLxle4/edit?usp=sharing",
             "img": {
                 "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
                 "alt": "SPHS Key Club Banner"
@@ -416,21 +446,6 @@ let data = {
             "url": "https://www.sphskeyclub.org/News/articles/The-Key-Takeaways-of-DCON-2024"
         },
         {
-            "title": "Point Opportunities Document (February)",
-            "classification": "PINNED ⚲ POINT OPPS",
-            "class-style": "margin: 0; color: var(--KeyPurple)",
-            "author": "Ava Masi",
-            "position": "VP of Service",
-            "year": "2025",
-            "bio": "The Service Point Opportunity Document that is consistently updating to be up to date, including ALL Key point opportunities of the month. All the details surrounding point worth, place to be, and time are on here!",
-            "url-bio": "See this month's point opportunities by ",
-            "url": "https://docs.google.com/document/d/1nGRwuih5X-iqU9Ip2k-C-eH-IUb3n8TAgUXCmvLxle4/edit?usp=sharing",
-            "img": {
-                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
-                "alt": "SPHS Key Club Banner"
-            }
-        },
-        {
             "title": "News Archive",
             "author": "SPHS Key Club",
             "position": "Board",
@@ -468,7 +483,6 @@ function toggleArchive() {
 
 // for the /News/index.html page
 function toggleNews() {
-    createNewsTd(data.articles.length-2);
     for (let i = 0; i < 8; i++) {
         createNewsTd(i);
     }
