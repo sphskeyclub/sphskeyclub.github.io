@@ -15,7 +15,6 @@ let data = {
                 "alt": "SPHS Key Club Banner"
             }
         },
-            "articles": [
         {
             "title": "Division 13 May Newsletter",
             "classification": "NEWSLETTER",
