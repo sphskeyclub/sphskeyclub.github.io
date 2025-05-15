@@ -24,7 +24,7 @@ let data = {
             "year": "2025",
             "bio": "I want to recognize my predecessor Anna Nguyen for doing an amazing job last year and helping to set our division up for success. I am honored to be in this position! With that in mind, I have a few important things I wanted to discuss in this email.",
             "url-bio": "Read this article by ",
-            "url": "https://sphskeyclub.org/News/newsletters/2025/Division13MayNewsletter.pdf",
+            "url": "https://sphskeyclub.org/News/newsletters/2025/Division13MayNewsletter.html",
             "img": {
                 "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
                 "alt": "SPHS Key Club Banner"
