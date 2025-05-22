@@ -1,6 +1,21 @@
 let data = {
     "articles": [
         {
+            "title": "May 20th Newsletter",
+            "classification": "NEWSLETTER",
+            "class-style": "margain: 0; color: var(--KeyBlue)",
+            "author": "Aurora Henderson",
+            "position": "Editor",
+            "year": "2025",
+            "bio": "Coming down to the last two newsletters of the school year! KEYp up the service and good spirit! :)",
+            "url-bio": "Read this article by ",
+            "url": "https://sphskeyclub.org/News/newsletters/2025/May20thNewsletter.pdf",
+            "img": {
+                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+                "alt": "SPHS Key Club Banner"
+            }
+        },
+        {
             "title": "May 13th Newsletter",
             "classification": "NEWSLETTER",
             "class-style": "margain: 0; color: var(--KeyBlue)",
