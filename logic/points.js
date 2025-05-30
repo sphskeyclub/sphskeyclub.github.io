@@ -1,6 +1,11 @@
 const data = {
     "logs": [
         {
+            "name": "2025 Summer Point Log (link may be temporary)",
+            "shorthand": "2025 Summer",
+            "url": "https://docs.google.com/spreadsheets/d/12hsiQm-qjsmj8YeDwKVGtwh0l_a3QgfZ1uJQsr2V7Rs/edit?usp=drivesdk"
+        },
+        {
             "name": "2024-25 Semester 2 Point Log",
             "shorthand": "2024-25 S2",
             "url": "https://docs.google.com/spreadsheets/d/1lzmD1roUn6V-HHibVzdtIVGYB9V8efnnEX9MGuU6wsU/edit?usp=sharing"

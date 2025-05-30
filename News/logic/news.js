@@ -1,5 +1,21 @@
 let data = {
     "articles": [
+        // TODO IMPORTANT CONVERT ALL MAILCHIMP LINKS TO PDFs HOSTED UNDER SPHSKEYCLUB.ORG
+        {
+            "title": "May 27th Newlsetter",
+            "classification": "NEWSLETTER",
+            "class-style": "margain: 0; color: var(--KeyBlue)",
+            "author": "Aurora Henderson",
+            "position": "Editor",
+            "year": "2025",
+            "bio": "FINAL newsletter of the school year! Thanks so very much to all of you, and have a great summer!!",
+            "url-bio": "Read this article by",
+            "url": "https://sphskeyclub.org/News/newsletters/2025/May27thNewsletter.pdf",
+            "img": {
+                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+                "alt": "SPHS Key Club Banner"
+            }
+        },
         {
             "title": "May 20th Newsletter",
             "classification": "NEWSLETTER",
