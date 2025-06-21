@@ -2,6 +2,36 @@ let data = {
     "articles": [
         // TODO IMPORTANT CONVERT ALL MAILCHIMP LINKS TO PDFs HOSTED UNDER SPHSKEYCLUB.ORG
         {
+            "title": "Division 13 June Newsletter",
+            "classification": "NEWSLETTER",
+            "class-style": "margain: 0; color: var(--KeyBlue)",
+            "author": "Tucker Henry",
+            "position": "2025-2026 Division 13 LTG",
+            "year": "2025",
+            "bio": "Hello Division 13! I hope you are all enjoying your summers! Please read through the June Newsletter when you get the chance. <br\><br\>As always, please do not hesitate to reach out if there's anything you need. I want to set our division up for success leading up to the new school year!<br\><br\>Thanks again - Tucker<br\>&#8203",
+            "url-bio": "Read this article by ",
+            "url": "https://sphskeyclub.org/News/newsletters/2025/Division13JuneNewsletter.html",
+            "img": {
+                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+                "alt": "SPHS Key Club Banner"
+            }
+        },
+        {
+            "title": "June 17th Newlsetter",
+            "classification": "NEWSLETTER",
+            "class-style": "margain: 0; color: var(--KeyBlue)",
+            "author": "Aurora Henderson",
+            "position": "Editor",
+            "year": "2025",
+            "bio": "I hope you all are having a great summer!! KEYP up the good spirit as we head on in to late-June service opportunities :)",
+            "url-bio": "Read this article by ",
+            "url": "https://sphskeyclub.org/News/newsletters/2025/June17thNewsletter.pdf",
+            "img": {
+                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+                "alt": "SPHS Key Club Banner"
+            }
+        },
+        {
             "title": "May 27th Newlsetter",
             "classification": "NEWSLETTER",
             "class-style": "margain: 0; color: var(--KeyBlue)",
@@ -9,7 +39,7 @@ let data = {
             "position": "Editor",
             "year": "2025",
             "bio": "FINAL newsletter of the school year! Thanks so very much to all of you, and have a great summer!!",
-            "url-bio": "Read this article by",
+            "url-bio": "Read this article by ",
             "url": "https://sphskeyclub.org/News/newsletters/2025/May27thNewsletter.pdf",
             "img": {
                 "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
