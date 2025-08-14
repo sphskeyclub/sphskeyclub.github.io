@@ -221,8 +221,8 @@ const officerInfo26 = {
         },
         {
             "title": "HKNA Chair",
-            "about": "HKNA Chair: My role consists of contacting with the HKNA sponsors to plan and organize events within the Historic Kenwood Neighborhood that helps the community, such as house painting or backyard clean-ups!<br>Shay Calkins: I’m very grateful I get the honor of being HKNA Chair! I love lizards, possums, dogs, music, and food! Outside of Key, my alias is ‘Hungry Shay’ in theater…. I'm lowKEY really chill and nonchalant. 😎 ",
-            "informalimgsrc": "./imgs/officers/25-26/informal/ShayC-700w.webp 700w",
+            "about": "HKNA Chair: My role consists of contacting with the HKNA sponsors to plan and organize events within the Historic Kenwood Neighborhood that helps the community, such as house painting or backyard clean-ups!<br>Alison Calkins: I’m very grateful I get the honor of being HKNA Chair! I love lizards, possums, dogs, music, and food! Outside of Key, my alias is ‘Hungry Alison’ in theater…. I'm lowKEY really chill and nonchalant. 😎 ",
+            "informalimgsrc": "./imgs/officers/25-26/informal/AlisonC-700w.webp 700w",
         },
         {
             "title": "Creative Committee Chair",
