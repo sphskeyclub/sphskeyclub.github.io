@@ -2,13 +2,29 @@ let data = {
     "articles": [
         // TODO IMPORTANT CONVERT ALL MAILCHIMP LINKS TO PDFs HOSTED UNDER SPHSKEYCLUB.ORG
         {
+            "title": "August 19th Newlsetter",
+            "classification": "NEWSLETTER",
+            "class-style": "margain: 0; color: var(--KeyBlue)",
+            "author": "Aurora Henderson",
+            "position": "Editor",
+            "year": "2025",
+            "bio": "First newsletter of the school year! On behalf of all of the board, we are so excited to jump right into the service that this year has to offer! First club meeting is this Friday during lunch, so make sure to attend for some KEY information.",
+            "url-bio": "Read this article by ",
+            "url": "https://sphskeyclub.org/News/newsletters/2025/August19thNewsletter.pdf",
+            "img": {
+                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+                "alt": "SPHS Key Club Banner"
+            }
+        },
+        {
+            //First newsletter of the school year! On behalf of all of the board, we are so excited to jump right into the service that this year has to offer! First club meeting is this Friday during lunch, so make sure to attend for some KEY information.
             "title": "July 11th Newlsetter",
             "classification": "NEWSLETTER",
             "class-style": "margain: 0; color: var(--KeyBlue)",
             "author": "Aurora Henderson",
             "position": "Editor",
             "year": "2025",
-            "bio": " hope you all had the chance to come out to today’s DCM as well as having a great summer! KEYP up the great spirits! :)",
+            "bio": "hope you all had the chance to come out to today’s DCM as well as having a great summer! KEYP up the great spirits! :)",
             "url-bio": "Read this article by ",
             "url": "https://sphskeyclub.org/News/newsletters/2025/July11thNewsletter.pdf",
             "img": {
