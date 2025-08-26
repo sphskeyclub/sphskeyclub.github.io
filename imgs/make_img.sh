@@ -12,7 +12,8 @@ fi
 
 # Convert the file to multiple WebP sizes
 echo "Converting $filename to multiple WebP sizes..."
-for size in 300 721 1080 1420 1690 1920 2048 2500; do
+#remove 3526 and 450 for normal this is just for home image
+for size in 300 721 1080 1420 1690 1920 2048 2500 3526 450; do
   magick "$filename" -resize ${size}x -quality 80 "${new_name}-${size}w.webp"
 done
 
