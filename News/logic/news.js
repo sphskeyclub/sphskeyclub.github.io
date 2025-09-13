@@ -2,6 +2,36 @@ let data = {
     "articles": [
         // TODO IMPORTANT CONVERT ALL MAILCHIMP LINKS TO PDFs HOSTED UNDER SPHSKEYCLUB.ORG
         {
+            "title": "September 9th Newlsetter",
+            "classification": "NEWSLETTER",
+            "class-style": "margain: 0; color: var(--KeyBlue)",
+            "author": "Aurora Henderson",
+            "position": "Editor",
+            "year": "2025",
+            "bio": "",
+            "url-bio": "Read this article by ",
+            "url": "https://sphskeyclub.org/News/newsletters/2025/September9thNewsletter.pdf",
+            "img": {
+                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+                "alt": "SPHS Key Club Banner"
+            }
+        },
+        {
+            "title": "September 2nd Newlsetter",
+            "classification": "NEWSLETTER",
+            "class-style": "margain: 0; color: var(--KeyBlue)",
+            "author": "Aurora Henderson",
+            "position": "Editor",
+            "year": "2025",
+            "bio": "",
+            "url-bio": "Read this article by ",
+            "url": "https://sphskeyclub.org/News/newsletters/2025/September2ndNewsletter.pdf",
+            "img": {
+                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+                "alt": "SPHS Key Club Banner"
+            }
+        },
+        {
             "title": "August 26th Newlsetter",
             "classification": "NEWSLETTER",
             "class-style": "margain: 0; color: var(--KeyBlue)",
@@ -167,6 +197,7 @@ let data = {
                 "alt": "SPHS Key Club Banner"
             }
         },
+        //mailchimp links start
         {
             "title": "April 22nd Newsletter",
             "classification": "NEWSLETTER",
