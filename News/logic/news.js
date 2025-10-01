@@ -2,6 +2,51 @@ let data = {
     "articles": [
         // TODO IMPORTANT CONVERT ALL MAILCHIMP LINKS TO PDFs HOSTED UNDER SPHSKEYCLUB.ORG
         {
+            "title": "September 30th Newlsetter",
+            "classification": "NEWSLETTER",
+            "class-style": "margain: 0; color: var(--KeyBlue)",
+            "author": "Aurora Henderson",
+            "position": "Editor",
+            "year": "2025",
+            "bio": "",
+            "url-bio": "Read this article by ",
+            "url": "https://sphskeyclub.org/News/newsletters/2025/September30thNewsletter.pdf",
+            "img": {
+                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+                "alt": "SPHS Key Club Banner"
+            }
+        },
+        {
+            "title": "September 23th Newlsetter",
+            "classification": "NEWSLETTER",
+            "class-style": "margain: 0; color: var(--KeyBlue)",
+            "author": "Aurora Henderson",
+            "position": "Editor",
+            "year": "2025",
+            "bio": "",
+            "url-bio": "Read this article by ",
+            "url": "https://sphskeyclub.org/News/newsletters/2025/September23rdNewsletter.pdf",
+            "img": {
+                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+                "alt": "SPHS Key Club Banner"
+            }
+        },
+        {
+            "title": "September 16th Newlsetter",
+            "classification": "NEWSLETTER",
+            "class-style": "margain: 0; color: var(--KeyBlue)",
+            "author": "Aurora Henderson",
+            "position": "Editor",
+            "year": "2025",
+            "bio": "",
+            "url-bio": "Read this article by ",
+            "url": "https://sphskeyclub.org/News/newsletters/2025/September16thNewsletter.pdf",
+            "img": {
+                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+                "alt": "SPHS Key Club Banner"
+            }
+        },
+        {
             "title": "September 9th Newlsetter",
             "classification": "NEWSLETTER",
             "class-style": "margain: 0; color: var(--KeyBlue)",
