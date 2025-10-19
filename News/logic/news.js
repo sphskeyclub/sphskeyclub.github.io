@@ -2,6 +2,36 @@ let data = {
     "articles": [
         // TODO IMPORTANT CONVERT ALL MAILCHIMP LINKS TO PDFs HOSTED UNDER SPHSKEYCLUB.ORG
         {
+            "title": "October 14th Newlsetter",
+            "classification": "NEWSLETTER",
+            "class-style": "margain: 0; color: var(--KeyBlue)",
+            "author": "Aurora Henderson",
+            "position": "Editor",
+            "year": "2025",
+            "bio": "",
+            "url-bio": "Read this article by ",
+            "url": "https://sphskeyclub.org/News/newsletters/2025/October14thNewsletter.pdf",
+            "img": {
+                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+                "alt": "SPHS Key Club Banner"
+            }
+        },
+        {
+            "title": "October 7th Newlsetter",
+            "classification": "NEWSLETTER",
+            "class-style": "margain: 0; color: var(--KeyBlue)",
+            "author": "Aurora Henderson",
+            "position": "Editor",
+            "year": "2025",
+            "bio": "",
+            "url-bio": "Read this article by ",
+            "url": "https://sphskeyclub.org/News/newsletters/2025/October7thNewsletter.pdf",
+            "img": {
+                "srcset": "./articles/imgs/PointOpp/KeyPoints-500w.webp 500w, ./articles/imgs/PointOpp/KeyPoints-1000w.webp 1000w, ./articles/imgs/PointOpp/KeyPoints-1280w.webp 1280w",
+                "alt": "SPHS Key Club Banner"
+            }
+        },
+        {
             "title": "September 30th Newlsetter",
             "classification": "NEWSLETTER",
             "class-style": "margain: 0; color: var(--KeyBlue)",
@@ -17,7 +47,7 @@ let data = {
             }
         },
         {
-            "title": "September 23th Newlsetter",
+            "title": "September 23rd Newlsetter",
             "classification": "NEWSLETTER",
             "class-style": "margain: 0; color: var(--KeyBlue)",
             "author": "Aurora Henderson",
