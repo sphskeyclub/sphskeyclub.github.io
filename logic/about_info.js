@@ -4,7 +4,7 @@ const officerInfo26 = {
     "officers": [
         {
             "title": "Co-President",
-            "about": "Hi! I’m Maya, and i’m the new Co-President of KC along with Claire. I love meeting new people, reading books, and listening to music. I’m beyond ecstatic to be one of the people guiding Key to a successful school year.",
+            "about": "Hi! I’m Maya, and I’m the new Co-President of KC along with Claire. I love meeting new people, reading books, and listening to music. I’m beyond ecstatic to be one of the people guiding Key to a successful school year.",
             "informalimgsrc": "./imgs/officers/25-26/informal/MayaD-700w.webp 700w",
             "multiple": "yes",
         },
@@ -27,6 +27,7 @@ const officerInfo26 = {
         {
             "title": "Secretary",
             "about": "My name is Gwendolyn Connors and I serve as the Secretary for St. Petersburg Senior High School's Key Club. I am going into my Junior year and I have been apart of Key Club since Freshman year. My job consists of keeping track of points and hours that each member serves as well as reporting to the district about what we have done as a club. Please feel free to contact me about any problem whether it be about your points, what I do, or a question about Key Club in general.",
+            "informalimgsrc": "./imgs/officers/25-26/informal/GwenC-700w.webp 700w"
         },
         {
             "title": "Treasurer",
